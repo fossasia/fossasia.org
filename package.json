@@ -1,0 +1,22 @@
+{
+  "name": "fossasia15",
+  "version": "1.0.0",
+  "description": "FOSSASIA '15 website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fossasia/fossasia15.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fossasia/fossasia15/issues"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-imagemin": "^2.1.0"
+  }
+}

@@ -1,0 +1,25 @@
+{
+	"original":
+	{
+		"name":"Pivot",
+		"pathToOriginal":"mixture/css/",
+		"originalFileName":"theme",
+		"colours":["#E74C3C","#2C3E50","#3498DB"]
+	},
+	"schemes":
+	[
+		{
+			"name":"Aquatica",
+			"colours":["#01A2A6","#2F2933","#29D9C2"]
+		},
+		{
+			"name":"Saquandosa",
+			"colours":["#EBAD60","#96526B","#FSCF66"]
+		},
+		{
+			"name":"Equinox",
+			"colours":["#BADA55","#5A55EE","#5A51ED"]
+		}
+	],
+	"holdthis":""
+}
