@@ -1,0 +1,18 @@
+{ 
+	"options":[
+		{	
+			"type":"toggle",
+			"class":"boxed-layout",
+			"text":"Boxed Layout",
+			"initial":"off",
+			"icon":"resize-width"
+		},
+		{	
+			"type":"toggle",
+			"class":"no-loader",
+			"text":"Disable Loader",
+			"initial":"off",
+			"icon":"reload"
+		}
+	]
+}
