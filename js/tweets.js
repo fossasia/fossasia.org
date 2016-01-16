@@ -68,6 +68,13 @@ function parser(data) {
 			parsed += words[word] + " ";
 		}
 	}
+  var date = +new Date(data.statuses[tweetNum].created_at);
+  var myDate = new Date();
+  myDate = myDate.getTime();
+  var difference = myDate-date; //it's in miliseconds
+  var difference = Math.round(difference/1000/3600/24);
+  parsed += "<span class='dateTweeted'>Tweeted "+difference+" Days Ago</div>";
+  
 	document.getElementsByClassName("tweets-feed")[0].innerHTML =  parsed;
 	document.getElementsByClassName("tweets-feed")[0].style.opacity =  1;
 }
@@ -118,6 +125,8 @@ window.onload = (function() {
 
       if(dataset.query) {
         var query = dataset.query.replace(/\s/gi, '%20').replace(/#/gi, '%23'); //replace spaces and hashtags in URL
+      } else {
+        query = '';
       }
 
       if(dataset.start) {
@@ -155,7 +164,6 @@ window.onload = (function() {
       if(script !== null) {
         document.head.removeChild(script);
       }
-
       /**
        * Invokes the callback function, passing the data from the server as the
        * first and only argument.
