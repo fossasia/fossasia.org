@@ -431,6 +431,10 @@ p a,
   min-width: 230px;
   border-radius: 35px;
 }
+
+.btn-lg:nth-of-type(1){
+  margin-right: 1% !important;
+}
 /*!
 // Backgrounds & Parallax
 // --------------------------------------------------*/
@@ -1388,6 +1392,7 @@ nav .container {
   min-width: 150px;
   margin-top: 32px;
   margin-right: 16px;
+  width: 175px;
 }
 @media all and (max-width: 768px) {
   .inline-video iframe {
