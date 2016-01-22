@@ -123,7 +123,7 @@
 									<li><a href="http://twitter.com/fossasia" target="default"><i class="icon social_twitter"></i></a></li>
 									<li><a href="http://facebook.com/fossasia" target="default"><i class="icon social_facebook"></i></a></li>
 									<li><a href="http://fossasia.net" target="default"><i class="icon social_dribbble"></i></a></li>
-									<li><a href="https://www.flickr.com/photos/fossasia/" target="default"><i class="icon social_instagram"></i></a></li>
+									<li><a href="https://www.flickr.com/photos/fossasia/" target="default"><i class="icon social_flickr"></i></a></li>
 									<li><a href="https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ" target="default"><i class="icon social_youtube icon-large"></i></a></li>
 								</ul>
 							</div>
@@ -742,10 +742,10 @@
 								<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
 							<form class="email-subscribe" action="http://news.fossasia.org/subscribe" method="POST" accept-charset="utf-8">
-                                                                <div class="col-sm-3">
-                                                                        <input class="form-email signup-email-field" placeholder="Name" type="text" name="name" id="name">
+                                                                <div class="col-sm-4">
+                                                                        <input class="form-email signup-email-field" placeholder="Enter your name" type="text" name="name" id="name">
                                                                 </div>
-								<div class="col-sm-6">
+								<div class="col-sm-5">
 									<input class="form-email signup-email-field" placeholder="Enter your email address" type="text" name="email" id="email">
 								</div>
 			    
@@ -755,7 +755,7 @@
 								</div>
 							
 								<div class="col-sm-12 text-center">
-									<span class="text-white">*We never share your email with 3rd parties</span>
+									<span>*We never share your email with 3rd parties</span>
 								</div>
 							</form>
 
@@ -766,7 +766,8 @@
 							<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
 								<div class="twitter-feed">
 									<i class="icon social_twitter text-white"></i>
-									<div class="tweets-feed" data-widget-id="312420098352742400">
+                  <!-- For changing parameters of tweets-feed, please see https://github.com/fossasia/fossasia-loklak-webtweets/blob/gh-pages/README.md for the full documentation -->
+									<div class="tweets-feed" data-count=3 data-from="fossasia">
 							
 									</div>
 									<span class="text-white">Follow <a href="http://twitter.com/fossasia" target="default">@fossasia</a> for more updates</span>
@@ -871,7 +872,7 @@
 								<li><a target="default" href="http://facebook.com/fossasia"><i class="icon social_facebook"></i></a></li>
 								<li><a target="default" href="https://www.linkedin.com/groups/FOSSASIA-3762811"><i class="icon social_linkedin icon-large"></i></a></li>
 								<li><a target="default" href="https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ"><i class="icon social_youtube icon-large"></i></a></li>
-								<li><a target="default" href="https://www.flickr.com/photos/fossasia"><i class="icon social_instagram icon-large"></i></a></li>
+								<li><a target="default" href="https://www.flickr.com/photos/fossasia"><i class="icon social_flickr icon-large"></i></a></li>
 							</ul>	
 						</div>
 					</div>
@@ -888,8 +889,8 @@
         <script src="js/jquery.countdown.min.js"></script>
         <script src="js/lightbox.min.js"></script>
         <script src="js/smooth-scroll.min.js"></script>
-        <script src="js/twitterfetcher.min.js"></script>
         <script src="js/placeholders.min.js"></script>
+        <script src="js/tweets.js"></script>
         <script src="js/scripts.js"></script>
     </body>
 </html>

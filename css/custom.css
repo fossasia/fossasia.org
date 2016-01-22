@@ -20,3 +20,29 @@
   text-decoration: none;
   border: none;
 }
+
+.tweets-feed {
+  color: #FFFFFF;
+  line-height: 36px;
+  font-size: 30px;
+  transition: opacity 0.2s linear;
+  margin-bottom: 20px;
+  height: 150px;
+}
+
+.tweets-feed a {
+  color: #FFFFFF;
+  text-decoration: underline;
+  font-weight:700;
+}
+
+.tweets-feed a:hover {
+  color: #FFFFFF;
+}
+
+.tweets-feed .dateTweeted {
+  font-size: 15px;
+  display: block;
+  text-align: center;
+  margin: 10px auto;
+}
