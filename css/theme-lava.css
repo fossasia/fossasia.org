@@ -1846,6 +1846,7 @@ p.question {
 .email-subscribe span {
   display: block;
   margin-top: 12px;
+  color: #cfcfcf;
 }
 .twitter-feed i {
   font-size: 48px;
