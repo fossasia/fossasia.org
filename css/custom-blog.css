@@ -1,0 +1,84 @@
+img.rss {
+  margin-bottom: 30px;
+}
+
+.post a {
+  color: #fff !important;
+  text-decoration: none;
+  border-color: transparent;
+}
+
+#result {
+  width: 80%;
+  height: 250px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin-bottom: 40px;
+  border-radius: 20px;
+}
+
+.post {
+  display: none;
+  padding: 20px;
+  position: relative;
+  height: 100%;
+  color: #fff !important;
+}
+
+.title, .author-date {
+  color: #fff;
+  padding: 10px;
+}
+
+.post.active {
+  display: block;
+}
+
+.post > h4 {
+  font-size: 1em;
+}
+
+.links {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-start;
+  padding-left: 0;
+}
+
+.links li {
+  display: inline-block;
+  margin-right: 15px;
+  background-color: #2D728F;
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+
+.links li a {
+  color: #fff;
+}
+
+.post img {
+  display: block;
+  width:30%;
+  height: 30%;
+  margin: 10px auto;
+}
+
+.post .link {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  margin-left: -20px;
+  margin-top: 190px;
+  height: 60px;
+  box-sizing: border-box;
+  padding: 20px;
+  font-weight: 700;
+  background: linear-gradient(rgba(0, 0, 0, 0.05), #000); /* Standard syntax */
+}
+
+.post .link:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.05), #2D728F); /* Standard syntax */
+  
+}
