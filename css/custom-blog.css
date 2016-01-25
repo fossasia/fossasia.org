@@ -4,10 +4,9 @@ img.rss {
 
 
 #result {
-  width: 80%;
   height: 500px;
   margin: 0 auto;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #fff;
   overflow: hidden;
   margin-bottom: 40px;
 }
@@ -17,12 +16,10 @@ img.rss {
   padding: 20px;
   position: relative;
   height: 100%;
-  color: #fff !important;
 }
 
 .title, .author-date {
-  color: #fff;
-  padding: 10px;
+  padding: 0 0 20px;
 }
 
 .post.active {
@@ -47,11 +44,7 @@ img.rss {
   padding: 5px 10px;
 }
 
-.links li a {
-  color: #fff;
-}
-
-.post img {
+.post img, post svg{
   display: block;
   width:30%;
   height: 30%;
@@ -68,11 +61,17 @@ img.rss {
   box-sizing: border-box;
   padding: 20px;
   font-weight: 700;
-  background: linear-gradient(rgba(0, 0, 0, 0.05), #222); /* Standard syntax */
-  color: #fff !important;
+  background-color: #fff; /* Standard syntax */
+  transition: background-color 0.2s ease-in;
+  color: #e12b00;
+}
+
+.linkText {
+  padding-bottom: 3px;
+  font-size: 1.5em;
 }
 
 .post .link:hover {
-  background: linear-gradient(rgba(0, 0, 0, 0.05), #2D728F); /* Standard syntax */
+  background-color: #ddd; /* Standard syntax */
   
 }
