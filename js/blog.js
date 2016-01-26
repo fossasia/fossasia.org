@@ -28,7 +28,7 @@ $(document).ready(function() {
           $('#result').append("<div class='post'><h3 class='title'>"+posts[index].title+"</h3> \
                               <h4 class='author-date'>By "+posts[index].creator+" on "+date.toDateString()+"</h4> \
                               <div class='content'>"+posts[index].description+"</div> \
-                              <a href='"+posts[index].link+"'><div class='link'><span class='linkText'>See more at FOSSASIA</span></div></a> \
+                              <a href='"+posts[index].link+"'><div class='link'><span class='linkText'>Read more in the blog</span></div></a> \
                               </div>");
           if(index == 0) {
             $('.post').addClass('active');
