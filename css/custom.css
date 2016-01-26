@@ -50,3 +50,22 @@
 .subscribe-1 .email-subscribe {
   margin-bottom: 50px !important;
 }
+.newsletter-name{
+  padding-right: 0px;
+}
+.newsletter-name input{
+  border-radius: 10px 0px 0px 10px;
+}
+.newsletter-email{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.newsletter-email input{
+  border-radius: 0px;
+}
+.newsletter-submit{
+  padding-left: 0px;
+}
+.newsletter-submit input{
+  border-radius: 0px 10px 10px 0px;
+}
