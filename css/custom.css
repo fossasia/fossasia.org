@@ -69,3 +69,15 @@
 .newsletter-submit input{
   border-radius: 0px 10px 10px 0px;
 }
+.social-profiles a i{
+  transition: all .5s;
+}
+.social-profiles a:hover i{
+  color: grey;
+}
+.sticky-nav .menu li a:hover {
+  border-color: #C3BFBF;
+  border-bottom-width: 2px;
+  margin-top: 4px;
+  margin-bottom: 2px;
+}
