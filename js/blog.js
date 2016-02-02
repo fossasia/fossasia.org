@@ -46,28 +46,30 @@ $(document).ready(function() {
   Feed.switchNext = function() {
     //check to see if it's the last one
     if(this.currentID != this.number - 1) {
+      transition(this.currentID, this.currentID + 1);
       this.currentID += 1;
-      document.getElementsByClassName('post')[this.currentID-1].className = "post";
-      document.getElementsByClassName('post')[this.currentID].className = "post active";
     } else {
+      transition(this.currentID, 0);
       this.currentID = 0;
-        document.getElementsByClassName('post')[this.number - 1].className = "post";
-        document.getElementsByClassName('post')[this.currentID].className = "post active";
     }
   }
   
   Feed.switchPrevious = function() {
     if(this.currentID != 0) {
+      transition(this.currentID, this.currentID - 1);
       this.currentID -= 1;
-      document.getElementsByClassName('post')[this.currentID+1].className = "post";
-      document.getElementsByClassName('post')[this.currentID].className = "post active";
     } else {
+      transition(this.currentID, this.number - 1);
       this.currentID = this.number - 1;
-      document.getElementsByClassName('post')[0].className = "post";
-      document.getElementsByClassName('post')[this.currentID].className = "post active";
     }
   }
   
+  // Transition from Post `a` to Post `b`
+  function transition(a, b) {
+    $('.post:eq(' + String(a) + ')').fadeOut(1000, function(){
+      $('.post:eq(' + String(b) + ')').fadeIn(1000);
+    });
+  }
 });
 
-setInterval(function() {Feed.switchNext();}, 5000);
+setInterval(function() {Feed.switchNext();}, 7000);
