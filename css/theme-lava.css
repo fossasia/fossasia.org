@@ -657,11 +657,6 @@ nav .container {
   -webkit-transform: translate3d(0px, 0px, 0px);
   -moz-transform: translate3d(0px, 0px, 0px);
 }
-.reveal-sidebar {
-  transform: translate3d(-300px, 0px, 0px);
-  -webkit-transform: translate3d(-300px, 0px, 0px);
-  -moz-transform: translate3d(-300px, 0px, 0px);
-}
 .sidebar-content {
   padding: 0px 24px;
   margin-top: 24px;
