@@ -23,11 +23,11 @@
 
 .tweets-feed {
   color: #FFFFFF;
-  line-height: 36px;
-  font-size: 30px;
+  line-height: 25px;
+  font-size: 20px;
   transition: opacity 0.2s linear;
   margin-bottom: 20px;
-  height: 150px;
+  height: 250px;
 }
 
 .tweets-feed a {
