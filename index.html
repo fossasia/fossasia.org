@@ -57,15 +57,20 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-md-2">
-								<img alt="FOSSASIA" class="logo logo-light" src="img/fossasia-long.png">
-								<img alt="FOSSASIA" class="logo logo-dark" src="img/fossasia-dark.png">
+								<a class="inner-link" href="#top"><img alt="FOSSASIA" class="logo logo-light" src="img/fossasia-long.png">
+								<img alt="FOSSASIA" class="logo logo-dark" src="img/fossasia-dark.png"></a>
 							</div>
 
 							<div class="col-md-10 text-right">
 								<ul class="menu">
 									<li><a target="_self" href="./about">About</a></li>
-									<li><a target="_self" href="http://labs.fossasia.org">Labs</a></li>
-									<li><a target="_self" href="https://github.com/fossasia">Contribute</a></li>
+									<li class="has-dropdown"><a href="http://labs.fossasia.org" target="_self">Labs</a>
+										<ul class="nav-dropdown">
+											<li><a target="_self" href="https://github.com/fossasia">Contribute on Github</a></li>
+											<li><a target="_self" href="http://labs.fossasia.org/#projects">Projects</a></li>
+											<li><a target="_self" href="http://labs.fossasia.org/ideas.html">Project Ideas</a></li>
+											<li><a target="_self" href="http://labs.fossasia.org/stipends.html">Project Stipends</a></li>
+										</ul>									
 									<li><a target="_self" class="inner-link" href="#subscribe">Subscribe</a></li>
 									<li><a target="_self" href="http://blog.fossasia.org">Blog</a></li>
 									<li><a target="_self" href="http://2017.fossasia.org">FOSSASIA'17</a></li>
@@ -83,6 +88,7 @@
 										</ul>
 									</li>
 									<li><a target="_self" href="./donate/">Donate</a></li>
+									<li><a href="http://blog.fossasia.org/contact/" target="_self">Contact</a></li>											
 									<li class="social-link"><a target="_self" href="http://twitter.org/fossasia"><i class="icon social_twitter"></i></a></li>
 									<li class="social-link"><a target="_self" href="http://facebook.com/fossasia"><i class="icon social_facebook"></i></a></li>
 
@@ -383,9 +389,8 @@
 								FOSSASIA develops software and hardware and cooperates with Open Tech projects. Please check out our Github and FOSSASIA Labs.
 							</p>
 
-							<a href="http://github.com/fossasia" class="btn" target="_self"><i class="icon pe-7s-add-user icon-large">&nbsp;</i>Follow us on Github</a>
+							<a href="http://github.com/fossasia" class="btn" target="_self"></i>Contribute on Github</a>
 							<a href="http://labs.fossasia.org" class="btn btn-hollow" target="_self">Visit FOSSASIA Labs</a>
-
 						</div>
 
 					</div>
@@ -616,6 +621,30 @@
 				</div>
 
 			</section>
+
+			<a id="join" class="in-page-link"></a>
+			
+			<section class="strip-divider primary-overlay">
+					<div class="background-image-holder parallax-background">
+						<img class="background-image" alt="About Image" src="img/hero7.jpg">
+					</div>
+					
+					<div class="video-wrapper">
+						<video autoplay="" muted="" loop="">
+							<source src="video/video.webm" type="video/webm">
+							<source src="video/video.mp4" type="video/mp4">
+							<source src="video/video.ogv" type="video/ogg">	
+						</video>
+					</div>
+					
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-12 text-center">
+								<h1 class="text-white">Interested in coding stipends? Subscribe to our&nbsp;<a href="#subscribe" class="inner-link" target="_self">newsletter for announcements</a><div>and start by doing a <a href="https://github.com/fossasia/labs.fossasia.org/labels/mini-project" class="inner-link" target="_self">mini-project</a>.</div></h1>
+							</div>
+						</div>
+					</div>
+			</section>			
 
 			<section class="inline-video">
 				<div class="container">
@@ -900,10 +929,13 @@
 					<div class="row ui-sortable">
 						<div class="col-sm-2">
 							<ul class="menu">
+								<li><a target="_self" href="http://blog.fossasia.org">Blog</a></li>							
 								<li><a target="_self" href="http://github.com/fossasia">Github</a></li>
+								<li><a target="_self" href="http://labs.fossasia.org/#projects">Projects</a></li>								
 								<li><a target="_self" href="http://coc.fossasia.org/">Code of Conduct</a></li>
 								<li><a target="_self" href="./about">About</a></li>
-								<li><a target="_self" href="http://blog.fossasia.org/contact">Contact</a></li><li><a target="_self" href="./donate/">Donate</a></li>
+								<li><a target="_self" href="http://blog.fossasia.org/contact">Contact</a></li>
+								<li><a target="_self" href="./donate/">Donate</a></li>
 								<li><a class="inner-link back-to-top" href="#top">Back To Top</a></li>
 							</ul>
 						</div>
