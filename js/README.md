@@ -132,4 +132,5 @@ This is basically copied from <https://developers.google.com/feed/v1/reference>
       - `categories[]` A list of string tags for the entry. Corresponds to the term attribute for the <category> element in Atom and the `<category>` element in RSS.
       
  ####This is how my browser console showed me things through feednami 
+  https://github.com/vaibsharma/fossasia.org/blob/gh-pages/js/Screenshot%20from%202016-08-30%2020:59:23.png
   
