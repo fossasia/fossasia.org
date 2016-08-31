@@ -1,18 +1,17 @@
-/*img.rss {
+img.rss {
   margin-bottom: 30px;
 }
 
 
-#result {
-  height: 500px;
-  margin: 0px auto;
-  background-color: black;
-  overflow: hidden;
-  margin-bottom: 40px;
-}
 #result .item{
-
+  height: 500px;
+  margin:2% 3% 5% 3%;
+  background-color: #fff;
+  overflow: hidden;
+  
+  
 }
+
 .post {
   display: none;
   padding: 20px;
@@ -77,6 +76,3 @@
   background-color: #ddd; 
   
 }*/
-#result .blogtitle{
-  margin-top: 30px;
-}
