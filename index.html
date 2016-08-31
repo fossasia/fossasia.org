@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
     <head>
@@ -26,6 +27,9 @@
         <link href="css/theme-lava.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="css/custom.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="css/custom-blog.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="css/bootstrap-theme.min.css.map" rel="stylesheet" type="text/css" media="all"/>
+        <link href="css/bootstrap.min.css.map" rel="stylesheet" type="text/css" media="all"/>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
 
         <script>
@@ -593,9 +597,36 @@
 							<i class="icon pe-7s-news-paper icon-large"></i>
 							<i class="icon pe-7s-paper-plane"></i>
 							<h1 class="large-h1">Blog Posts</h1>
-                               <div id="result">
-              	
-                               </div>
+                               <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                      <ol class="carousel-indicators">
+                                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                 <li data-target="#myCarousel" data-slide-to="1"></li>
+                                 <li data-target="#myCarousel" data-slide-to="2"></li>
+                                 <li data-target="#myCarousel" data-slide-to="3"></li>
+                                 <li data-target="#myCarousel" data-slide-to="4"></li>
+                                 <li data-target="#myCarousel" data-slide-to="5"></li>
+                                 <li data-target="#myCarousel" data-slide-to="6"></li>
+                                 <li data-target="#myCarousel" data-slide-to="7"></li>
+                                 <li data-target="#myCarousel" data-slide-to="8"></li>
+                                 <li data-target="#myCarousel" data-slide-to="9"></li>
+                                      </ol>         <!-- Indicators -->
+                                   <div class="carousel-inner" role="listbox" id="result">
+                               
+                                     
+                                   </div>
+  
+
+                        <!-- Left and right controls -->
+                             <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+             <span class="sr-only">Previous</span>
+                             </a>
+                            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                               <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                               <span class="sr-only">Next</span>
+                            </a>
+                             </div>
+
 						</div>
 					</div>
 
