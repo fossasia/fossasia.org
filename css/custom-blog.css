@@ -1,16 +1,18 @@
-img.rss {
+/*img.rss {
   margin-bottom: 30px;
 }
 
 
 #result {
   height: 500px;
-  margin: 0 auto;
-  background-color: #fff;
+  margin: 0px auto;
+  background-color: black;
   overflow: hidden;
   margin-bottom: 40px;
 }
+#result .item{
 
+}
 .post {
   display: none;
   padding: 20px;
@@ -61,7 +63,7 @@ img.rss {
   box-sizing: border-box;
   padding: 20px;
   font-weight: 700;
-  background-color: #fff; /* Standard syntax */
+  background-color: #fff; 
   transition: background-color 0.2s ease-in;
   color: #e12b00;
 }
@@ -72,6 +74,9 @@ img.rss {
 }
 
 .post .link:hover {
-  background-color: #ddd; /* Standard syntax */
+  background-color: #ddd; 
   
+}*/
+#result .blogtitle{
+  margin-top: 30px;
 }
