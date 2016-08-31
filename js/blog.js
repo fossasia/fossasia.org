@@ -49,7 +49,7 @@ feednami.load(url,function(result){
               i=i+1;
             }
 
-            html.push("<a href=" + link +">Read More</a><br>");
+            html.push("<a href=" + link +" target='_blank'>Read More</a><br>");
              html.push("<span>"+(date)+"</span></div>");
             blog.append(html.join(""));
              
