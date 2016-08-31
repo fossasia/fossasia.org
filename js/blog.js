@@ -24,11 +24,7 @@ feednami.load(url,function(result){
                 html.push("<div class='item active'><h1>"+title+"</h1>");
             }
             else{
-<<<<<<< HEAD
                 html.push("<div class='item' ><h1 class='blogtitle'>"+title+"</h1>");
-=======
-                html.push("<div class='item' ><h1>"+title+"</h1>");
->>>>>>> 8ee28ba6d5b04866cf9437a158985139b1613e85
             }
             var author = text.author ;
             html.push("<h1>"+(author)+"</h1>");
