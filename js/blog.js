@@ -27,31 +27,13 @@ feednami.load(url,function(result){
                 html.push("<div class='item' ><h1 class='blogtitle'>"+title+"</h1>");
             }
             var author = text.author ;
-            html.push("<h1>"+(author)+"</h1>");
+            html.push("<h1>By - "+(author)+"</h1>");
            
             var link = text.guid ;
             var date = new Date(text.date);
-
-           
-             text = text.description;
-             text = $(text);
-            
-            var content = text.find("p").prevObject ;
-           
-            length = content.length;
-            i=0;
-            count =0;
-             while(i < length){
-             if(content[i].innerHTML && count<2){
-                 html.push(" <p>"+(content[i].innerHTML)+"</p> ");
-                 
-                count+=1;
-               }
-              i=i+1;
-            }
-
-            html.push("<p><a href=" + link +" target='_blank'>Read More</a></p><br>");
-             html.push("<span>"+(date)+"</span></div>");
+             summary = text.summary
+             html.push("<hr><p class ='summary'>"+summary + "<p>");
+             html.push("<span class='date'> Posted On - "+(date)+"</span></div>");
             blog.append(html.join(""));
              
             

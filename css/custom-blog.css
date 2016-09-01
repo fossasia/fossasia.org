@@ -4,7 +4,7 @@ img.rss {
 
 
 #result .item{
-  height: 600px;
+  height: 450px;
   margin:5% 3% 5% 3%;
   background-color: #fff;
   overflow: hidden;
@@ -17,8 +17,7 @@ img.rss {
   margin-right: 5px;
 }
 #result .item .summary{
-  margin-top: 100px;
-  margin-bottom: 50px;
+  margin: 36px 10% 50px 10%;
 }
 
 
