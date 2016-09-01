@@ -43,13 +43,14 @@ feednami.load(url,function(result){
             count =0;
              while(i < length){
              if(content[i].innerHTML && count<2){
-                 html.push("<p>"+(content[i].innerHTML)+"</p>");
+                 html.push(" <p>"+(content[i].innerHTML)+"</p> ");
+                 
                 count+=1;
                }
               i=i+1;
             }
 
-            html.push("<a href=" + link +" target='_blank'>Read More</a><br>");
+            html.push("<p><a href=" + link +" target='_blank'>Read More</a></p><br>");
              html.push("<span>"+(date)+"</span></div>");
             blog.append(html.join(""));
              
