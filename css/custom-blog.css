@@ -5,13 +5,19 @@ img.rss {
 
 #result .item{
   height: 500px;
-  margin:2% 3% 5% 3%;
+  margin:5% 3% 5% 3%;
   background-color: #fff;
   overflow: hidden;
-  
-  
+}
+#result .item h1 {
+  font-weight: 400 ;
+}
+p a{
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
+/*
 .post {
   display: none;
   padding: 20px;
@@ -76,3 +82,4 @@ img.rss {
   background-color: #ddd; 
   
 }*/
+*/
