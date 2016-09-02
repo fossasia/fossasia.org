@@ -7,6 +7,7 @@ $(document).ready(function() {
 
 function feeds(url){
 var blog = $("#result");
+console.log(blog)
 var html = [];
 feednami.load(url,function(result){
         if(result.error) {
@@ -14,8 +15,9 @@ feednami.load(url,function(result){
         } else {
           
             var entries = result.feed.entries;
-          for( var x=0 ; x< 10; x++){
             html=[];
+          for( var x=0 ; x< 10; x++){
+            
             var count =0;
             var text = entries[x];
             
@@ -34,11 +36,11 @@ feednami.load(url,function(result){
              summary = text.summary
              html.push("<hr><p class ='summary'>"+summary + "<p>");
              html.push("<span class='date'> Posted On - "+(date)+"</span></div>");
-            blog.append(html.join(""));
+            
              
             
          }
-          
+          blog.html(html.join(""));
         
       
       
