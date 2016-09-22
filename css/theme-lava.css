@@ -642,12 +642,12 @@ nav .container {
   position: fixed;
   right: 0px;
   top: 0px;
-  width: 350;
+  width: 300px;
   height: 100%;
   background: #333333;
-  transform: translate3d(350px, 0px, 0px);
-  -webkit-transform: translate3d(350, 0px, 0px);
-  -moz-transform: translate3d(350px, 0px, 0px);
+  transform: translate3d(300px, 0px, 0px);
+  -webkit-transform: translate3d(300px, 0px, 0px);
+  -moz-transform: translate3d(300px, 0px, 0px);
   transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
@@ -658,9 +658,9 @@ nav .container {
   -moz-transform: translate3d(0px, 0px, 0px);
 }
 .reveal-sidebar {
-  transform: translate3d(-350px, 0px, 0px);
-  -webkit-transform: translate3d(-350px, 0px, 0px);
-  -moz-transform: translate3d(-350px, 0px, 0px);
+  transform: translate3d(-300px, 0px, 0px);
+  -webkit-transform: translate3d(-300px, 0px, 0px);
+  -moz-transform: translate3d(-300px, 0px, 0px);
 }
 .sidebar-content {
   padding: 0px 24px;
