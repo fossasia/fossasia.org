@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+<url>
+  <loc>http://fossasia.org/</loc>
+  <lastmod>2016-09-23T00:47:39+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://fossasia.org/about/</loc>
+  <lastmod>2016-09-23T00:47:39+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://labs.fossasia.org/</loc>
+  <lastmod>2016-09-23T00:47:39+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://fossasia.org/#subscribe</loc>
+  <lastmod>2016-09-23T00:47:39+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.fossasia.org/</loc>
+  <lastmod>2016-09-23T00:47:39+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://2017.fossasia.org/</loc>
+  <lastmod>2016-09-23T00:47:39+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://events.fossasia.org/</loc>
+  <lastmod>2016-09-23T00:47:39+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://fossasia.org/donate/</loc>
+  <lastmod>2016-09-23T00:47:39+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.fossasia.org/contact/</loc>
+  <lastmod>2016-09-23T00:47:39+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+</urlset>
