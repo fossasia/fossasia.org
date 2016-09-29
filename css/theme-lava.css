@@ -544,7 +544,7 @@ nav .container {
   display: none;
   background: rgba(255, 255, 255, 0.9);
   min-width: 200px;
-  overflow: hidden;
+  overflow-y: scroll;
   margin-top: -2px;
 }
 .nav-dropdown li:first-child {
