@@ -758,7 +758,7 @@ nav .container {
 @media all and (max-width: 768px) {
   nav {
     max-height: 67px;
-    overflow: hidden;
+    overflow-y: scroll;
     background: rgba(255, 255, 255, 0.9) !important;
   }
   nav .menu li {
