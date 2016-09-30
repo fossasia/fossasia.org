@@ -1,6 +1,0 @@
-Some software used herein is licensed under the following licenses:
-
-MIT license: http://www.opensource.org/licenses/mit-license.php
-
-GPL license: http://www.gnu.org/copyleft/gpl.html
-
