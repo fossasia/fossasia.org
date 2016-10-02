@@ -715,16 +715,6 @@ nav .container {
   color: rgba(255, 255, 255, 0.5);
   font-size: 12px;
 }
-.copy-text-box {
-  position: relative;
-  height: 250px;
-  width: 100%;
-  color: rgba(255, 255, 255, 0.5);
-}
-.copy-text-bottom {
-  position: absolute;
-  bottom: 5px;
-}
 .text-panel {
   background: #474747;
   padding: 18px;
