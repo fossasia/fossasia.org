@@ -986,15 +986,15 @@
 							</ul>
 						</div>
 
-						<div class="col-sm-6">
+						<div class="col-sm-7">
 							<span class="lead color-heading">About FOSSASIA</span>
 							<p>
 								FOSSASIA is the premier Free and Open Source technology organization in Asia for developers, designers, start-ups, and contributors. Projects at FOSSASIA range from open hardware, to design, graphics and software. FOSSASIA was established in 2009. The annual FOSSASIA took place in Cambodia, Vietnam and Singapore. FOSSASIA meetup groups exist throughout Asia.</p>
 						</div>
 
-						<div class="col-sm-4">
+						<div class="col-sm-3">
 							<ul class="contact-methods">
-								<li><i class="icon pe-7s-mail"></i><span><a href="mailto:fossasia@googlegroups.com" target="_self" style="color:#777777">fossasia@googlegroups.com</a></span></li>
+								<li><i class="icon pe-7s-mail"></i><span><a id="mailAdd" href="mailto:fossasia@googlegroups.com" target="_self" style="color:#777777">fossasia@googlegroups.com</a></span></li>
 								<li><i class="icon pe-7s-phone"></i><span>+65 83435672</span></li>
 								<li><i class="icon pe-7s-map-marker"></i><span>Ms. DANG Hong Phuc</span></li>
 								<li><span>FOSSASIA</span></li>
@@ -1019,7 +1019,12 @@
 				</div>
 			</footer>
 		</div>
-
+        <script>
+          // changes email address in homepage to make it responsive according to screen resolutions
+          if (screen.width <=853) {
+          document.getElementById('mailAdd').innerHTML = 'fossasia@google...';
+        }
+        </script>
 		    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
 		<script src="js/feednami.js"></script>
         <script src="js/bootstrap.min.js"></script>
