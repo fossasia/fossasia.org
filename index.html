@@ -123,7 +123,7 @@
 								<ul class="menu">
 									<li><a class="inner-link" href="#top">Home</a></li>
 									<li><a href="./about" target="_self">About</a></li>
-									<li><a href="http://eventyay.com" target="_self">eventyay Event Management</a></li>									
+									<li><a href="http://eventyay.com" target="_self">Event Management</a></li>									
 									<li><a class="inner-link" href="#labs" target="_self">Labs &amp; Code</a></li>
 									<li><a href="http://github.com/fossasia" target="_self">Contribute</a></li>
 									<!-- <li><a class="inner-link" href="#support" target="_self">Support</a></li><li><a class="inner-link" href="#subscribe" target="_self">Subscribe</a></li> -->
@@ -146,9 +146,11 @@
 								</ul>
 							</div>
 
-							<div class="copy-text">
-								<span>© Copyright 2016 Creative Commons By License, FOSSASIA</span>
-							</div>
+							<div class="copy-text-box">
+                                <div class="copy-text-bottom">
+                                    <span>© Copyright 2016 Creative Commons By License, FOSSASIA</span>
+                                </div>
+                            </div>
 						</div>
 					</div>
 
@@ -992,7 +994,7 @@
 
 						<div class="col-sm-3">
 							<ul class="contact-methods">
-								<li><i class="icon pe-7s-mail"></i><span><a href="mailto:fossasia@googlegroups.com" target="_self" style="color:#777777">fossasia@googlegroups.com</a></span></li>
+								<li><i class="icon pe-7s-mail"></i><span><a id="mailAdd" href="mailto:fossasia@googlegroups.com" target="_self" style="color:#777777">fossasia@googlegroups.com</a></span></li>
 								<li><i class="icon pe-7s-phone"></i><span>+65 83435672</span></li>
 								<li><i class="icon pe-7s-map-marker"></i><span>Ms. DANG Hong Phuc</span></li>
 								<li><span>FOSSASIA</span></li>
@@ -1017,7 +1019,12 @@
 				</div>
 			</footer>
 		</div>
-
+        <script>
+          // changes email address in homepage to make it responsive according to screen resolutions
+          if (screen.width <=853) {
+          document.getElementById('mailAdd').innerHTML = 'fossasia@google...';
+        }
+        </script>
 		    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
 		<script src="js/feednami.js"></script>
         <script src="js/bootstrap.min.js"></script>
