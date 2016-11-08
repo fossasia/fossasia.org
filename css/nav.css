@@ -1,0 +1,27 @@
+/* to adjust fossasia logo according to nav */
+.nav-container .overlay-nav .container .row img{
+    padding-top: 5px;
+}
+
+
+
+/* rotating animation in icons like fabebook and twitter */
+.container .row .text-center i{
+            transition: all 0.3s ease-in-out;
+            
+}
+.container .row .text-center i:hover{
+           transition: all 0.3s ease-in-out;
+           transform: rotate(360deg);
+           -webkit-transform: rotate(360deg);
+            
+}
+
+/* under effect in nav links */
+.has-dropdown .nav-dropdown li a{
+    transition: all 0.3s ease-in-out;
+}
+.has-dropdown .nav-dropdown li a:hover{
+    transition: all 0.3s ease-in-out;
+    text-decoration: underline;
+} 
