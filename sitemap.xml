@@ -16,7 +16,7 @@
   <loc>http://fossasia.org/about/</loc>
   <lastmod>2016-09-23T00:47:39+00:00</lastmod>
   <changefreq>always</changefreq>
-  <priority>1.00</priority>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>http://labs.fossasia.org/</loc>
@@ -34,7 +34,7 @@
   <loc>http://blog.fossasia.org/</loc>
   <lastmod>2016-09-23T00:47:39+00:00</lastmod>
   <changefreq>always</changefreq>
-  <priority>0.80</priority>
+  <priority>1.00</priority>
 </url>
 <url>
   <loc>http://2017.fossasia.org/</loc>
