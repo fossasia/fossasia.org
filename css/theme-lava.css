@@ -494,6 +494,7 @@ nav .container {
 }
 .bottom-border {
   position: absolute;
+  top:63ps;
   bottom: 2px;
   width: 100%;
   height: 2px;
