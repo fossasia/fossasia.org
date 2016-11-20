@@ -498,6 +498,7 @@ nav .container {
   width: 100%;
   height: 2px;
   background: rgba(255, 255, 255, 0.3);
+  margin-bottom: 24px;
 }
 .sidebar-menu .bottom-border {
   position: relative;
@@ -663,11 +664,14 @@ nav .container {
   -moz-transform: translate3d(-300px, 0px, 0px);
 }
 .sidebar-content {
-  padding: 0px 24px;
-  margin-top: 24px;
+  background: #333333;
+  position: relative;
+  z-index: 9999;
+  padding-bottom: 1px;
 }
 .widget {
   margin-bottom: 24px;
+  padding: 0px 24px;
 }
 .widget .title {
   font-size: 16px;
@@ -716,14 +720,16 @@ nav .container {
   font-size: 12px;
 }
 .copy-text-box {
-  position: relative;
-  height: 250px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px; 
   width: 100%;
+  padding: 5px 0px;
   color: rgba(255, 255, 255, 0.5);
 }
 .copy-text-bottom {
-  position: absolute;
-  bottom: 5px;
+  left: 24px;
+  position: relative;
 }
 .text-panel {
   background: #474747;
