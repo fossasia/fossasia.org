@@ -2,3 +2,6 @@ language: python
 python:
     - "3.4"
     - python updatesitemap.py 
+install:
+    - "pip install requests"
+    - "pip install bs4"
