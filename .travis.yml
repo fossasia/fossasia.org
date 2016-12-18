@@ -2,7 +2,7 @@ language: python
 python:
     - "2.7"
 install:
-    - "pip install requests"
-    - "pip install bs4"
+    - "pip install requests==2.12.4"
+    - "pip install bs4==4.5.1"
 script:
     - python updatesitemap.py
