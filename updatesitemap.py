@@ -64,6 +64,8 @@ if __name__ == "__main__":
             for line in sitemap:
                 if not line.isspace():
                     cache.write(line)
-            # sitemap.seek(0,0)
-            # cache.seek(0,0)
-            # sitemap.write(cache.read())
+            sitemap.seek(0,0)
+            sitemap.truncate()
+            sitemap.seek(0,0)
+            cache.seek(0,0)
+            sitemap.write(cache.read())
