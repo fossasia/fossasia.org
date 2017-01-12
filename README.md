@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/fossasia/fossasia.org.svg?branch=gh-pages)](https://travis-ci.org/fossasia/fossasia.org)
 # FOSSASIA website
 
 [![Build Status](https://travis-ci.org/fossasia/fossasia.org.svg?branch=master)](https://travis-ci.org/fossasia/fossasia.org)
