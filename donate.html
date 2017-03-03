@@ -7,11 +7,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="css/flexslider.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="css/donate.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="css/elegant-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="css/pe-icon-7-stroke.min.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="css/theme-lava.css" rel="stylesheet" type="text/css" media="all"/>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
+        
+        
+        
     </head>
     <body class="no-loader">
     
@@ -117,19 +121,65 @@
 				
 			</section>
 			
-			<a id="stripe" class="in-page-link"></a>
+			
+            <a id="stripe" class="in-page-link"></a>
 			
 			<section class="schedule schedule-with-text">
 				<div class="container">
 					<div class="row">
+						<div class="col-sm-6 col-md-12 center-block" >
+							<h1 class="text-center">Donate Us</h1>
+							
+                            <div class="full-width">
+                            
+                              <div class="half-width">
+							
+                                <a href="#donatenow" class="btn center-align" target="default">Quick Donate&nbsp;</a>
+                                
+                              </div>
+                                <div class="half-width" >
+                            
+                                    
+                                    <a href="#regularsupporter" class="btn center-align" target="default">Regular Suppoter&nbsp;</a>
+                                    
+                            
+                                </div>
+							
+                            </div>
+						</div>
+						
+						
+						
+					</div>
+				</div>
+			</section>
+            
+            <a id="donatenow" class="in-page-link"></a>
+			
+			<section class="inline-video">
+				<div class="container">
+					<div class="row">
 						<div class="col-sm-6 col-md-12">
-							<h1>Donate with Stripe</h1>
+							<h1>Quick Donate</h1>
 							
 							<p>
-								At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+								Choose an amount:<br><br>
+                                
+                                
+                                  <div class="form-inline form-group quater-width">
+                                    <div class="input-group">
+                                      <div class="input-group-addon">$</div>
+                                        <input type="text" class="form-control" id="InputAmount" style="color:#333333;width:100%;border-radius:0;border:1px solid #e0e0e0;" placeholder="Amount" value="0">
+                                        <!--
+                                      <div class="input-group-addon">.00</div>-->
+                                    </div>
+                                  </div>
+                                  
+                            Or<br><br>
+                                
+
 								<form action="/charge" method="POST">
-		  <script
-		    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+		  <script   src="https://checkout.stripe.com/checkout.js" class="stripe-button"
 		    data-key="pk_test_IHdlNeCcW1H44btA1bcjWXa9"
 		    data-image="/img/documentation/checkout/marketplace.png"
 		    data-name="fossasia.org"
@@ -141,7 +191,7 @@
 		</form>
 							</p>
 							
-							<a href="https://checkout.stripe.com/checkout.js" class="btn" target="default">Donate with Stripe&nbsp;</a>
+							<a href="#paymentmode" onclick="donate(1);" class="btn" target="default">Go Next&nbsp;</a>
 							
 						</div>
 						
@@ -150,35 +200,98 @@
 					</div>
 				</div>
 			</section>
-			
-			<a id="paypal" class="in-page-link"></a>
+            
+        <a id="regularsupporter" class="in-page-link"></a>
+        <section class="schedule schedule-with-text">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6 col-md-12">
+                            
+                            
+							<h1>Regular Supporter</h1>
+							
+							<p>
+								Choose a monthly amount:<br/><br/>
+                                
+                                
+                                  <div class="form-inline form-group quater-width">
+                                    <div class="input-group">
+                                      <select name="monthlyamount" id="monthlyamount" style="border-radius:5px;width: 200px" class="form-control">
+                                          <option value="5">$5/month</option>
+                                          <option value="10">$10/month</option>
+                                          <option value="50">$50/month</option>
+                                          <option value="100">$100/month</option>
+                                          <option value="200">$200/month</option>
+                                        </select>
+                                    </div>
+                                  </div>
+                                
+							</p>
+							
+							<a href="#paymentmode" onclick="donate(2);" class="btn" target="default">Go Next&nbsp;</a>
+							
+						</div>
+						
+						
+						
+					</div>
+				</div>
+			</section>
+            
+    
+    <a id="paymentmode" class="in-page-link"></a>
 			
 			<section class="inline-video">
 				<div class="container">
 					<div class="row">
-						<div class="col-sm-12">
-							<h1>Donate with Paypal</h1>
-						</div>
-					</div>
-				
-					<div class="row">
-						<div class="col-md-12">
-							<p class="lead">
-								At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos.
-						
-							</p><p>
-								Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non.
-							</p>
-							<a href="#" class="btn">Donate with Paypal</a>
+						<div class="col-sm-6 col-md-12 center-block" >
+							<h1 class="text-center">Payment Mode</h1>
 							
+                            <div class="full-width">
+                                
+                            
+                             
+                              <div class="form-inline form-group full-width">
+                                
+                                  <div class="" style="margin-left:calc(50% - 125px)">
+                                      
+                                <input id="show1" class="form-control left-float" style="border-radius: 5px;width: 180px;color:#333333;" type="text" placeholder="Select an Amount" value="" readonly>
+                                  
+                              <a href="#donatenow" id="change1" style="margin-left: 5px;height:33px;" type="submit" class=" btn-hollow left-float">&nbsp;Change&nbsp;</a>   
+                               </div> 
+                                
+                                </div>
+                                <div style="clear:both;"></div>
+                                
+                                
+                            <div class="half-width">
+							
+                                <a href="./donate/" class="btn center-align" target="default">Donate with Paypal&nbsp;</a>
+                                
+                            </div>
+                                <div class="half-width" >
+                            
+                                    
+                                    <a href="https://checkout.stripe.com/checkout.js" class="btn center-align" target="default">Donate with Stripe&nbsp;</a>
+                                    
+                                    <!--
+							<a href="https://checkout.stripe.com/checkout.js" class="btn center-align" target="default">Regular Suppoter&nbsp;</a>
+
+-->
+                                </div>
+							
+                            </div>
 						</div>
-					
+						
+						
 						
 					</div>
 				</div>
 			</section>
-			
-			<a id="banksg" class="in-page-link"></a>
+            
+            
+            
+          <a id="banksg" class="in-page-link"></a>
 			
 			<section class="duplicatable-content">
 				<div class="container">
@@ -329,6 +442,30 @@
         <script src="js/twitterfetcher.min.js"></script>
         <script src="js/placeholders.min.js"></script>
         <script src="js/scripts.js"></script>
+
+        <!-- my script  -->
+        <script>
+            $(document).ready(function(){$("a").on("click",function(d){if(this.hash!==""){d.preventDefault();var c=this.hash;$("html, body").animate({scrollTop:$(c).offset().top},900,function(){})}})});
+            
+            
+            function donate(ch){
+                
+                
+                var sh  = document.getElementById("show1");
+                if(ch == 1){
+                    var s1 = document.getElementById("InputAmount").value;
+                    sh.value = "$"+s1;
+                    document.getElementById("change1").href = "#donatenow";
+                }else{
+                    var s2 = document.getElementById("monthlyamount").value;
+                    sh.value = "$"+s2+"/month";
+                    document.getElementById("change1").href = "#regularsupporter";
+                }
+                    
+            }
+        </script>
+
+        <!-- end -->
     </body>
 </html>
 				
