@@ -1,0 +1,22 @@
+.full-width{
+	width:100%; margin:auto;
+}
+.half-width{
+	width:50%; margin:0;float:left;
+}
+.center-align{
+	margin:0 calc(50% - 90px);
+}
+.quater-width{
+    width: 30%;
+    min-width: 300px
+}
+.btn-hollow:hover{
+    color:white;
+}
+.left-float{
+    float:left;
+}
+.right-float{
+    float:right;
+}
