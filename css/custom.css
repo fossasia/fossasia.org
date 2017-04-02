@@ -88,3 +88,12 @@
   margin-top: 2px;
   margin-bottom: 2px;
 }
+.appear{
+  display: block;
+}
+.hide{
+  display: none;
+}
+.baddition{
+  margin-left:  600px;
+}

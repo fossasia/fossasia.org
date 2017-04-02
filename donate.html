@@ -11,7 +11,9 @@
         <link href="css/pe-icon-7-stroke.min.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="css/theme-lava.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all"/>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
+        <script src="js/donate.js"></script>
     </head>
     <body class="no-loader">
     
@@ -116,18 +118,57 @@
 				</div>
 				
 			</section>
-			
+			<br>
+			<br>
+			<a href="#stripe" class="btn baddition" target="default">Stripe&nbsp;</a>
+		<br><br>
+			<a href="#paypal" class="btn baddition" target="default">Paypal&nbsp;</a><br><br>
+			<a href="#others" class="btn baddition" target="default">Others&nbsp;</a><br><br><br>
 			<a id="stripe" class="in-page-link"></a>
 			
 			<section class="schedule schedule-with-text">
-				<div class="container">
+				<div class="container" >
 					<div class="row">
 						<div class="col-sm-6 col-md-12">
 							<h1>Donate with Stripe</h1>
+							<button onclick="hider(1,1)" class="stripe-button-el"  style="padding:5px 31px"><font color="white"><b> Donation</b></font></button>
+								<button onclick="hider(1,2)" class="stripe-button-el" style="padding:5px;margin-left:  60px;margin-bottom:  30px" ><font color="white"><b>Regular Supporter</b></font></button>
+								<div id="donation1" class="hide">
+                               <br>  Enter the amount
+                                  <div class="form-inline form-group quater-width">
+                                    <div class="input-group">
+                                      <div class="input-group-addon">$</div>
+                                        <input type="text"  class="form-control" id="InputAmount" style="color:#333333;width:15%;border-radius:0;border:1px solid #e0e0e0" placeholder="Amount" value="0">
+                                        <!--
+                                      <div class="input-group-addon">.00</div>-->
+                                    </div>
+                                  </div>
+                                  <a href="https://checkout.stripe.com/checkout.js" class="btn" target="default">Donate with Stripe&nbsp;</a><br><br>
+							</div>
+              
+
 							
-							<p>
+							<div id="regular1" class="hide">
+							<br>Choose a monthly amount:
+                                
+                                
+                                  <div class="form-inline form-group quater-width">
+                                    <div class="input-group">
+                                      <select name="monthlyamount" id="monthlyamount" style="border-radius:5px;width: 200px" class="form-control">
+                                          <option value="5">$5/month</option>
+                                          <option value="10">$10/month</option>
+                                          <option value="50">$50/month</option>
+                                          <option value="100">$100/month</option>
+                                          <option value="200">$200/month</option>
+                                        </select>
+                                    </div>
+                                  </div>
+                                  <a href="https://checkout.stripe.com/checkout.js" class="btn" target="default">Donate with Stripe&nbsp;</a><br><br>
+							
+							</div><p>
 								At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
 								<form action="/charge" method="POST">
+
 		  <script
 		    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
 		    data-key="pk_test_IHdlNeCcW1H44btA1bcjWXa9"
@@ -141,7 +182,6 @@
 		</form>
 							</p>
 							
-							<a href="https://checkout.stripe.com/checkout.js" class="btn" target="default">Donate with Stripe&nbsp;</a>
 							
 						</div>
 						
@@ -158,18 +198,55 @@
 					<div class="row">
 						<div class="col-sm-12">
 							<h1>Donate with Paypal</h1>
+							<button onclick="hider(2,1)" class="stripe-button-el"  style="padding:5px 31px"><font color="white"><b> Donation</b></font></button>
+								<button onclick="hider(2,2)" class="stripe-button-el" style="padding:5px;margin-left:  60px;margin-bottom:  30px" ><font color="white"><b>Regular Supporter</b></font></button>
+								<div id="donation2" class="hide">
+                               <br>  Enter the amount
+                                  <div class="form-inline form-group quater-width">
+                                    <div class="input-group">
+                                      <div class="input-group-addon">$</div>
+                                        <input type="text"  class="form-control" id="InputAmount" style="color:#333333;width:15%;border-radius:0;border:1px solid #e0e0e0" placeholder="Amount" value="0">
+                                        <!--
+                                      <div class="input-group-addon">.00</div>-->
+                                    </div>
+                                  </div>
+                                  <a href="./donate/" class="btn">Donate with Paypal</a><br><br>
+							</div>
+              
+
+							
+							<div id="regular2" class="hide">
+							<br>Choose a monthly amount:
+                                
+                                
+                                  <div class="form-inline form-group quater-width">
+                                    <div class="input-group">
+                                      <select name="monthlyamount" id="monthlyamount" style="border-radius:5px;width: 200px" class="form-control">
+                                          <option value="5">$5/month</option>
+                                          <option value="10">$10/month</option>
+                                          <option value="50">$50/month</option>
+                                          <option value="100">$100/month</option>
+                                          <option value="200">$200/month</option>
+                                        </select>
+                                    </div>
+                                  </div>
+                                 <a href="./donate/" class="btn">Donate with Paypal</a><br><br>
+							
+							</div>
 						</div>
 					</div>
-				
-					<div class="row">
-						<div class="col-md-12">
+					</ul>
+					
+							
 							<p class="lead">
 								At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos.
+
+									
 						
 							</p><p>
 								Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non.
 							</p>
-							<a href="#" class="btn">Donate with Paypal</a>
+							
 							
 						</div>
 					
@@ -180,9 +257,9 @@
 			
 			<a id="banksg" class="in-page-link"></a>
 			
-			<section class="duplicatable-content">
-				<div class="container">
-					<div class="row">
+			<section class="duplicatable-content" id="others">
+				<div class="container" >
+					<div class="row"  >
 						<div class="col-sm-12">
 							<h1>Donate via Bank Wire Transfer in Singapore</h1>
 						</div>
