@@ -11,7 +11,11 @@
         <link href="css/pe-icon-7-stroke.min.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="css/theme-lava.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all"/>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+<script src="https://checkout.stripe.com/checkout.js"></script>
+       
     </head>
     <body class="no-loader">
     
@@ -116,32 +120,91 @@
 				</div>
 				
 			</section>
-			
+			<br>
+			<br>
+			<a href="#stripe" class="btn baddition" target="default">Stripe&nbsp;</a>
+		<br><br>
+			<a href="#paypal" class="btn baddition" target="default">Paypal&nbsp;</a><br><br>
+			<a href="#others" class="btn baddition" target="default">Others&nbsp;</a><br><br><br>
 			<a id="stripe" class="in-page-link"></a>
 			
 			<section class="schedule schedule-with-text">
-				<div class="container">
+				<div class="container" >
 					<div class="row">
 						<div class="col-sm-6 col-md-12">
 							<h1>Donate with Stripe</h1>
+							<button onclick="hider(1,1) " class="stripe-button-el"  style="padding:5px 31px"><font color="white"><b> Donation</b></font></button>
+								<button onclick="hider(1,2)" class="stripe-button-el" style="padding:5px;margin-left:  60px;margin-bottom:  30px" ><font color="white"><b>Regular Supporter</b></font></button>
+								<div id="donation1" class="hide">
+								<form id="myForm" action="/your-server-side-code" method="POST">
+    
+                               <br>  Enter the amount
+                                  <div class="form-inline form-group quater-width">
+                                    <div class="input-group">
+                                      <div class="input-group-addon">$</div>
+                                        <input type="text"  class="form-control" id="amount" name="amount" style="color:#333333;width:15%;border-radius:0;border:1px solid #e0e0e0" placeholder="Amount" >
+                                        
+    <input type="hidden" id="stripeToken" value="" name="stripeToken" /> <!-- set value=stripe token -->
+    <input type="hidden" id="stripeEmail" value="" name="stripeEmail" /><!-- set value= stripe email id -->
+    <input type="hidden" id="amount" name="amount" /></form>
+
+<!-- <input type="button" id="customButton" value="Pay"> -->
+                             <!--
+                                      <div class="input-group-addon">.00</div>-->
+                                    </div>
+                                  </div>
+                                  <input type="button" class="btn" value="Donate" id="customButton"> <br><br>
+
+
+           
+							</div>
+                          
+ <!-- 
+    For stripe payments  go the link 
+	https://stripe.com/docs/quickstart
+    In checkout section the required credentials will be present -->
 							
-							<p>
+							
+							<div id="regular1" class="hide">
+							<br>Choose a monthly amount:
+                                
+                                
+                                  <div class="form-inline form-group quater-width">
+                                    <div class="input-group"> 
+                                    <form id="myForme" action="/your-server-side-code" method="POST">
+  
+                                      <select id="amounte" name="amounte" style="border-radius:5px;width: 200px" class="form-control">
+                                          <option value="5">$5/month</option>
+                                          <option value="10">$10/month</option>
+                                          <option value="50">$50/month</option>
+                                          <option value="100">$100/month</option>
+                                          <option value="200">$200/month</option>
+                                        </select>
+
+    									<input type="hidden" value="" id="stripeTokene" name="stripeTokene" /><!-- set value=stripe token -->
+    									<input type="hidden"  value="" id="stripeEmaile" name="stripeEmaile" /><!-- set value= stripe email id -->
+    									<input type="hidden" id="amounte" name="amounte" />
+                                    </div>
+                                  </div>
+                                   <input type="button" class="btn" value="Donate" id="customButtone"><br><br>
+    
+							
+							</div><p>
 								At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
-								<form action="/charge" method="POST">
-		  <script
-		    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-		    data-key="pk_test_IHdlNeCcW1H44btA1bcjWXa9"
-		    data-image="/img/documentation/checkout/marketplace.png"
-		    data-name="fossasia.org"
-		    data-description="2 widgets"
-		    data-currency="sgd"
-		    data-amount="2000"
-		    data-locale="auto">
-		  </script>
-		</form>
+								<div class="hide">
+			<form id="stripe1" action="/your-server-side-code" method="POST">
+  <script
+    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+    data-key="pk_test_N7Sv4PWYv5myu8D3LI501rSy"
+    data-amount=80000
+    data-name="Demo Site"
+    data-description="Widget"
+    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+    data-locale="auto">
+  </script>
+</form></div>
 							</p>
 							
-							<a href="https://checkout.stripe.com/checkout.js" class="btn" target="default">Donate with Stripe&nbsp;</a>
 							
 						</div>
 						
@@ -158,18 +221,101 @@
 					<div class="row">
 						<div class="col-sm-12">
 							<h1>Donate with Paypal</h1>
+	<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+
+    <!-- Identify your business so that you can collect the payments. -->
+
+    <input type="hidden" name="business"
+        value="donations@kcparkfriends.org"><!-- replace with fossasia email -->
+
+    <!-- Specify a Donate button. -->
+    <input type="hidden" name="cmd" value="_donations">
+
+    <!-- Specify details about the contribution -->
+    <!-- replace value of the below input items with the values in the code auto generated from paypal -->
+    <input type="hidden" name="item_name" value="Friends of the Park">
+    <input type="hidden" name="item_number" value="Fall Cleanup Campaign">
+    <input type="hidden" name="currency_code" value="USD">
+							<button onclick="hider(2,1)" type="submit"class="stripe-button-el"  style="padding:5px 31px"><font color="white"><b> Donation</b></font></button>
+								<button type="button" onclick="hider(2,2)" class="stripe-button-el" style="padding:5px;margin-left:  60px;margin-bottom:  30px" ><font color="white"><b>Regular Supporter</b></font></button></form> 
+								<div id="donation2" class="hide">
+							
+
+    <!-- Display the payment button. -->
+  
+
+
+
+ 
+
+							</div>
+              
+
+<!-- 
+    For paypal payments  go the link 
+	https://www.paypal.com/in/cgi-bin/webscr?cmd=_donate-intro-outside
+    to generate the paypal donate button code -->
+							
+							<div id="regular2" class="hide">
+							<br>Choose a monthly amount:
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+							<input type="hidden" name="cmd" value="_xclick">
+							<input type="hidden" name="business" value="abhisheks6477@gmail.com"><!-- replace with fossasia email -->
+							<!-- replace value of the below input items with the values in the code auto generated from paypal. Input items may also be subjected to changes due to difference in paypal policies for various countries. -->
+							<input type="hidden" name="lc" value="IN">
+							<input type="hidden" name="item_name" value="temporary">
+							<input type="hidden" name="button_subtype" value="services">
+							<input type="hidden" name="no_note" value="0">
+							<input type="hidden" name="currency_code" value="USD">
+							<input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">    
+ 							<input type="hidden" name="on0" value="payment">                               
+                                  <div class="form-inline form-group quater-width">
+                                    <div class="input-group">
+                                      <select name="os0" id="monthlyamount" style="border-radius:5px;width: 200px" class="form-control">
+                                          <option value="monthly">$5/month</option>
+                                          <option value="monthly"">$10/month</option>
+                                          <option value="monthly"">$50/month</option>
+                                          <option value="monthly">$100/month</option>
+                                          <option value="monthly">$200/month</option>
+                                        </select>
+                                        <input type="hidden" name="currency_code" value="USD">
+							<input type="hidden" name="option_select0" value="monthly">
+							<input type="hidden" name="option_amount0" value="5.00">
+							<input type="hidden" name="option_select1" value="monthly">
+							<input type="hidden" name="option_amount1" value="10.00">
+							<input type="hidden" name="option_select2" value="monthly">
+							<input type="hidden" name="option_amount2" value="50.00">
+							<input type="hidden" name="option_select3" value="monthly">
+							<input type="hidden" name="option_amount3" value="100.00">
+							<input type="hidden" name="option_select4" value="monthly">
+							<input type="hidden" name="option_amount4" value="200.00">
+							<input type="hidden" name="option_index" value="0">
+                                    </div>
+                                  </div>
+                                
+
+
+
+<input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+							
+							</div>
 						</div>
 					</div>
-				
-					<div class="row">
-						<div class="col-md-12">
+					</ul>
+					
+							
 							<p class="lead">
 								At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos.
+
+									
 						
 							</p><p>
 								Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non.
 							</p>
-							<a href="#" class="btn">Donate with Paypal</a>
+							
 							
 						</div>
 					
@@ -180,9 +326,9 @@
 			
 			<a id="banksg" class="in-page-link"></a>
 			
-			<section class="duplicatable-content">
-				<div class="container">
-					<div class="row">
+			<section class="duplicatable-content" id="others">
+				<div class="container" >
+					<div class="row"  >
 						<div class="col-sm-12">
 							<h1>Donate via Bank Wire Transfer in Singapore</h1>
 						</div>
@@ -316,7 +462,7 @@
 				</div>
 			</footer>
 		</div>
-				
+		 <script src="js/donate.js"></script>		
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/skrollr.min.js"></script>

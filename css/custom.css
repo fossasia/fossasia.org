@@ -88,3 +88,13 @@
   margin-top: 2px;
   margin-bottom: 2px;
 }
+/*css classes for hiding and showing Donation and regular supporter parts in donate.html*/
+.appear{
+  display: block;
+}
+.hide{
+  display: none;
+}
+.baddition{
+  margin-left:  600px;
+}
