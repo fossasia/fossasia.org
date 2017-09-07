@@ -7,7 +7,6 @@ $(document).ready(function() {
 
 function feeds(url){
 var blog = $("#result");
-console.log(blog)
 var html = [];
 feednami.load(url,function(result){
         if(result.error) {
