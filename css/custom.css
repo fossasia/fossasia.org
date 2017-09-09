@@ -7,7 +7,7 @@
   color: #E12B00;
   text-decoration: underline;
   border: none;
-};
+}
 
 .schedule a:active {
   color: red;
@@ -78,7 +78,6 @@
 .sticky-nav .menu li a:hover {
   border-color: #C3BFBF;
   border-bottom-width: 2px;
-  margin-top: 4px;
   margin-bottom: 2px;
 }
 
