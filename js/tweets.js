@@ -23,7 +23,7 @@ function datahandler(raw) {
 
 var tweetNum = 0;
 
-function parseFunc(){
+function parseFunc(stuff){
 	parser(stuff)
 }
 
