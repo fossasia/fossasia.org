@@ -5,7 +5,6 @@ $(document).ready(function() {
  });
 
 
-
 function feeds(url){
 var blog = $("#result");
 var html = [];
@@ -50,4 +49,3 @@ feednami.load(url,function(result){
     });
  
 }
-
