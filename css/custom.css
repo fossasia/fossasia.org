@@ -87,6 +87,19 @@
   margin-top: 2px;
   margin-bottom: 2px;
 }
+@media screen and (max-width: 440px)
+{
+  #DevPrograms{
+    height: 85vh;
+  }
+}
+@media screen and (max-width: 350px)
+{
+  #DevPrograms{
+    height: 100vh;
+  }
+}
+
 /*css classes for hiding and showing Donation and regular supporter parts in donate.html*/
 .appear{
   display: block;
