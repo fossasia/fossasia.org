@@ -1,12 +1,18 @@
 img.rss {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
+}
+.carousel-inner{
+   width: 100%; /* Set width to 100% */
+   margin: auto;
+   min-height:700px;
+   max-height:800px;
 }
 
-
 #result .item{
-  height: 450px;
+  height:100%;
+  width:100%;
   margin:5% 3% 5% 3%;
-  background-color: #fff;
+  background-color:#fff;
   overflow: hidden;
 }
 #result .item h1 {
