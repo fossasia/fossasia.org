@@ -31,7 +31,6 @@
         <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" media="all"/>
         
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
-
         <script>
      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -621,7 +620,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12 text-center">
-							<i class="icon pe-7s-pen"></i>
+							<i class="icon pe-7s-pen"></i>    <!--*************bug here ******************-->
 							<i class="icon pe-7s-news-paper icon-large"></i>
 							<i class="icon pe-7s-paper-plane"></i>
 							<h1 class="large-h1">Blog Posts</h1>
@@ -638,26 +637,24 @@
                                  <li data-target="#myCarousel" data-slide-to="8"></li>
                                  <li data-target="#myCarousel" data-slide-to="9"></li>
                                       </ol>         <!-- Indicators -->
-                                   <div class="carousel-inner" role="listbox" id="result">
+                                   <div class="carousel-inner" role="listbox" id="result">    <!-- calls for JS function in blog.js-->
                                
                                      
                                    </div>
   
-
-                        <!-- Left and right controls -->
-                             <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-             <span class="sr-only">Previous</span>
-                             </a>
-                            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                               <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                               <span class="sr-only">Next</span>
-                            </a>
+                       	 							<!-- Left and right controls -->
+                         	    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            								 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            								 <span class="sr-only">Previous</span>
+                    	         </a>
+                        	    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                          				     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                           				    <span class="sr-only">Next</span>
+                            	</a>
                              </div>
 
 						</div>
 					</div>
-
 
 				</div>
 
@@ -691,7 +688,7 @@
 					</div>
 					
 					<div class="video-wrapper">
-						<video autoplay="" muted="" loop="">
+						<video autoplay muted="" loop>
 							<source src="video/video.webm" type="video/webm">
 							<source src="video/video.mp4" type="video/mp4">
 							<source src="video/video.ogv" type="video/ogg">	
