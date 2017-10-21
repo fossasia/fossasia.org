@@ -20,7 +20,11 @@ img.rss {
   margin: 36px 10% 50px 10%;
 }
 
-
+.subscribed{
+  height: 30%;
+   width:100%;
+   display: inline-block; 
+}
 /*
 .post {
   display: none;
@@ -86,4 +90,4 @@ img.rss {
   background-color: #ddd; 
   
 }*/
-*/
+
