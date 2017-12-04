@@ -254,6 +254,8 @@ body {
   font-size: 14px;
   line-height: 24px;
   background: #eee;
+  margin: auto;
+  display: inline-block;
   -moz-osx-font-smoothing: grayscale;
 }
 h1,
