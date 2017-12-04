@@ -550,6 +550,14 @@ nav .container {
   margin-top: -2px;
   -webkit-transition: all 0.3s;
 }
+.projects{
+   min-height:525px;
+}
+
+.events{
+   min-height: 450px;
+}
+
 .nav-dropdown li:first-child {
   margin-top: -1px;
 }
@@ -849,7 +857,7 @@ nav .container {
   .nav-dropdown {
     position: relative;
     display: none;
-    min-height: 439px; 
+    min-height: 600px; 
  }
   .has-dropdown:hover .nav-dropdown {
     display: block;
