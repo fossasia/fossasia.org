@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Meetup</title>
+        <title>Support FOSSASIA</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="css/flexslider.min.css" rel="stylesheet" type="text/css" media="all"/>
@@ -30,32 +30,34 @@
     	<a id="top"></a>
 				
 		<div class="nav-container">
-						
+
 				<nav class="overlay-nav">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-2">
-								<img alt="FOSSASIA" class="logo logo-light" src="img/fossasia-long.png">
-								<img alt="FOSSASIA" class="logo logo-dark" src="img/fossasia-dark.png">
+								<a  target="_self" class="inner-link" href="./"><img alt="FOSSASIA" class="logo logo-light" src="img/fossasia-long.png">
+								<img alt="FOSSASIA" class="logo logo-dark" src="img/fossasia-dark.png"></a>
 							</div>
-					
+
 							<div class="col-md-10 text-right">
 								<ul class="menu">
 										<li class="has-dropdown"><a href="./about">About</a>
-										<ul class="nav-dropdown">
-											<li><a target="_self" href="./about#background">Background &amp; Mission</a></li>
+										<ul class="nav-dropdown" style="min-height: 100px"> <!--whenever you add/remove an option, change the style="min-height:425px" by +- 25px-->
+											<li><a target="_self" href="./about#background">Background & Mission</a></li>
 											<li><a target="_self" href="./licenses">Licenses</a></li>
 											<li><a target="_self" href="./team">Team</a></li>
 										</ul>
 									<li class="has-dropdown"><a href="./apply.html">Apply</a>
-										<ul class="nav-dropdown">
+										<ul class="nav-dropdown" style="min-height: 175px"> <!--whenever you add/remove an option, change the style="min-height:425px" by +- 25px-->
 											<li><a target="_self" href="/apply-students">University Student Programs/Internships</a></li>
 											<li><a target="_self" href="/apply-pupils">Pre-University Student Programs/Internships</a></li>
 											<li><a target="_self" href="http://codeheat.org">Code Heat Contest</a></li>	
 											<li><a target="_self" href="/adp">Advanced Developer Program</a></li>
 										</ul>
-									<li class="has-dropdown"><a href="http://labs.fossasia.org/#projects">Projects</a>
-										<ul class="nav-dropdown" style="min-height:525px"> <!--whenever you add/remove an option, change the style="min-height:500px" by +- 25px-->
+									<li class="has-dropdown" style="min-height: 175px"><a href="http://labs.fossasia.org/#projects">Projects</a>
+
+                 				   <ul class="nav-dropdown projects" > <!--whenever you add/remove an option, change the style="min-height:500px" by +- 25px-->
+
 											<li><a target="_self" href="https://github.com/fossasia">Contribute on Github</a></li>
 											<li><a target="_self" href="http://labs.fossasia.org/ideas.html">Project Ideas</a></li>
 											<li><a target="_self" href="http://labs.fossasia.org" target="_self">FOSSASIA Labs</a></li>
@@ -69,18 +71,25 @@
 											<li><a target="_self" href="http://pslab.fossasia.org/">Pocket Science Lab</a></li>
 											<li><a target="_self" href="https://query-server.herokuapp.com/">Query Server</a></li>
 											<li><a target="_self" href="http://knitting.fossasia.org/">Knitting Lab</a></li>
+											<li><a target="_self" href="https://badgeyay-dev.herokuapp.com/">Badgeyay</a></li>
+											<li><a target="_self" href="http://gci17.fossasia.org">Code-In 2017</a></li>
 											<li><a target="_self" href="http://gci16.fossasia.org">Code-In 2016</a></li>
 											<li><a target="_self" href="http://gci15.fossasia.org">Code-In 2015</a></li>
 											<li><a target="_self" href="http://gci14.fossasia.org">Code-In 2014</a></li>
-										</ul>
-									<li><a target="_self" href="./#subscribe">Subscribe</a></li>
+										</ul>									
+									<li><a target="_self" class="inner-link" href="./#subscribe">Subscribe</a></li>
 									<li><a target="_self" href="http://blog.fossasia.org">Blog</a></li>
 									<li class="has-dropdown"><a href="http://events.fossasia.org">Events</a>
-										<ul class="nav-dropdown" style="min-height:450px"> <!--whenever you add/remove an option, change the style="min-height:400px" by +- 25px-->
+
+										<ul class="nav-dropdown events"> <!--whenever you add/remove an option, change the style="min-height:425px" by +- 25px-->
+
 											<li><a target="_self" href="http://events.fossasia.org/#sponsorship">Sponsorship</a></li>
 											<li><a target="_self" href="http://eventyay.com">FOSSASIA Event Management</a></li>				
-											<li><a href="http://sciencehack.asia" target="_self">Science Hack Asia</a></li>
-											<li><a href="http://sciencehack.in" target="_self">Science Hack India</a></li>
+											<li><a target="_self" href="http://sciencehack.asia">Science Hack Asia</a></li>
+											<li><a target="_self" href="http://sciencehack.in">Science Hack India</a></li>
+											<li><a target="_self" href="http://2018.fossasia.org">FOSSASIA Summit 2018</a></li>
+											<li><a target="_self" href="http://opentechsummit.cn">OpenTechSummit China</a></li>
+											<li><a target="_self" href="http://jugaadfest.com">Jugaadfest India</a></li>
 											<li><a target="_self" href="http://2018.fossasia.org">FOSSASIA Summit 2018</a></li>
 											<li><a target="_self" href="http://2017.fossasia.org">FOSSASIA Summit 2017</a></li>
 											<li><a target="_self" href="http://2016.fossasia.org">FOSSASIA Summit 2016</a></li>
@@ -88,54 +97,66 @@
 											<li><a target="_self" href="http://2014.fossasia.org">FOSSASIA Summit 2014</a></li>
 											<li><a target="_self" href="http://2012.fossasia.org">FOSSASIA Summit 2012</a></li>
 											<li><a target="_self" href="http://2011.fossasia.org">FOSSASIA Summit 2011</a></li>
-											<li><a target="_self" href="http://2010.fossasia.org">FOSSASIA Summit 2010</a></li>i>
+											<li><a target="_self" href="http://2010.fossasia.org">FOSSASIA Summit 2010</a></li>
 											<li><a target="_self" href="http://2009.fossasia.org">GNOME.Asia 2009</a></li>
-											<li><a target="_self" href="http://coc.fossasia.org">Code of Conduct</a></li>
+											<li><a target="_self" href="http://coc.fossasia.org">Code of Conduct</a></li>					
 										</ul>
+									</li>
+									<li class="hidden-sm hidden-xs"><a target="_self" href="./donate/">Donate</a></li>
+									<li class="hidden-sm hidden-xs"><a href="http://blog.fossasia.org/contact/" target="_self">Contact</a></li>											
+									<li class="social-link hidden-md hidden-sm hidden-xs"><a target="_self" href="https://twitter.com/fossasia"><i class="icon social_twitter"></i></a></li>
+									<li class="social-link hidden-md hidden-sm hidden-xs"><a target="_self" href="https://facebook.com/fossasia"><i class="icon social_facebook"></i></a></li>
+      								<li class="social-link hidden-md hidden-sm hidden-xs"><a target="_self" href="https://github.com/fossasia"><i class="fa fa-github fa-lg"></i></a></li>
+
+								</ul>
 								<div class="sidebar-menu-toggle"><i class="icon icon_menu"></i></div>
 								<div class="mobile-menu-toggle"><i class="icon icon_menu"></i></div>
-								
+
 							</div>
 						</div>
 					</div>
-			
+
 					<div class="bottom-border"></div>
-			
+
 					<div class="sidebar-menu">
 						<img alt="Logo" class="logo" src="img/fossasia-long.png">
 						<div class="bottom-border"></div>
-						<div class="sidebar-content">
-					
-							<div class="widget">
-								<ul class="menu">
-									<li><a class="inner-link" href="#top">Home</a></li>
-									<li><a class="inner-link" href="#activities" target="default">Activities</a></li>
-									<li><a class="inner-link" href="#about" target="default">About</a></li>
-									<li><a class="inner-link" href="#labs" target="default">Labs &amp; Code</a></li>
-									<li><a class="inner-link" href="#communitymap" target="default">Community</a></li><li><a class="inner-link" href="#support" target="default">Support</a></li><li><a class="inner-link" href="#subscribe" target="default">Subscribe</a></li>
-									<li><a href="http://2016.fossasia.org" target="_self">FOSSASIA'16</a></li>
-									<li><a href="http://blog.fossasia.org" target="_self">Blog</a></li><li><a href="./donate/" target="default">Donate</a></li>
-								</ul>
-							</div>
-					
-							<div class="widget">
-								<ul class="social-profiles">
-									<li><a href="http://twitter.com/fossasia" target="default"><i class="icon social_twitter"></i></a></li>
-									<li><a href="http://facebook.com/fossasia" target="default"><i class="icon social_facebook"></i></a></li>
-									<li><a href="http://fossasia.net" target="default"><i class="icon social_dribbble"></i></a></li>
-									<li><a href="https://www.flickr.com/photos/fossasia/" target="default"><i class="icon social_instagram"></i></a></li>
-									<li><a href="https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ" target="default"><i class="icon social_youtube icon-large"></i></a></li>
-								</ul>
-							</div>
-					
-							<div class="copy-text">
-								<span>© Copyright 2016 FOSSASIA</span>
+						<div class="widget">
+							<ul class="menu">
+								<li><a class="inner-link" href="#top">Home</a></li>
+								<li><a href="./about" target="_self">About</a></li>
+								<li><a href="http://eventyay.com" target="_self">Event Management</a></li>									
+								<li><a class="inner-link" href="#labs" target="_self">Labs &amp; Code</a></li>
+								<li><a href="http://github.com/fossasia" target="_self">Contribute</a></li>
+								<!-- <li><a class="inner-link" href="#support" target="_self">Support</a></li><li><a class="inner-link" href="#subscribe" target="_self">Subscribe</a></li> -->
+								<li><a href="http://2018.fossasia.org" target="_self">FOSSASIA Summit'18</a></li>
+								<li><a href="http://blog.fossasia.org" target="_self">Blog</a></li>
+								<li><a href="./donate/" target="self">Donate</a></li>
+								<li><a href="https://groups.google.com/group/fossasia" target="_self">Mailing List</a></li>
+								<li><a href="http://blog.fossasia.org/contact/" target="_self">Contact</a></li>
+							</ul>
+						</div>
+
+						<div class="widget">
+							<ul class="social-profiles">
+								<li><a href="http://twitter.com/fossasia" target="_self"><i class="icon social_twitter"></i></a></li>
+								<li><a href="http://facebook.com/fossasia" target="_self"><i class="icon social_facebook"></i></a></li>
+								<li><a href="https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ" target="_self"><i class="icon social_youtube icon-large"></i></a></li>
+								<li><a href="https://www.flickr.com/photos/fossasia/" target="_self"><i class="icon social_flickr"></i></a></li>
+								<li><a href="https://www.instagram.com/explore/tags/fossasia/" target="_self"><i class="icon social_instagram"></i></a></li>
+								<li><a href="https://github.com/fossasia" target="_self" ><i class="fa fa-github fa-lg"></i></a></li>
+							</ul>
+						</div>
+						
+						<div class="copy-text-box">
+							<div class="copy-text-bottom">
+								<span>© Copyright 2016 Creative Commons By License, FOSSASIA</span>
 							</div>
 						</div>
 					</div>
-					
-					
-			
+
+
+
 				</nav>
 		</div>
 		<div class="main-container"><section class="section-header overlay preserve3d">
@@ -152,7 +173,7 @@
 							<i class="icon pe-7s-users icon-large"></i>
 							<h1 class="text-white">Please donate and become a supporting member</h1>
 							<p class="lead text-white">
-								FOSSASIA needs your support to continue the work for sharing of knowledge, code and design, organizing events and meetups and to keep our network running.&nbsp;You can support us with a donation via credit card, paypal, or bank transfer.</p>
+								FOSSASIA needs your support to continue the work for sharing of knowledge, code and design, organizing events and meetups and to keep our network running.&nbsp;You can support us with a donation via credit card or paypal.</p>
 						</div>
 					</div>
 				</div>
@@ -163,7 +184,7 @@
 			<a href="#stripe" class="btn baddition" target="default">Stripe&nbsp;</a>
 		<br><br>
 			<a href="#paypal" class="btn baddition" target="default">Paypal&nbsp;</a><br><br>
-			<a href="#others" class="btn baddition" target="default">Others&nbsp;</a><br><br><br>
+		<!--	<a href="#others" class="btn baddition" target="default">Others&nbsp;</a><br><br><br> -->
 			<a id="stripe" class="in-page-link"></a>
 			
 			<section class="schedule schedule-with-text">
@@ -227,8 +248,18 @@
                                    <input type="button" class="btn" value="Donate" id="customButtone"><br><br>
     
 							
-							</div><p>
-								At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+							</div>
+														<p class="lead">
+								The recommended way for donating to us is to join. You can decide on if you want to pay 10 Euro or more monthly.
+
+									
+						
+							</p><p>
+								In case you just want to make a single payment with any amount of your choice, please use the option above.
+							</p>
+							
+							
+						</div>
 								<div class="hide">
 			<form id="stripe1" action="/your-server-side-code" method="POST">
   <script
@@ -272,7 +303,7 @@
     <!-- Specify details about the contribution -->
     <!-- replace value of the below input items with the values in the code auto generated from paypal -->
     <input type="hidden" name="item_name" value="FOSSASIA Friends">
-    <input type="hidden" name="item_number" value="FOSSASIA Campaign">
+    <input type="hidden" name="item_number" value="Supporting FOSSASIA">
     <input type="hidden" name="currency_code" value="USD">
 	<button onclick="hider(2,1)" type="submit"class="stripe-button-el"  style="padding:5px 31px"><font color="white"><b> Donation</b></font></button>
 	<button type="button" onclick="hider(2,2)" class="stripe-button-el" style="padding:5px;margin-left:  60px;margin-bottom:  30px" ><font color="white"><b>Regular Supporter</b></font></button></form> 
@@ -301,7 +332,7 @@
 				<input type="hidden" name="business" value="office@fossasia.org"><!-- replace with fossasia email -->
 				<!-- replace value of the below input items with the values in the code auto generated from paypal. Input items may also be subjected to changes due to difference in paypal policies for various countries. -->
 				<input type="hidden" name="lc" value="SG">
-				<input type="hidden" name="item_name" value="temporary">
+				<input type="hidden" name="item_name" value="Supporter">
 				<input type="hidden" name="button_subtype" value="services">
 				<input type="hidden" name="no_note" value="0">
 				<input type="hidden" name="currency_code" value="USD">
@@ -314,7 +345,7 @@
                                           <option value="monthly"">$10/month</option>
                                           <option value="monthly"">$50/month</option>
                                           <option value="monthly">$100/month</option>
-                                          <option value="monthly">$200/month</option>
+                                          <option value="monthly">$250/month</option>
                                         </select>
                                         <input type="hidden" name="currency_code" value="USD">
 							<input type="hidden" name="option_select0" value="monthly">
@@ -346,12 +377,12 @@
 					
 							
 							<p class="lead">
-								At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos.
+								The recommended way for donating to us is to join. You can decide on if you want to pay 10 Euro or more monthly.
 
 									
 						
 							</p><p>
-								Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non.
+								In case you just want to make a single payment with any amount of your choice, please use the option above.
 							</p>
 							
 							
@@ -362,7 +393,7 @@
 				</div>
 			</section>
 			
-			<a id="banksg" class="in-page-link"></a>
+<!--			<a id="banksg" class="in-page-link"></a>
 			
 			<section class="duplicatable-content" id="others">
 				<div class="container" >
@@ -416,7 +447,7 @@
 									Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
 								</p>
 							</div>
-						</div>
+						</div> 
 					
 						
 					
@@ -425,7 +456,7 @@
 						
 					</div>
 				</div>
-			</section>
+			</section>-->
 			
 			<section class="color-blocks">
 				<div class="color-block block-left col-sm-12 col-md-12"></div>
@@ -433,13 +464,13 @@
 				
 				<div class="container">
 					<div class="row">
-						<a href="http://2017.fossasia.org" class="block-content" target="default">
+						<a href="http://2017.fossasia.org/tickets/" class="block-content" target="default">
 							<div class="col-sm-4 text-center col-md-2">
 								<i class="icon pe-7s-cash icon-large"></i>
 							</div>
 						
 							<div class="col-sm-8 col-md-10">
-								<h1>Get a ticket for FOSSASIA 2017 in&nbsp;Singapore&nbsp;and join up with the developer community!</h1>
+								<h1>Get a ticket for the FOSSASIA Summit 2018 in&nbsp;Singapore&nbsp;and join up with the developer community!</h1>
 								<p>
 									Catch our community special and save off your ticket.&nbsp;Be quick before they sell out!
 								</p>
@@ -481,7 +512,7 @@
 							<ul class="contact-methods">
 								<li><i class="icon pe-7s-mail"></i><span>contact@fossasia.org</span></li>
 								<li><i class="icon pe-7s-phone"></i><span>+65 83435672</span></li>
-								<li><i class="icon pe-7s-map-marker"></i><span>6 Eu Tong Sen Street, #5-07 The Central, Singapore 059817</span></li>
+								<li><i class="icon pe-7s-map-marker"></i><span>FOSSASIA<br/>6 Eu Tong Sen Street, #5-07 The Central, Singapore 059817</span></li>
 							</ul>
 						</div>
 					</div>
