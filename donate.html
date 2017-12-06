@@ -54,9 +54,9 @@
 											<li><a target="_self" href="http://codeheat.org">Code Heat Contest</a></li>	
 											<li><a target="_self" href="/adp">Advanced Developer Program</a></li>
 										</ul>
-									<li class="has-dropdown" style="min-height: 175px"><a href="http://labs.fossasia.org/#projects">Projects</a>
+									<li class="has-dropdown"><a href="http://labs.fossasia.org/#projects">Projects</a>
 
-                 				   <ul class="nav-dropdown projects" > <!--whenever you add/remove an option, change the style="min-height:500px" by +- 25px-->
+                 				   <ul class="nav-dropdown projects" style="min-height: 575px"> <!-- whenever you add/remove an option, change the style="min-height:500px" by +- 25px -->
 
 											<li><a target="_self" href="https://github.com/fossasia">Contribute on Github</a></li>
 											<li><a target="_self" href="http://labs.fossasia.org/ideas.html">Project Ideas</a></li>
@@ -159,75 +159,53 @@
 
 				</nav>
 		</div>
-		<div class="main-container"><section class="section-header overlay preserve3d">
-			
+		<div class="main-container">
+
+			<section class="section-header overlay preserve3d">
 				<div class="background-image-holder parallax-background">
 					<img class="background-image" alt="Background Image" src="img/hero7.jpg">
 				</div>
-				
 				<div class="container vertical-align">
 					<div class="row">
 						<div class="col-sm-offset- col-sm-8">
 							<i class="icon pe-7s-global"></i>
 							<i class="icon pe-7s-like icon-large"></i>
 							<i class="icon pe-7s-users icon-large"></i>
-							<h1 class="text-white">Please donate and become a supporting member</h1>
+							<h1 class="text-white">Please Donate and Become a Regular Supporter</h1>
 							<p class="lead text-white">
 								FOSSASIA needs your support to continue the work for sharing of knowledge, code and design, organizing events and meetups and to keep our network running.&nbsp;You can support us with a donation via credit card or paypal.</p>
 						</div>
 					</div>
 				</div>
-				
 			</section>
-			<br>
-			<br>
-			<a href="#stripe" class="btn baddition" target="default">Stripe&nbsp;</a>
-		<br><br>
-			<a href="#paypal" class="btn baddition" target="default">Paypal&nbsp;</a><br><br>
-		<!--	<a href="#others" class="btn baddition" target="default">Others&nbsp;</a><br><br><br> -->
-			<a id="stripe" class="in-page-link"></a>
-			
-			<section class="schedule schedule-with-text">
+
+
+		<section>
 				<div class="container" >
 					<div class="row">
 						<div class="col-sm-6 col-md-12">
-							<h1>Donate with Stripe</h1>
+							<h1>Donate with Credit Card</h1>
 							<button onclick="hider(1,1) " class="stripe-button-el"  style="padding:5px 31px"><font color="white"><b> Donation</b></font></button>
 								<button onclick="hider(1,2)" class="stripe-button-el" style="padding:5px;margin-left:  60px;margin-bottom:  30px" ><font color="white"><b>Regular Supporter</b></font></button>
 								<div id="donation1" class="hide">
 								<form id="myForm" action="/your-server-side-code" method="POST">
-    
                                <br>  Enter the amount
                                   <div class="form-inline form-group quater-width">
                                     <div class="input-group">
                                       <div class="input-group-addon">$</div>
                                         <input type="text"  class="form-control" id="amount" name="amount" style="color:#333333;width:15%;border-radius:0;border:1px solid #e0e0e0" placeholder="Amount" >
-                                        
-    <input type="hidden" id="stripeToken" value="" name="stripeToken" /> <!-- set value=stripe token -->
-    <input type="hidden" id="stripeEmail" value="" name="stripeEmail" /><!-- set value= stripe email id -->
-    <input type="hidden" id="amount" name="amount" /></form>
-
-<!-- <input type="button" id="customButton" value="Pay"> -->
-                             <!--
-                                      <div class="input-group-addon">.00</div>-->
+								    <input type="hidden" id="stripeToken" value="" name="stripeToken" /> <!-- set value=stripe token -->
+								    <input type="hidden" id="stripeEmail" value="" name="stripeEmail" /><!-- set value= stripe email id -->
+								    <input type="hidden" id="amount" name="amount" /></form>
+					<!-- <input type="button" id="customButton" value="Pay"> -->
+                             <!-- <div class="input-group-addon">.00</div>-->
                                     </div>
                                   </div>
                                   <input type="button" class="btn" value="Donate" id="customButton"> <br><br>
-
-
-           
 							</div>
-                          
- <!-- 
-    For stripe payments  go the link 
-	https://stripe.com/docs/quickstart
-    In checkout section the required credentials will be present -->
-							
-							
+					 <!-- For stripe payments  go the link https://stripe.com/docs/quickstartIn checkout section the required credentials will be present -->	
 							<div id="regular1" class="hide">
 							<br>Choose a monthly amount:
-                                
-                                
                                   <div class="form-inline form-group quater-width">
                                     <div class="input-group"> 
                                     <form id="myForme" action="/your-server-side-code" method="POST">
@@ -239,105 +217,74 @@
                                           <option value="100">$100/month</option>
                                           <option value="200">$200/month</option>
                                         </select>
-
     									<input type="hidden" value="" id="stripeTokene" name="stripeTokene" /><!-- set value=stripe token -->
     									<input type="hidden"  value="" id="stripeEmaile" name="stripeEmaile" /><!-- set value= stripe email id -->
     									<input type="hidden" id="amounte" name="amounte" />
                                     </div>
                                   </div>
                                    <input type="button" class="btn" value="Donate" id="customButtone"><br><br>
-    
-							
 							</div>
-														<p class="lead">
+								<p class="lead">
 								The recommended way for donating to us is to join. You can decide on if you want to pay 10 Euro or more monthly.
-
-									
-						
-							</p><p>
+								</p><p>
 								In case you just want to make a single payment with any amount of your choice, please use the option above.
-							</p>
-							
-							
-						</div>
+								</p>		
+							</div>
 								<div class="hide">
-			<form id="stripe1" action="/your-server-side-code" method="POST">
-  <script
-    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-    data-key="pk_test_N7Sv4PWYv5myu8D3LI501rSy"
-    data-amount=80000
-    data-name="Demo Site"
-    data-description="Widget"
-    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
-    data-locale="auto">
-  </script>
-</form></div>
+							<form id="stripe1" action="/your-server-side-code" method="POST">
+							  <script
+							    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+							    data-key="pk_test_N7Sv4PWYv5myu8D3LI501rSy"
+							    data-amount=80000
+							    data-name="Demo Site"
+							    data-description="Widget"
+							    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+							    data-locale="auto">
+							  </script>
+							</form></div>
 							</p>
-							
-							
-						</div>
-						
-						
-						
+						</div>	
 					</div>
 				</div>
 			</section>
+
 			
 			<a id="paypal" class="in-page-link"></a>
-			
 			<section class="inline-video">
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12">
 							<h1>Donate with Paypal</h1>
-	<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-
-    <!-- Identify your business so that you can collect the payments. -->
-
-    <input type="hidden" name="business"
-        value="office@fossasia.org"><!-- replace with fossasia email -->
-
-    <!-- Specify a Donate button. -->
-    <input type="hidden" name="cmd" value="_donations">
-
-    <!-- Specify details about the contribution -->
-    <!-- replace value of the below input items with the values in the code auto generated from paypal -->
-    <input type="hidden" name="item_name" value="FOSSASIA Friends">
-    <input type="hidden" name="item_number" value="Supporting FOSSASIA">
-    <input type="hidden" name="currency_code" value="USD">
-	<button onclick="hider(2,1)" type="submit"class="stripe-button-el"  style="padding:5px 31px"><font color="white"><b> Donation</b></font></button>
-	<button type="button" onclick="hider(2,2)" class="stripe-button-el" style="padding:5px;margin-left:  60px;margin-bottom:  30px" ><font color="white"><b>Regular Supporter</b></font></button></form> 
-	<div id="donation2" class="hide">
-							
-
-    <!-- Display the payment button. -->
-  
-
-
-
- 
-
-							</div>
-              
-
-<!-- 
-    For paypal payments  go the link 
-	https://www.paypal.com/in/cgi-bin/webscr?cmd=_donate-intro-outside
-    to generate the paypal donate button code -->
-							
-				<div id="regular2" class="hide">
-				<br>Choose a monthly amount:
-                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-				<input type="hidden" name="cmd" value="_xclick">
-				<input type="hidden" name="business" value="office@fossasia.org"><!-- replace with fossasia email -->
-				<!-- replace value of the below input items with the values in the code auto generated from paypal. Input items may also be subjected to changes due to difference in paypal policies for various countries. -->
-				<input type="hidden" name="lc" value="SG">
-				<input type="hidden" name="item_name" value="Supporter">
-				<input type="hidden" name="button_subtype" value="services">
-				<input type="hidden" name="no_note" value="0">
-				<input type="hidden" name="currency_code" value="USD">
-				<input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">    
- 				<input type="hidden" name="on0" value="payment">                               
+							<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+						<!-- Identify your business so that you can collect the payments. -->
+						    <input type="hidden" name="business"
+						        value="office@fossasia.org"><!-- replace with fossasia email -->
+						<!-- Specify a Donate button. -->
+						    <input type="hidden" name="cmd" value="_donations">
+					 	<!-- Specify details about the contribution -->
+						<!-- replace value of the below input items with the values in the code auto generated from paypal -->
+						    <input type="hidden" name="item_name" value="FOSSASIA Friends">
+						    <input type="hidden" name="item_number" value="Supporting FOSSASIA">
+						    <input type="hidden" name="currency_code" value="USD">
+							<button onclick="hider(2,1)" type="submit"class="stripe-button-el"  style="padding:5px 31px"><font color="white"><b> Donation</b></font></button>
+							<button type="button" onclick="hider(2,2)" class="stripe-button-el" style="padding:5px;margin-left:  60px;margin-bottom:  30px" ><font color="white"><b>Regular Supporter</b></font></button></form> 
+							<div id="donation2" class="hide">
+   						 <!-- Display the payment button. -->
+							</div>       
+						<!-- For paypal payments  go the link  https://www.paypal.com/in/cgi-bin/webscr?cmd=_donate-intro-outsideto generate the paypal donate button code -->												
+							<div id="regular2" class="hide">
+							<br>Choose a monthly amount:
+			                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+							<input type="hidden" name="cmd" value="_xclick">
+							<input type="hidden" name="business" value="office@fossasia.org"><!-- replace with fossasia email -->
+						<!-- replace value of the below input items with the values in the code auto generated from paypal. Input items may also be subjected to changes due to difference in paypal policies for various countries. -->
+							<input type="hidden" name="lc" value="SG">
+							<input type="hidden" name="item_name" value="Supporter">
+							<input type="hidden" name="button_subtype" value="services">
+							<input type="hidden" name="no_note" value="0">
+							<input type="hidden" name="currency_code" value="USD">
+							<input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">    
+			 				<input type="hidden" name="on0" value="payment">                               
                                   <div class="form-inline form-group quater-width">
                                     <div class="input-group">
                                       <select name="os0" id="monthlyamount" style="border-radius:5px;width: 200px" class="form-control">
@@ -361,37 +308,23 @@
 							<input type="hidden" name="option_index" value="0">
                                     </div>
                                   </div>
-                                
-
-
-
-<input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-</form>
-
-							
+							<input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+							<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+							</form>							
 							</div>
 						</div>
 					</div>
-					</ul>
-					
-							
+					</ul>						
 							<p class="lead">
-								The recommended way for donating to us is to join. You can decide on if you want to pay 10 Euro or more monthly.
-
-									
-						
+								The recommended way for donating to us is to join. You can decide on if you want to pay 10 Euro or more monthly.		
 							</p><p>
 								In case you just want to make a single payment with any amount of your choice, please use the option above.
-							</p>
-							
-							
+							</p>		
 						</div>
-					
-						
 					</div>
 				</div>
 			</section>
+
 			
 <!--			<a id="banksg" class="in-page-link"></a>
 			
