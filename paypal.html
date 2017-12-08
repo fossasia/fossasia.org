@@ -1,0 +1,70 @@
+<html>
+<head>
+	<title>PayPal form</title>
+</head>
+<body>
+	<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<!-- Identify your business so that you can collect the payments. -->
+						    <input type="hidden" name="business"
+						        value="office@fossasia.org"><!-- replace with fossasia email -->
+<!-- Specify a Donate button. -->
+						    <input type="hidden" name="cmd" value="_donations">
+<!-- Specify details about the contribution -->
+<!-- replace value of the below input items with the values in the code auto generated from paypal -->
+						    <input type="hidden" name="item_name" value="FOSSASIA Friends">
+						    <input type="hidden" name="item_number" value="Supporting FOSSASIA">
+						    <input type="hidden" name="currency_code" value="USD">
+							<button onclick="hider(2,1)" type="submit" class="stripe-button-el"  style="padding:5px 31px"><font color="white"><b> Donation</b></font></button>
+							<button type="button" onclick="hider(2,2)" class="stripe-button-el" style="padding:5px;margin-left:  60px;margin-bottom:  30px" ><font color="white"><b>Regular Supporter</b></font></button></form> 
+							<div id="donation2" class="hide">
+<!-- Display the payment button. -->
+							</div>       
+<!-- For paypal payments  go the link  https://www.paypal.com/in/cgi-bin/webscr?cmd=_donate-intro-outsideto generate the paypal donate button code -->												
+							<div id="regular2" class="hide">
+							<br>Choose a monthly amount:
+			                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+							<input type="hidden" name="cmd" value="_xclick">
+							<input type="hidden" name="business" value="office@fossasia.org"><!-- replace with fossasia email -->
+<!-- replace value of the below input items with the values in the code auto generated from paypal. Input items may also be subjected to changes due to difference in paypal policies for various countries. -->
+							<input type="hidden" name="lc" value="SG">
+							<input type="hidden" name="item_name" value="Supporter">
+							<input type="hidden" name="button_subtype" value="services">
+							<input type="hidden" name="no_note" value="0">
+							<input type="hidden" name="currency_code" value="USD">
+							<input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">    
+			 				<input type="hidden" name="on0" value="payment">                               
+                                  <div class="form-inline form-group quater-width">
+                                    <div class="input-group">
+                                      <select name="os0" id="monthlyamount" style="border-radius:5px;width: 200px" class="form-control">
+                                          <option value="monthly">$5/month</option>
+                                          <option value="monthly"">$10/month</option>
+                                          <option value="monthly"">$25/month</option>
+                                          <option value="monthly"">$50/month</option>
+                                          <option value="monthly">$100/month</option>
+                                          <option value="monthly">$250/month</option>
+                                          <option value="monthly">$500/month</option>
+                                        </select>
+                                        <input type="hidden" name="currency_code" value="USD">
+							<input type="hidden" name="option_select0" value="monthly">
+							<input type="hidden" name="option_amount0" value="5.00">
+							<input type="hidden" name="option_select1" value="monthly">
+							<input type="hidden" name="option_amount1" value="10.00">
+							<input type="hidden" name="option_select2" value="monthly">
+							<input type="hidden" name="option_amount2" value="25.00">
+							<input type="hidden" name="option_select3" value="monthly">
+							<input type="hidden" name="option_amount3" value="50.00">
+							<input type="hidden" name="option_select4" value="monthly">
+							<input type="hidden" name="option_amount4" value="100.00">
+							<input type="hidden" name="option_select5" value="monthly">
+							<input type="hidden" name="option_amount5" value="250.00">
+							<input type="hidden" name="option_select6" value="monthly">
+							<input type="hidden" name="option_amount6" value="500.00">
+							<input type="hidden" name="option_index" value="0">
+                            </div>
+                          </div>
+							<input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+							<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+						</form>	
+
+</body>
+</html>
