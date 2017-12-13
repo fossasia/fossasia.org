@@ -869,6 +869,12 @@ nav .container {
 /*!
 // 8. Sliders & Dividers & Headers
 // --------------------------------------------------*/
+.item p.summary img {
+  margin: auto;
+}
+.carousel-inner>.item {
+  padding: 40px 60px !important;
+}
 .hero-slider {
   padding: 0px;
   position: relative;
@@ -1170,6 +1176,18 @@ nav .container {
 }
 .call-to-action .social_twitter {
   background-color: #00aced;
+}
+.call-to-action .social_googleplus {
+  background-color: #d34836;
+}
+.call-to-action .social_linkedin {
+  background-color: #0077B5;
+}
+.call-to-action .social_pinterest {
+  background-color: #BD081C;
+}
+.call-to-action .social_tumblr {
+  background-color: #35465c;
 }
 .call-to-action a:last-of-type i {
   margin-right: 0px;
