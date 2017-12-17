@@ -64,12 +64,13 @@ will be called*/
   
   
   var handler = StripeCheckout.configure({
-    key: 'pk_test_6pRNASCoBOKtIshFeQd4XMUh',
-    image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
+    key: 'pk_test_IHdlNeCcW1H44btA1bcjWXa9',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/FOSSASIA_Logo.svg/2000px-FOSSASIA_Logo.svg.png',
     token: function (token) {
         $("#stripeToken").val(token.id);
         $("#stripeEmail").val(token.email);
-        $("#amount").val($("#amount").val() * 100);
+        $("#amounts").val($("#amount").val() * 100);
+        console.log('waaaaaat')
         $("#myForm").submit();
     }
 });
@@ -79,8 +80,8 @@ $('#customButton').on('click', function (e) {
     var displayAmount = parseFloat(Math.floor($("#amount").val() * 100) / 100).toFixed(2);
     // Open Checkout with further options
     handler.open({
-        name: 'Demo Site',
-        description: 'Custom amount ($' + displayAmount + ')',
+        name: 'Donate to fossasia',
+        description: 'Donating: ($' + displayAmount + ')',
         amount: amount
     });
     e.preventDefault();
@@ -91,12 +92,15 @@ $(window).on('popstate', function () {
     handler.close();
 });
 var handler = StripeCheckout.configure({
-    key: 'pk_test_6pRNASCoBOKtIshFeQd4XMUh',
-    image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
+   // key: 'pk_test_IHdlNeCcW1H44btA1bcjWXa9',
+    key: 'pk_test_IHdlNeCcW1H44btA1bcjWXa9',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/FOSSASIA_Logo.svg/2000px-FOSSASIA_Logo.svg.png',
     token: function (token) {
         $("#stripeTokene").val(token.id);
         $("#stripeEmaile").val(token.email);
-        $("#amounte").val($("#amount").val() * 100);
+        $("#amountse").val($("#amount").val() * 100);
+        console.log("what is going on here",$("#amountse").val())
+        debugger;
         $("#myForme").submit();
     }
 });
@@ -106,7 +110,7 @@ $('#customButtone').on('click', function (e) {
     var displayAmount = parseFloat(Math.floor($("#amounte").val() * 100) / 100).toFixed(2);
     // Open Checkout with further options
     handler.open({
-        name: 'Demo Site',
+        name: 'Fossasia donation',
         description: 'Custom amount ($' + displayAmount + ')',
         amount: amount
     });
