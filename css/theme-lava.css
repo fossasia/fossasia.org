@@ -544,7 +544,7 @@ nav .container {
   position: absolute;
   z-index: 1;
   opacity: 0;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 0, 0, 0.9);
   min-width: 200px;
   overflow: hidden;
   margin-top: -2px;
