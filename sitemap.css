@@ -84,7 +84,8 @@ color:#009;
 font-weight:bold;
 }
 .scrollDown {
-height:50px;
-overflow-y: scroll;
+float: right;
+height:500px;
+overflow: auto;
 }
 
