@@ -540,7 +540,7 @@ nav .container {
   display: none;
   background: rgba(255, 255, 255, 0.9);
   min-width: 200px;
-  overflow: hidden;
+  overflow: auto;
   margin-top: -2px;
 }
 .nav-dropdown li:first-child {
@@ -549,7 +549,7 @@ nav .container {
 .nav-dropdown li {
   opacity: 0;
   margin-right: 0px;
-  float: none;
+  float: right;
   margin-bottom: 18px;
 }
 .nav-dropdown li a {
