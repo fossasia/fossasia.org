@@ -83,8 +83,8 @@ a.aemphasis {
 color:#009;
 font-weight:bold;
 }
-.myDropDown {
-   height: 50px;
-   overflow: auto;
+.scrollDown {
+height:50px;
+overflow-y: scroll;
 }
 
