@@ -539,7 +539,7 @@ nav .container {
   z-index: -1;
   display: none;
   background: rgba(255, 255, 255, 0.9);
-  min-width: 200px;
+  min-width: 590px;
   overflow: auto;
   margin-top: -2px;
 }
