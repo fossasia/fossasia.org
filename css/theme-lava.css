@@ -2074,6 +2074,10 @@ p.question {
   -moz-transition: all 0.3s ease-out;
   max-height: 80px;
 }
+.sponsor img:hover{
+  max-width: 170px;
+  max-height: 100px;
+}
 .sponsors span {
   display: inline-block;
   margin-top: 24px;
