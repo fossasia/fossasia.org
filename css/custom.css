@@ -72,6 +72,7 @@
 .social-profiles a i{
   transition: all .5s;
   padding: 1px;
+  margin: 1px;
 }
 .social-profiles a:hover i{
   color: grey;
