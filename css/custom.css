@@ -75,12 +75,6 @@
 .social-profiles a:hover i{
   color: grey;
 }
-.sticky-nav .menu li a:hover {
-  border-color: #C3BFBF;
-  border-bottom-width: 2px;
-  margin-bottom: 2px;
-}
-
 .sidebar-content .widget ul li a:hover{
   border-color: #C3BFBF;
   border-bottom-width: 2px;

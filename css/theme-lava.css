@@ -726,11 +726,12 @@ nav .container {
 }
 .widget .menu li a {
   padding-bottom: 0px;
-  color: #fff !important;
+  color: #fff;
   font-size: 12px;
 }
 .widget .menu li a:hover {
   border-color: rgba(0, 0, 0, 0);
+  color:red;
 }
 .widget .menu .social-link {
   display: none;
