@@ -64,7 +64,7 @@ will be called*/
   
   
   var handler = StripeCheckout.configure({
-    key: 'pk_test_IHdlNeCcW1H44btA1bcjWXa9',
+    key: 'pk_live_TYUOty0alel95s5ZGMydBd8Q',
     image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/FOSSASIA_Logo.svg/2000px-FOSSASIA_Logo.svg.png',
     token: function (token) {
         $("#stripeToken").val(token.id);
@@ -93,7 +93,7 @@ $(window).on('popstate', function () {
 });
 var handler = StripeCheckout.configure({
    // key: 'pk_test_IHdlNeCcW1H44btA1bcjWXa9',
-    key: 'pk_test_IHdlNeCcW1H44btA1bcjWXa9',
+    key: 'pk_live_TYUOty0alel95s5ZGMydBd8Q',
     image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/FOSSASIA_Logo.svg/2000px-FOSSASIA_Logo.svg.png',
     token: function (token) {
         $("#stripeTokene").val(token.id);
