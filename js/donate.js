@@ -65,7 +65,7 @@ will be called*/
   
 var handler = StripeCheckout.configure({
    // key: 'pk_test_IHdlNeCcW1H44btA1bcjWXa9',
-    key: 'pk_test_IHdlNeCcW1H44btA1bcjWXa9',
+    key: 'pk_live_TYUOty0alel95s5ZGMydBd8Q',
     image: '/img/fossasia_400x400.png',
     token: function (token) {
         $("#stripeTokene").val(token.id);
