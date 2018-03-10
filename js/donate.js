@@ -63,15 +63,15 @@ On clicking the donate button with ids customButton and customButtone respective
 will be called*/
   
   
-  var handler = StripeCheckout.configure({
-    key: 'pk_live_TYUOty0alel95s5ZGMydBd8Q',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/FOSSASIA_Logo.svg/2000px-FOSSASIA_Logo.svg.png',
+var handler = StripeCheckout.configure({
+   // key: 'pk_test_IHdlNeCcW1H44btA1bcjWXa9',
+    key: 'pk_test_IHdlNeCcW1H44btA1bcjWXa9',
+    image: '/img/fossasia_400x400.png',
     token: function (token) {
-        $("#stripeToken").val(token.id);
-        $("#stripeEmail").val(token.email);
-        $("#amounts").val($("#amount").val() * 100);
-        console.log('waaaaaat')
-        $("#myForm").submit();
+        $("#stripeTokene").val(token.id);
+        $("#stripeEmaile").val(token.email);
+        $("#amountse").val($("#amount").val() * 100);
+        $("#myForme").submit();
     }
 });
 
@@ -84,25 +84,8 @@ $('#customButton').on('click', function (e) {
         description: 'Donating: ($' + displayAmount + ')',
         amount: amount
     });
+    $("#contributionType").val("oneoff");
     e.preventDefault();
-});
-
-// Close Checkout on page navigation
-$(window).on('popstate', function () {
-    handler.close();
-});
-var handler = StripeCheckout.configure({
-   // key: 'pk_test_IHdlNeCcW1H44btA1bcjWXa9',
-    key: 'pk_live_TYUOty0alel95s5ZGMydBd8Q',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/FOSSASIA_Logo.svg/2000px-FOSSASIA_Logo.svg.png',
-    token: function (token) {
-        $("#stripeTokene").val(token.id);
-        $("#stripeEmaile").val(token.email);
-        $("#amountse").val($("#amount").val() * 100);
-        console.log("what is going on here",$("#amountse").val())
-        debugger;
-        $("#myForme").submit();
-    }
 });
 
 $('#customButtone').on('click', function (e) {
@@ -110,10 +93,11 @@ $('#customButtone').on('click', function (e) {
     var displayAmount = parseFloat(Math.floor($("#amounte").val() * 100) / 100).toFixed(2);
     // Open Checkout with further options
     handler.open({
-        name: 'Fossasia donation',
+        name: 'Fossasia recurrent donation',
         description: 'Custom amount ($' + displayAmount + ')',
         amount: amount
     });
+    $("#contributionType").val("regular");
     e.preventDefault();
 });
 

@@ -189,7 +189,7 @@
 							<button onclick="hider(1,1) " class="stripe-button-el"  style="padding:5px 31px"><font color="white"><b> Donation</b></font></button>
 								<button onclick="hider(1,2)" class="stripe-button-el" style="padding:5px;margin-left:  60px;margin-bottom:  30px" ><font color="white"><b>Regular Supporter</b></font></button>
 								<div id="donation1" class="hide">
-								<form id="myForm" action="https://us-central1-publiccodeasia.cloudfunctions.net/donate" method="POST">
+								<form id="myForm" action="https://publiccode-rainbowdangerdash.c9users.io/publiccodeasia/us-central1/donate" action2="https://us-central1-publiccodeasia.cloudfunctions.net/donate" method="POST">
                                <br>  Enter the amount
                                   <div class="form-inline form-group quater-width">
                                     <div class="input-group">
@@ -197,6 +197,7 @@
                                         <input type="text"  class="form-control" id="amount" name="amount" style="color:#333333;width:15%;border-radius:0;border:1px solid #e0e0e0;padding:1px;text-align:center" placeholder="Amount" >
 								    <input type="hidden" id="stripeToken"  name="stripeToken" /><!-- set value=stripe token -->
     								<input type="hidden" id="stripeEmail" name="email" /><!-- set value= stripe email id -->
+    								<input type="hidden" name="contributionType" value="oneoff"/>
 								    <input type="hidden" id="amounts" name="amounts" />
 								    <input type="hidden" name="redirect" value="https://fossasia.org/thankyou" />
 								</form>
@@ -212,7 +213,7 @@
 							<br>Choose a monthly amount:
                                   <div class="form-inline form-group quater-width">
                                     <div class="input-group">
-                                    <form id="myForme" action="https://us-central1-publiccodeasia.cloudfunctions.net/donate" method="POST">
+                                    <form id="myForme" action="https://publiccode-rainbowdangerdash.c9users.io/publiccodeasia/us-central1/donate" action2="https://us-central1-publiccodeasia.cloudfunctions.net/donate" method="POST">
                                       <select id="amounte" name="amounte" style="border-radius:5px;width: 200px" class="form-control">
                                           <option value="5">$5/month</option>
                                           <option value="10">$10/month</option>
@@ -225,6 +226,7 @@
     									<input type="hidden" id="stripeTokene"  name="stripeToken" /><!-- set value=stripe token -->
     									<input type="hidden" id="stripeEmaile" name="email" /><!-- set value= stripe email id -->
     									<input type="hidden" id="amountse" name="amounts" />
+    									<input type="hidden" name="contributionType" value="regular"/>
     									<input type="hidden" name="redirect" value="https://fossasia.org/thankyou" />
                                     </div>
                                   </div>
