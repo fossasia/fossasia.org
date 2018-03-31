@@ -35,7 +35,7 @@
   </url>
 
   <url>
-    <loc>http://fossasia.org/sitemap.html</loc>
+    <loc>http://fossasia.org/sitemap/index.html</loc>
     <lastmod>2017-01-01T02:06:46+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>1.00</priority>
@@ -63,7 +63,7 @@
   </url>
 
   <url>
-    <loc>http://fossasia.org/donate.html</loc>
+    <loc>http://fossasia.org/donate/index.html</loc>
     <lastmod>2017-01-01T02:06:46+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>1.00</priority>
@@ -113,13 +113,6 @@
 
   <url>
     <loc>http://fossasia.org/contact/index.html</loc>
-    <lastmod>2017-01-01T02:06:46+00:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>1.00</priority>
-  </url>
-
-  <url>
-    <loc>http://fossasia.org/donate/index.html</loc>
     <lastmod>2017-01-01T02:06:46+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>1.00</priority>
