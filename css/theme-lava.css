@@ -382,11 +382,12 @@ p a,
   color: #333333;
 }
 .btn {
+  border: 2px solid #e12b00;
   min-width: 180px;
   border-radius: 25px;
   text-align: center;
   padding: 13px 0px 14px 0px;
-  color: #fff;
+  color: #e12b00;
   font-size: 15px;
   transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
