@@ -384,7 +384,6 @@ p a,
 .btn {
   min-width: 180px;
   border-radius: 25px;
-  background: #e12b00;
   text-align: center;
   padding: 13px 0px 14px 0px;
   color: #fff;
@@ -394,9 +393,9 @@ p a,
   -moz-transition: all 0.3s ease-out;
   font-weight: 600;
   line-height: 1;
+  background:none;
 }
 .btn:hover {
-  color: #fff;
   background: #c82600;
 }
 .btn-hollow {
@@ -857,7 +856,7 @@ nav .container {
   .nav-dropdown {
     position: relative;
     display: none;
-    min-height: 600px; 
+    min-height: 600px;
  }
   .has-dropdown:hover .nav-dropdown {
     display: block;
