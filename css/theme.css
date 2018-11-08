@@ -11,14 +11,14 @@
  7. Buttons
  8. Navigation
  9. Slider, Dividers
- 10. Speakers & Topics
- 11. Schedule
- 12. Galleries
- 13. Pricing & FAQ
- 14. Subscribe
- 15. Contact
- 16. Forms
- 17. Footers
+10. Speakers & Topics
+11. Schedule
+12. Galleries
+13. Pricing & FAQ
+14. Subscribe
+15. Contact
+16. Forms
+17. Footers
 
 // --------------------------------------------------*/
 /*!
@@ -244,6 +244,7 @@ nav {
 /*!
 // 5. Typography
 // --------------------------------------------------*/
+
 .text-white {
   color: #fff;
 }
@@ -384,6 +385,7 @@ p a,
 }
 .btn {
   min-width: 180px;
+
   border-radius: 25px;
   background: #0072bc;
   text-align: center;
@@ -2006,6 +2008,10 @@ p.question {
 /*!
 // 16. Forms
 // --------------------------------------------------*/
+form {
+margin: 0 auto; 
+width:250px;
+}
 form.register {
   overflow: hidden;
   padding-top: 24px;
@@ -2058,7 +2064,7 @@ input[type="submit"] {
   overflow: hidden;
 }
 .email-subscribe input {
-  margin: 0px auto;
+  margin: 0 auto;
   min-width: 100%;
   max-width: 100%;
 }

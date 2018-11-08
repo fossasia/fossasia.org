@@ -51,10 +51,11 @@
   margin-bottom: 50px !important;
 }
 .newsletter-name{
-  padding-right: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 .newsletter-name input{
-  border-radius: 10px 0px 0px 10px;
+  border-radius: 0px;
 }
 .newsletter-email{
   padding-left: 5px;
@@ -63,8 +64,21 @@
 .newsletter-email input{
   border-radius: 0px;
 }
+.newsletter-captcha{
+  left: 50%;
+}
+.newsletter-captcha input{
+  border-radius: 0px;
+  min-width: 150px;
+  display: flex;
+}
+.newsletter-captcha input:hover {
+background-color: #C3BFBF;
+font:black;
+}
 .newsletter-submit{
   padding-left: 0px;
+  left: 25%;
 }
 .newsletter-submit input{
   border-radius: 0px 10px 10px 0px;

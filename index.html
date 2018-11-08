@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
     <head>
@@ -17,8 +16,6 @@
         <meta name="twitter:description" content="FOSSASIA Open Technology Organization - Developing Open Source, Big Data, Design Thinking and Free Knowledge Tools with Asia's Premier Open Technology Organization">
         <meta name="twitter:creator" content="@fossasia">
         <meta name="twitter:image" content="https://fossasia.org/img.fossasia.png">
-
-
 		<link rel=icon href="fa.png">
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="css/flexslider.min.css" rel="stylesheet" type="text/css" media="all"/>
@@ -31,15 +28,48 @@
         <link href="css/custom-blog.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" media="all"/>
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
-        <script>
-     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	
+		<script type="text/javascript">
 
-     ga('create', 'UA-17146009-5', 'auto');
-     ga('send', 'pageview');
-    </script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-17146009-5', 'auto');
+    ga('send', 'pageview');
+    
+	//Captcha	
+	function Captcha(){
+			var alpha = new Array('1','2','3','4','5','6','7','8','9','0','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z');
+			var i;
+			for (i=0;i<6;i++){
+			  var a = alpha[Math.floor(Math.random() * alpha.length)];
+			  var b = alpha[Math.floor(Math.random() * alpha.length)];
+			  var c = alpha[Math.floor(Math.random() * alpha.length)];
+			  var d = alpha[Math.floor(Math.random() * alpha.length)];
+			  var e = alpha[Math.floor(Math.random() * alpha.length)];
+			  var f = alpha[Math.floor(Math.random() * alpha.length)];
+			  var g = alpha[Math.floor(Math.random() * alpha.length)];
+			 }
+		   	var code = a + ' ' + b + ' ' + ' ' + c + ' ' + d + ' ' + e + ' '+ f + ' ' + g;
+		   	document.getElementById("mainCaptcha").value = code
+		 }
+		 function ValidCaptcha(){
+			 var string1 = removeSpaces(document.getElementById('mainCaptcha').value);
+			 var string2 = removeSpaces(document.getElementById('txtInput').value);
+			 if (string1 == string2){
+			   return true;
+			 }
+			 else{ 
+				alert("Wrong Captcha Input");
+				return false;
+			 }
+		 }
+		 function removeSpaces(string){
+		   return string.split(' ').join('');
+		 }	
+	</script>
     </head>
 
     <body class="no-loader">
@@ -855,13 +885,41 @@
 								<div class="newsletter-email col-sm-5">
 								<input class="form-email signup-email-field" placeholder="Enter your email address" type="text" name="email" id="email" required>
 								</div>
-								<div class="newsletter-submit col-sm-3">
-								<input class="btn" value="Subscribe" type="submit" name="submit" id="submit">
-								<input type="hidden" name="list" value="763ZArsH2S8gm2Udhssk5A6g">
+								<div>
+									<table>	
+										<tr>
+											<td>
+											<br>			 
+											<div class="text-white" style="margin-left: 62%;">Text Captcha</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+											<div class="newsletter-captcha col-sm-3">
+												<input type="button" disabled id="mainCaptcha" style="display: flex;text-align: center; font-family:'Courier New,Courier !important'" readonly >
+												<input type="button" id="refresh" value="Next Captcha" onclick="Captcha()">
+											</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+											<div class="newsletter-captcha col-sm-3">
+												<input type="text" id="txtInput"/>    
+											</div>
+											</td>
+										</tr>
+									</table>
+												<br>
+												<div class="newsletter-submit col-sm-3">
+														<input class="btn" value="Subscribe" type="submit" name="submit" id="submit" onclick="return ValidCaptcha()">
+														<input type="hidden" name="list" value="763ZArsH2S8gm2Udhssk5A6g">
+												</div>						
 								</div>
 								<div class="col-sm-12 text-center">
 								<label id="honey">
+									<div class="text-white">
 									<p>Please do not put anything here:</p>
+									</div>
 									<input name="url" type="text">
 								</label>
 								<span>*We never share your email with 3rd parties</span>

@@ -180,5 +180,5 @@ window.onload = (function() {
         }
     };
     datafetcher();
-
+    Captcha();
 });
