@@ -87,6 +87,9 @@
   margin-top: 2px;
   margin-bottom: 2px;
 }
+.item .wp-post-image{
+  height: auto;
+}
 @media screen and (min-width: 350px) and (max-width: 440px)
 {
   #DevPrograms{
