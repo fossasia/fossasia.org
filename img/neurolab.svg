@@ -38,9 +38,9 @@
    fit-margin-right="0"
    fit-margin-bottom="0"
    units="cm"
-   inkscape:zoom="1.18"
-   inkscape:cx="83.679949"
-   inkscape:cy="94.024414"
+   inkscape:zoom="0.834386"
+   inkscape:cx="-14.060392"
+   inkscape:cy="131.56649"
    inkscape:window-x="0"
    inkscape:window-y="0"
    inkscape:window-maximized="1"
@@ -80,5 +80,6 @@
      id="tspan830"
      x="46.466621"
      y="110.6723"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'open sans';-inkscape-font-specification:'open sans';fill:#ecdc5c;stroke-width:1.7088623">Neurolab</tspan></text>
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'open sans';-inkscape-font-specification:'open sans';fill:#ecdc5c;stroke-width:1.7088623">neurolab</tspan></text>
+
 </svg>
