@@ -249,3 +249,14 @@ a:focus, a:hover {
     color: #fff !important;
     background: #e12b00 !important;
 }
+
+.text-white a:focus {
+  color: lightgray;
+  border-bottom: 4px solid lightgray;
+  text-decoration: none;
+}
+
+.text-white a:hover {
+  color: white;
+  border-bottom: 4px solid white;
+}
