@@ -7,16 +7,16 @@
   height: 100%;
   top: 0;
   left: 0;
-
 }
-.schedule a {
-  color: #B82300;
+
+  .schedule a {
+  color: #E12B00;
   border: none;
 }
 
 .schedule a:hover {
-  color: #B82300;
-  text-decoration: none;
+  color: #E12B00;
+  text-decoration: underline;
   border: none;
 }
 
@@ -38,7 +38,7 @@
   font-size: 20px;
   transition: opacity 0.2s linear;
   margin-bottom: 20px;
-  height: auto;
+  height: 250px;
 }
 
 .tweets-feed a {
@@ -82,172 +82,58 @@
 }
 .social-profiles a i{
   transition: all .5s;
-  line-height: 70px;
 }
 .social-profiles a:hover i{
   color: grey;
 }
 .sticky-nav .menu li a:hover {
-  /*border-color: #C3BFBF;*/
+  border-color: #C3BFBF;
+  border-bottom-width: 2px;
+  margin-bottom: 2px;
 }
 
 .sidebar-content .widget ul li a:hover{
-  /*border-color: #C3BFBF;*/
-  /*margin-top: 2px;*/
+  border-color: #C3BFBF;
+  border-bottom-width: 2px;
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
-a:focus, a:hover {
-    color: #9fab9e;
-    text-decoration:none;
+.item .wp-post-image{
+  height: auto;
 }
+@media screen and (min-width: 350px) and (max-width: 440px)
+{
+  #DevPrograms{
+    height: 90vh;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 350px)
+{
+  #DevPrograms{
+      height: 115vh;
+  }
+}
+
+@media screen and (min-width: 240px) and (max-width: 290px)
+{
+  #DevPrograms{
+    height: 120vh;
+  }
+}
+
+@media screen and (max-width: 240px)
+{
+  #DevPrograms{
+    height: 180vh;
+  }
+}
+
 /*css classes for hiding and showing Donation and regular supporter parts in donate.html*/
 .appear{
   display: block;
 }
 .hide{
   display: none;
-}
-.baddition{
-  margin-left:  600px;
-}
-.btn{
-  color: white;
-  text-decoration: none;
-}
-
-#overlay{
-  padding: 0
-}
-
-/*css classes for speaker bio on tooltip*/
-.speaker-bio-tooltip{
-    border-radius: 10px;
-    position: absolute;
-    display: none;
-    width: 100%;
-    background: #b82300;
-    z-index: 1000;
-    overflow: visible !important;
-}
-
-.speaker-bio-tooltip-pin{
-    position: absolute;
-    display: none;
-    z-index: 20;
-    background: url(../img/pin_bg.png) left top no-repeat;
-    width: 26px;
-    height: 13px;
-    left: 50%;
-    margin-left: -13px;
-    margin-top: -13px;
-    top: 100%;
-}
-
-.speaker-bio-tooltip .speaker-bio-tooltip-content {
-    color: #fff;
-    padding: 35px;
-    font-size: 16px;
-    line-height: 24px;
-}
-
-.speaker-bio-tooltip-content a{
-    color: yellow !important;
-    border-color: yellow;
-}
-
-/*css classes for speaker bio on tooltip*/
-
-/*END*/
-
-/* media queries to display social icons in footer properly*/
-@media (max-width: 768px) {
-  .social_twitter {
-    top: 0;
-    left: 15%;
-  }
-  .social_facebook {
-    top: 0;
-    left: 35%;
-  }
-  .social_linkedin {
-    top: 0;
-    left: 55%;
-  }
-  .social_youtube {
-    top: 0;
-    left: 75%;
-  }
-  .social_flickr {
-    top: 100%;
-    left: 20%;
-    margin-top: 40px;
-  }
-  .social_instagram {
-    top: 100%;
-    left: 45%;
-    margin-top: 40px;
-  }
-  .fa-github {
-    top: 100%;
-    left: 70%;
-  }
-}
-.speaker-description.Felipe p {
-  line-height: 1.7;
-}
-
-.all-speakers img.background-image {
-  width: 100%;
-}
-.speaker-column {
-  min-height: 405px;
-}
-@media (max-width: 767px) {
-  .all-speakers .speaker {
-    max-width: 300px;
-    margin: auto;
-	width: auto;
-    text-align: center;
-  }
-  .speaker-column + .speaker-column {
-    margin-top: 36px;
-  }
-  .all-speakers .speakers-row + .speakers-row {
-    margin-top: 36px;
-  }
-}
-
-@media (min-width: 768px) {
-  .speaker-outer:nth-child(odd) {
-    clear: left;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 991px) {
-
-.all-speakers .speaker {
-    max-width: 300px;
-    margin: auto;
-    width: auto;
-    text-align: center;
-  }	
-
-  nav .logo {
-    top: -18px;
-  }
-  .menu li {
-    margin-right: 27px;
-  }
-}
-
-.btn-hollow-red {
-  color: #e12b00 !important;
-  border: 2px solid #e12b00 !important;
-  background: transparent !important;
-}
-
-.btn-hollow-red:hover {
-    color: #fff !important;
-    background: #e12b00 !important;
 }
 
 .text-white a:focus {
@@ -259,4 +145,11 @@ a:focus, a:hover {
 .text-white a:hover {
   color: white;
   border-bottom: 4px solid white;
+}
+
+.baddition{
+  margin-left:  600px;
+}
+.background-image {
+  width: 100%;
 }
