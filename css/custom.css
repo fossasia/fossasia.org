@@ -153,3 +153,10 @@
 .background-image {
   width: 100%;
 }
+
+@media screen and (max-width: 560px){
+  .price{
+    font-size: 10vw !important;
+  }
+}
+
