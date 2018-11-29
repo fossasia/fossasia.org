@@ -3,13 +3,22 @@ $(document).ready(function() {
 	"use strict";
 
     /************** Nav Scripts **************/
-
+    var prevScrollpos = window.pageYOffset;
+    var currentScrollPos = null; 
     $(window).scroll(function() {
         if ($(window).scrollTop() > 1) {
             $('nav').addClass('sticky-nav');
         } else {
             $('nav').removeClass('sticky-nav');
         }
+        currentScrollPos = window.pageYOffset;
+
+        if ( currentScrollPos > 780 && prevScrollpos < currentScrollPos) {
+                $('nav').css('top', '-400px').delay(2500);
+        } else {
+           $('nav').css('top', '0px');
+        }
+        prevScrollpos = currentScrollPos ;
     });
 
     $('a').click(function() {
@@ -17,7 +26,6 @@ $(document).ready(function() {
             return false;
         }
     });
-
     // Margin on the menu to make room for sidebar menu if it exists
 
     if ($('.sidebar-menu-toggle').length && !$('.sidebar-menu-toggle i').hasClass('variant-deleted-mrv')) {
