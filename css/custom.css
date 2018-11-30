@@ -160,3 +160,11 @@
   }
 }
 
+nav{
+  -webkit-transition: top 0.9s ease-in-out !important;
+  transition: top 0.9s ease-in-out !important;
+}
+.mobile-menu-toggle{
+  position: absolute;
+  top: -7px;
+}
