@@ -1,0 +1,17 @@
+.reveal-sidebar {
+	transform: translateX(-300px);
+	-webkit-transform: translateX(-300px);
+	-moz-transform: translateX(-300px);
+}
+
+.sidebar-menu, .instagram-sidebar {
+	transform: translateX(300px);
+	-webkit-transform: translateX(300px);
+	-moz-transform: translateX(300px);
+}
+
+.show-sidebar {
+	transform: translateX(0px);
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+}

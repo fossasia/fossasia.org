@@ -1,0 +1,95 @@
+img.rss {
+  margin-bottom: 0px;
+}
+.carousel-inner{
+   width: 100%; /* Set width to 100% */
+   margin: auto;
+   min-height:700px;
+   max-height:800px;
+}
+
+#result .item{
+  height:100%;
+  width:100%;
+  margin:5% 3% 5% 3%;
+  background-color:#fff;
+  overflow: hidden;
+}
+#result .item h1 {
+  font-weight: 400 ;
+}
+#result p a{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+#result .item .summary{
+  margin: 36px 10% 50px 10%;
+}
+
+
+/*
+.post {
+  display: none;
+  padding: 20px;
+  position: relative;
+  height: 100%;
+}
+
+.title, .author-date {
+  padding: 0 0 20px;
+}
+
+.post.active {
+  display: block;
+}
+
+.post > h4 {
+  font-size: 1em;
+}
+
+.links {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-start;
+  padding-left: 0;
+}
+
+.links li {
+  display: inline-block;
+  margin-right: 15px;
+  background-color: #2D728F;
+  padding: 5px 10px;
+}
+
+.post img, post svg{
+  display: block;
+  width:30%;
+  height: 30%;
+  margin: 10px auto;
+}
+
+.post .link {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  margin-left: -20px;
+  margin-top: 440px;
+  height: 60px;
+  box-sizing: border-box;
+  padding: 20px;
+  font-weight: 700;
+  background-color: #fff; 
+  transition: background-color 0.2s ease-in;
+  color: #e12b00;
+}
+
+.linkText {
+  padding-bottom: 3px;
+  font-size: 1.5em;
+}
+
+.post .link:hover {
+  background-color: #ddd; 
+  
+}*/
+*/
