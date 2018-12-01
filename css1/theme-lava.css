@@ -545,17 +545,9 @@ nav .container {
   z-index: 1;
   opacity: 0;
   background: rgba(255, 255, 255, 0.9);
-  min-width: 200px;
-  overflow: hidden;
+  min-width: 250px;
   margin-top: -2px;
   -webkit-transition: all 0.3s;
-}
-.projects{
-   min-height:525px;
-}
-
-.events{
-   min-height: 450px;
 }
 
 .nav-dropdown li:first-child {
@@ -588,8 +580,8 @@ nav .container {
 
 .nav-dropdown{
   display: none;
-  min-height:314px;
-
+  max-height:300px;
+  overflow-y: scroll;
 }
 
 .has-dropdown:hover > ul{
@@ -600,6 +592,7 @@ nav .container {
 .has-dropdown:hover .nav-dropdown {
   opacity: 1;
   max-height: 300px;
+  overflow-y: scroll;
 }
 .has-dropdown:hover .nav-dropdown li {
   opacity: 1;
@@ -857,7 +850,6 @@ nav .container {
   .nav-dropdown {
     position: relative;
     display: none;
-    min-height: 600px;
  }
   .has-dropdown:hover .nav-dropdown {
     display: block;
