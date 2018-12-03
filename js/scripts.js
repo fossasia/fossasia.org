@@ -5,20 +5,28 @@ $(document).ready(function() {
     /************** Nav Scripts **************/
     var prevScrollpos = window.pageYOffset;
     var currentScrollPos = null; 
-    $(window).scroll(function() {
+    $(window).scroll(function(){
         if ($(window).scrollTop() > 1) {
             $('nav').addClass('sticky-nav');
         } else {
             $('nav').removeClass('sticky-nav');
         }
+    });
+    $(window).scroll(function() {
         currentScrollPos = window.pageYOffset;
-
-        if ( currentScrollPos > 780 && prevScrollpos < currentScrollPos) {
-                $('nav').css('top', '-400px').delay(2500);
-        } else {
-           $('nav').css('top', '0px');
+        if ( currentScrollPos < 780) {
+            $('nav').css('top', '0px');
+        } else if(currentScrollPos - prevScrollpos > 3){
+            setTimeout(function(){
+                $('nav').css('top', '-100px');
+            },400)
+        } else if(prevScrollpos - currentScrollPos > 3){
+            setTimeout(function(){
+                $('nav').css('top', '0px');
+            }, 400);
         }
         prevScrollpos = currentScrollPos ;
+        $('nav').clearQueue();
     });
 
     $('a').click(function() {
