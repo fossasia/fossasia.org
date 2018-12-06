@@ -101,6 +101,16 @@
 .item .wp-post-image{
   height: auto;
 }
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .nav-wrapper {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width:800px) {
+  .nav-wrapper {
+    padding: 0 3px;
+  }
+}
 @media screen and (min-width: 350px) and (max-width: 440px)
 {
   #DevPrograms{
