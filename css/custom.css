@@ -1,9 +1,15 @@
-#text-2 .widget widget_text h2.widget-title{
-padding-top:5px;
-  
+.dark-layer {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
-.schedule a {
+  .schedule a {
   color: #E12B00;
   border: none;
 }
@@ -67,16 +73,12 @@ padding-top:5px;
 }
 .newsletter-email input{
   border-radius: 0px;
-  margin-left: 10px;
-
 }
 .newsletter-submit{
   padding-left: 0px;
-
 }
 .newsletter-submit input{
   border-radius: 0px 10px 10px 0px;
-  margin-left: 14px;
 }
 .social-profiles a i{
   transition: all .5s;
@@ -95,6 +97,9 @@ padding-top:5px;
   border-bottom-width: 2px;
   margin-top: 2px;
   margin-bottom: 2px;
+}
+.item .wp-post-image{
+  height: auto;
 }
 @media screen and (min-width: 350px) and (max-width: 440px)
 {
@@ -135,4 +140,17 @@ padding-top:5px;
 }
 .background-image {
   width: 100%;
+}
+@media screen and (max-width: 560px){
+  .price{
+    font-size: 10vw !important;
+  }
+}
+nav{
+  -webkit-transition: top 0.7s ease-in-out !important;
+  transition: top 0.7s ease-in-out !important;
+}
+.mobile-menu-toggle{
+  position: absolute;
+  top: -7px;
 }
