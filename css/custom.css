@@ -73,12 +73,17 @@
 }
 .newsletter-email input{
   border-radius: 0px;
+  margin-left: 10px;
+
 }
 .newsletter-submit{
   padding-left: 0px;
+
 }
 .newsletter-submit input{
   border-radius: 0px 10px 10px 0px;
+  margin-left: 14px;
+
 }
 .social-profiles a i{
   transition: all .5s;
