@@ -1285,7 +1285,7 @@ nav .container {
   background-color: #b82300;
   right: 0px;
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 991px) {
   .block-content {
     margin-bottom: 144px;
     overflow: hidden;
