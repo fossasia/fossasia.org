@@ -458,7 +458,7 @@ p a,
 nav .logo {
   max-height: 45px;
   max-width: 110px;
-  position: absolute;
+  position: relative;
   top: 0px;
   opacity: 1;
 }
