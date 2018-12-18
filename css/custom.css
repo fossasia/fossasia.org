@@ -245,5 +245,36 @@ nav{
   align-content: center;
   margin-left: 250px;
   margin-top: 350px;
-
+}
+.has-submenu{
+  position: relative;
+}
+.submenu{
+  top: 0px;
+  left: 100%;
+}
+.has-submenu > a:after{
+  display: inline-block;
+  font-family: 'Pe-icon-7-stroke';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\e688";
+  color: #fff;
+  font-size: 24px;
+  position: absolute;
+  top: 3px;
+  right: 25px;
+  color: #333;
+}
+.has-submenu:hover > a:after{
+  color: #fff;
+}
+.nav-dropdown li:hover > a{
+  color: #fff;
 }

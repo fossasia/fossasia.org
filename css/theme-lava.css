@@ -546,7 +546,7 @@ nav .container {
   opacity: 0;
   background: rgba(255, 255, 255, 0.9);
   min-width: 200px;
-  overflow: hidden;
+  overflow: visible;
   margin-top: -2px;
   -webkit-transition: all 0.3s;
 }
@@ -610,7 +610,7 @@ nav .container {
 .has-dropdown a {
   padding-left: 18px;
 }
-.has-dropdown:before {
+.menu > .has-dropdown:before {
   display: inline-block;
   font-family: 'Pe-icon-7-stroke';
   speak: none;
