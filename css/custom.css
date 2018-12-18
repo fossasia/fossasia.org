@@ -247,3 +247,7 @@ nav{
   margin-top: 350px;
 
 }
+.equal-row{
+  display: flex;
+  flex-wrap: wrap;
+}
