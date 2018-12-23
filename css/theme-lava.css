@@ -2361,6 +2361,9 @@ footer.short .top-border {
   left: 8px;
   font-size: 16px;
 }
+.contact-mail {
+  margin-top: 40px;
+}
 footer.classic .social-profiles {
   margin-top: 36px;
 }
