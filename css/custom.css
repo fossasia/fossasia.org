@@ -1,4 +1,15 @@
-.schedule a {
+.dark-layer {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+  .schedule a {
   color: #E12B00;
   border: none;
 }
@@ -62,12 +73,17 @@
 }
 .newsletter-email input{
   border-radius: 0px;
+  margin-left: 10px;
+
 }
 .newsletter-submit{
   padding-left: 0px;
+
 }
 .newsletter-submit input{
   border-radius: 0px 10px 10px 0px;
+  margin-left: 14px;
+
 }
 .social-profiles a i{
   transition: all .5s;
@@ -86,6 +102,9 @@
   border-bottom-width: 2px;
   margin-top: 2px;
   margin-bottom: 2px;
+}
+.item .wp-post-image{
+  height: auto;
 }
 @media screen and (min-width: 350px) and (max-width: 440px)
 {
@@ -126,4 +145,142 @@
 }
 .background-image {
   width: 100%;
+}
+@media screen and (max-width: 560px){
+  .price{
+    font-size: 10vw !important;
+  }
+}
+nav{
+  -webkit-transition: top 0.7s ease-in-out !important;
+  transition: top 0.7s ease-in-out !important;
+}
+.mobile-menu-toggle{
+  position: absolute;
+  top: -7px;
+}
+.embedded-video-holder{
+  margin-top: 10px;
+}
+
+ .app_tile {
+  display: inline-block;
+  padding: 10px;
+  text-align: left;
+  opacity: .99;
+  overflow: hidden;
+  position: relative;
+  border-radius: 3px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 5);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+ .app_tile:before {
+  content: '';
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 20));
+  width: 200%;
+  height: 150%;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 2;
+  transition-property: top, opacity;
+  transition-duration: 0.3s;
+}
+ .app_tile img {
+  display: block;
+  max-width: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+ .app_tile .details {
+  font-size: 16px;
+  padding: 20px;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  -webkit-text-stroke-width: 0.15px;
+  -webkit-text-stroke-color: grey;
+}
+ .app_tile .details span {
+  display: block;
+  opacity: 0;
+  position: relative;
+  top: 100px;
+  transition-property: top, opacity;
+  transition-duration: 0.3s;
+  transition-delay: 0s;
+}
+ .app_tile .details .title {
+  line-height: 1;
+  font-weight: 600;
+  font-size: 18px;
+}
+ .app_tile .details .info {
+  line-height: 1.2;
+  margin-top: 5px;
+  font-size: 14px;
+}
+ .app_tile:focus:before,
+ .app_tile:focus span,  .app_tile:hover:before,
+ .app_tile:hover span {
+  opacity: 1;
+}
+ .app_tile:focus:before,  .app_tile:hover:before {
+  top: 50%;
+}
+ .app_tile:focus span,  .app_tile:hover span {
+  top: 0;
+}
+ .app_tile:focus .title,  .app_tile:hover .title {
+  transition-delay: 0.15s;
+}
+ .app_tile:focus .info,  .app_tile:hover .info {
+  transition-delay: 0.25s;
+}
+#androids{
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  margin-left: 250px;
+  margin-top: 350px;
+}
+.has-submenu{
+  position: relative;
+}
+.submenu{
+  top: 0px;
+  left: 100%;
+}
+.has-submenu > a:after{
+  display: inline-block;
+  font-family: 'Pe-icon-7-stroke';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\e688";
+  color: #fff;
+  font-size: 24px;
+  position: absolute;
+  top: 3px;
+  right: 25px;
+  color: #333;
+}
+.has-submenu:hover > a:after{
+  color: #fff;
+}
+.nav-dropdown li:hover > a{
+  color: #fff;
+}
+.equal-row{
+  display: flex;
+  flex-wrap: wrap;
 }

@@ -3,13 +3,30 @@ $(document).ready(function() {
 	"use strict";
 
     /************** Nav Scripts **************/
-
-    $(window).scroll(function() {
+    var prevScrollpos = window.pageYOffset;
+    var currentScrollPos = null; 
+    $(window).scroll(function(){
         if ($(window).scrollTop() > 1) {
             $('nav').addClass('sticky-nav');
         } else {
             $('nav').removeClass('sticky-nav');
         }
+    });
+    $(window).scroll(function() {
+        currentScrollPos = window.pageYOffset;
+        if ( currentScrollPos < 780) {
+            $('nav').css('top', '0px');
+        } else if(currentScrollPos - prevScrollpos > 3){
+            setTimeout(function(){
+                $('nav').css('top', '-100px');
+            },400)
+        } else if(prevScrollpos - currentScrollPos > 3){
+            setTimeout(function(){
+                $('nav').css('top', '0px');
+            }, 400);
+        }
+        prevScrollpos = currentScrollPos ;
+        $('nav').clearQueue();
     });
 
     $('a').click(function() {
@@ -17,7 +34,6 @@ $(document).ready(function() {
             return false;
         }
     });
-
     // Margin on the menu to make room for sidebar menu if it exists
 
     if ($('.sidebar-menu-toggle').length && !$('.sidebar-menu-toggle i').hasClass('variant-deleted-mrv')) {
