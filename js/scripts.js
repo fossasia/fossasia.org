@@ -98,18 +98,6 @@ $(document).ready(function() {
         directionNav: false
     });
 
-    /************** Divider Scripts **************/
-
-    $('.background-image-holder').each(function() {
-
-        // Append background-image <img>'s as li item CSS background for better responsive performance
-        var imgSrc = $(this).children('.background-image').attr('src');
-        $(this).css('background', 'url("' + imgSrc + '")');
-        $(this).children('.background-image').hide();
-        $(this).css('background-position', '50% 0%');
-        // Check if the slider has a color scheme attached, if so, apply it to the slider nav
-    });
-
     /************** Instagram Feed **************/
 
     jQuery.fn.spectragram.accessData = {
@@ -349,4 +337,48 @@ $(window).load(function() {
         alert("Not a valid email address");
         return false;
     }
+});
+    /************** Defer offscreen images **************/
+// Sections which have images have class lazy-section and the images have class lazy
+document.addEventListener("DOMContentLoaded", function() {
+    var lazyloadSections ;    // Stores the elements for lazy loading
+    var lazyLoadElements ;   // stores the img in the element
+    var lazyloadThrottleTimeout;
+    var scrollTop ;
+    function lazyload () {
+        lazyloadSections = document.querySelectorAll(".lazy-section");
+        if(lazyloadThrottleTimeout) {
+            clearTimeout(lazyloadThrottleTimeout);
+        }    
+        lazyloadThrottleTimeout = setTimeout(function() {
+            scrollTop = window.pageYOffset;
+            lazyloadSections.forEach(function(section) {
+                if($(section).offset().top -1300 < (window.innerHeight + scrollTop)  && $(section).height() + $(section).offset().top + 1300 > scrollTop ) {
+                    lazyLoadElements = section.querySelectorAll('img , iframe');
+                    lazyLoadElements.forEach(function(element){
+                        if($(element).hasClass('background-image'))
+                        {
+                            var elementSrc = $(element).attr('data-src');
+                            $(element).parent('.background-image-holder').css('background', 'url("' + elementSrc + '")');
+                            $(element).hide();
+                            $(element).parent('.background-image-holder').css('background-position', '50% 0%');
+                        }
+                        else{
+                            element.src = element.dataset.src;
+                        }
+                    });
+                    section.classList.remove('lazy-section');
+                }
+            });
+        }, 0);
+        if(lazyloadSections.length == 0 && !$('.map').hasClass('hid')) { 
+            document.removeEventListener("scroll", lazyload);
+            window.removeEventListener("resize", lazyload);
+            window.removeEventListener("orientationChange", lazyload);
+        }
+    }
+    document.addEventListener("scroll", lazyload);
+    window.addEventListener("resize", lazyload);
+    window.addEventListener("orientationChange", lazyload);
+    lazyload();
 });
