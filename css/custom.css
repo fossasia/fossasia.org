@@ -298,3 +298,8 @@ nav{
   display: flex;
   flex-wrap: wrap;
 }
+@media screen and (min-width: 768px) and (max-width: 992px){
+  .overlay-nav .menu li{
+    margin-right: 20px;
+  }
+}
