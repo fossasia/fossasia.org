@@ -250,12 +250,13 @@ body {
   font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
-  color: #777777;
+  color: #777777; 
   font-size: 14px;
   line-height: 24px;
   background: #eee;
   -moz-osx-font-smoothing: grayscale;
 }
+
 h1,
 h2,
 h3,

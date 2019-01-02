@@ -217,10 +217,10 @@ nav{
   left: 0;
   z-index: 3;
   -webkit-text-stroke-width: 0.15px;
-  -webkit-text-stroke-color: grey;
+  -webkit-text-stroke-color: grey; 
 }
  .app_tile .details span {
-  display: block;
+  display: block ;  
   opacity: 0;
   position: relative;
   top: 100px;
@@ -232,6 +232,8 @@ nav{
   line-height: 1;
   font-weight: 600;
   font-size: 18px;
+
+
 }
  .app_tile .details .info {
   line-height: 1.2;
@@ -242,6 +244,8 @@ nav{
  .app_tile:focus span,  .app_tile:hover:before,
  .app_tile:hover span {
   opacity: 1;
+  background-color: #333333;
+
 }
  .app_tile:focus:before,  .app_tile:hover:before {
   top: 50%;
@@ -253,7 +257,7 @@ nav{
   transition-delay: 0.15s;
 }
  .app_tile:focus .info,  .app_tile:hover .info {
-  transition-delay: 0.25s;
+  transition-delay: 0.15s;
 }
 #androids{
   align-items: center;
@@ -261,6 +265,7 @@ nav{
   align-content: center;
   margin-left: 250px;
   margin-top: 350px;
+
 }
  .has-submenu{
   position: relative;
