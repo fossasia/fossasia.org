@@ -1779,6 +1779,7 @@ p.question {
   margin-bottom: 36px;
   position: relative;
   overflow: hidden;
+  min-height: 520px;
 }
 .info-box img {
   display: block;
