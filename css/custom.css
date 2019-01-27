@@ -213,3 +213,52 @@ nav{
   display: flex;
   flex-wrap: wrap;
 }
+@media(max-width: 1200px){
+    .menu li{
+      margin-right: 2%;
+    }
+    .menu{
+      width: 100%;
+    }
+    .social-link{
+      display: none;
+    }
+    #troop .social-link{
+      display: block;
+    }
+    #troop{
+      display: block;
+    }
+}
+@media(max-width: 990px){
+    .social-link{
+      display: none;
+    }
+    #troop .social-link{
+      display: block;
+    }
+    #troop{
+      display: block;
+    }
+    .col-md-2{
+      position: fixed;
+      left: 0;  
+    }
+    .col-md-10{
+      position: fixed;
+      right: 0;
+      width: 84%;
+    }
+    nav .text-right {
+      position:fixed ;
+    }
+}
+@media(max-width: 768px){
+    .col-md-10{
+      position: relative;
+      /*right: 0;*/
+    }
+    nav .text-right {
+      position:relative; 
+    } 
+}
