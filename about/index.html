@@ -198,6 +198,7 @@
 		</nav>
 	</div>
 	</div>
+	<button onclick="topFunc()" id="topbtn" title="Go to top">&#10148;</button>
 	<div class="main-container">
 		<section class="section-header overlay preserve3d lazy-section">
 			<div class="background-image-holder parallax-background">
@@ -711,7 +712,7 @@
 							<li><a target="_self" href="../about">About</a></li>
 							<li><a target="_self" href="https://blog.fossasia.org/contact">Contact</a></li>
 							<li><a target="_self" href="../donate/">Donate</a></li>
-							<li><a class="inner-link back-to-top" href="#top">Back To Top</a></li>
+			
 						</ul>
 					</div>
 
@@ -762,6 +763,24 @@
 	<script src="../js/scripts.js"></script>
 	<script src="../js/tweets.js"></script>
 	<script src="../js/blog.js"></script>
+<script>
+
+window.onscroll = function() {scrollFunc()};
+// When the user scrolls down 25px from the top display button
+function scrollFunc() {
+  if (document.body.scrollTop > 25 || document.documentElement.scrollTop > 25) {
+    document.getElementById("topbtn").style.display = "block";
+  } else {
+    document.getElementById("topbtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button,go to top of the site
+function topFunc() {
+ $("html, body").animate({ scrollTop: 0 }, "slow");
+  
+}
+</script>
 </body>
 
 </html>
