@@ -298,7 +298,7 @@
 					</div>
 				</div>
 			</section>
-
+                        <button onclick="topFunc()" id="topbtn" title="Go to top">&#10148;</button>
 			<a id="activities" class="in-page-link"></a>
 
 			<section class="duplicatable-content visitor-info lazy-section">
@@ -1314,7 +1314,7 @@
 								<li><a target="_self" href="./about">About</a></li>
 								<li><a target="_self" href="https://blog.fossasia.org/contact">Contact</a></li>
 								<li><a target="_self" href="./donate/">Donate</a></li>
-								<li><a class="inner-link back-to-top" href="#top">Back To Top</a></li>
+								
 							</ul>
 						</div>
 						<div class="col-sm-7">
@@ -1368,5 +1368,23 @@
         <script src="js/scripts.js"></script>
         <script src="js/tweets.js"></script>
         <script src="js/blog.js"></script>
+        <script>
+
+window.onscroll = function() {scrollFunc()};
+// When the user scrolls down 25px from the top display button
+function scrollFunc() {
+  if (document.body.scrollTop > 25 || document.documentElement.scrollTop > 25) {
+    document.getElementById("topbtn").style.display = "block";
+  } else {
+    document.getElementById("topbtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button,go to top of the site
+function topFunc() {
+ $("html, body").animate({ scrollTop: 0 }, "slow");
+  
+}
+</script>
     </body>
 </html>
