@@ -66,7 +66,7 @@ html[xmlns] .slides {display: block;}
 .flex-pauseplay a.flex-play:before { content: '\f003'; }
 
 /* Control Nav */
-.flex-control-nav {width: 100%; position: absolute; bottom: 44px; text-align: center; z-index: 10;}
+.flex-control-nav {width: 100%; position: absolute; bottom: 44px; text-align: center; z-index: 5;}
 .flex-control-nav li {margin: 0 5px; display: inline-block; zoom: 1; *display: inline;}
 .flex-control-paging li a {width: 8px; height: 8px; display: block; background: #fff; background: rgba(255,255,255,0.5); cursor: pointer; text-indent: -9999px; -webkit-border-radius: 50%; -moz-border-radius: 20px; -o-border-radius: 50%; border-radius: 50%; transition: all .5s ease; -webkit-transition: all .5s ease; -moz-transition: all .5s ease;  }
 .flex-control-paging li a:hover { background: #fff; background: rgba(255,255,255,0.7); }
