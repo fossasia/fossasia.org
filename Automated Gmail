@@ -1,0 +1,19 @@
+//The following code shows how to automate Gmail login using Selenium webdriver in Python language//
+import time
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+driver=webdriver.Chrome("C:\\")
+driver.maximize_window()
+driver.get("https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&service=mail&sacu=1&rip=1")
+elem1 = driver.find_element_by_id("identifierId")
+elem1.send_keys("....@gmail.com")
+elem_button=driver.find_element_by_id("identifierNext")
+elem_button.click()
+time.sleep(1)
+elem = driver.find_element_by_name("password")
+elem.send_keys("......")
+elem_button=driver.find_element_by_id("passwordNext")
+elem_button.click()
+
+
+
