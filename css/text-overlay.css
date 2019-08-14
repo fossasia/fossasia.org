@@ -1,0 +1,19 @@
+.container {
+  position: relative;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 65px;
+  right: 80px;
+  left: 50%;
+  background-color: rgba(128, 128, 128, 0.2);
+  color: black;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
