@@ -4,16 +4,14 @@
 
 .text-block {
   position: absolute;
-  bottom: 65px;
+  bottom: 80px;
   right: 80px;
   left: 50%;
-  background-color: rgba(128, 128, 128, 0.2);
+  background-color: rgba(105, 105, 105, 0.4);
   color: black;
-  padding-left: 50px;
-  padding-right: 50px;
   padding-top: 10px;
   padding-bottom: 5px;
-  margin-bottom: 10px;
-  margin-right: -62%;
+  margin-bottom: -10px;
+  margin-right: -43%;
   transform: translate(-50%, -50%)
 }
