@@ -358,7 +358,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     lazyLoadElements.forEach(function(element){
                         if($(element).hasClass('background-image'))
                         {
-                            var elementSrc = $(element).attr('data-src');
+                            var elementSrc = $(element).attr('src');
                             $(element).parent('.background-image-holder').css('background', 'url("' + elementSrc + '")');
                             $(element).hide();
                             $(element).parent('.background-image-holder').css('background-position', '50% 0%');
