@@ -209,3 +209,24 @@ nav{
   display: flex;
   flex-wrap: wrap;
 }
+
+
+#totop{
+  z-index: 2147483638;
+  border-radius: 50%;
+  width: 5%;
+  height: 70px;
+  transform: translate(1870%, -860%);  
+  background-color:#E12B00;
+  border-color: #E12B00;
+  color: whitesmoke;
+  font-size: 200%;
+  text-align: center;
+  opacity: 0.7;
+  position: fixed;
+  
+ 
+}
+#totop:hover{
+  opacity: 0.9;
+}
