@@ -1,0 +1,26 @@
+html {
+    scroll-behavior: smooth;
+}
+i.scrollToTop {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+#scrollToTopBtn {
+    display: none;
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    background-color: #b82300;
+    color: white; 
+    cursor: pointer; 
+    padding: 10px 16px;
+}
+  
+#scrollToTopBtn:hover {
+    background-color: #e12b00;
+}
