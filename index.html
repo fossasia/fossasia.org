@@ -20,7 +20,8 @@
 
 
 		<link rel=icon href="fossasia.ico">
-        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
+		<link href="css/backToTop.css" rel="stylesheet" type="text/css"/>
         <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="css/elegant-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all"/>
@@ -796,7 +797,6 @@
 
 					</div>
 			</section>
-
 
 			<section class="image-with-text background-dark preserve-3d lazy-section">
 				<div class="container vertical-align">
@@ -1642,11 +1642,24 @@
 				</div>
 			</footer>
 		</div>
+		<a href="#top" id="scrollToTopBtn" title="Go to top"><i class="scrollToTop"></i></a>
         <script>
           // changes email address in homepage to make it responsive according to screen resolutions
           if (screen.width <=853) {
           document.getElementById('mailAdd').innerHTML = 'fossasia@google...';
         }
+			// add eventListener for scroll to top button
+			const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+			window.addEventListener("scroll", showScrollToTopBtn);
+
+			function showScrollToTopBtn() {
+			    if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  					scrollToTopBtn.style.display = "block";
+  				} else {
+					scrollToTopBtn.style.display = "none";
+  				}
+			}
         </script>
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
 		<script src="js/feednami.js"></script>
