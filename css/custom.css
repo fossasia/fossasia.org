@@ -157,6 +157,7 @@
 }
 .background-image {
   width: 100%;
+  display: visible !important;
 }
 
 @media screen and (max-width: 560px){
