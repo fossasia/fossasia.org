@@ -446,7 +446,7 @@ p a,
   background-position: 50% 50% !important;
 }
 .background-image-holder img {
-  display: none;
+  display: visible;
 }
 .image-holder {
   position: relative;
