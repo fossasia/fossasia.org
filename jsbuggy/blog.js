@@ -1,6 +1,6 @@
 $(document).ready(function() {
     
-    var url = 'https://blog.fossasia.org/feed/?format=xml';
+    var url = 'http://blog.fossasia.org/feed/?format=xml';
     feeds(url);
  });
 

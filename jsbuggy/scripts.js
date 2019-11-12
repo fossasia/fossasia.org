@@ -3,13 +3,30 @@ $(document).ready(function() {
 	"use strict";
 
     /************** Nav Scripts **************/
-
-    $(window).scroll(function() {
+    var prevScrollpos = window.pageYOffset;
+    var currentScrollPos = null; 
+    $(window).scroll(function(){
         if ($(window).scrollTop() > 1) {
             $('nav').addClass('sticky-nav');
         } else {
             $('nav').removeClass('sticky-nav');
         }
+    });
+    $(window).scroll(function() {
+        currentScrollPos = window.pageYOffset;
+        if ( currentScrollPos < 780) {
+            $('nav').css('top', '0px');
+        } else if(currentScrollPos - prevScrollpos > 3){
+            setTimeout(function(){
+                $('nav').css('top', '-100px');
+            },400)
+        } else if(prevScrollpos - currentScrollPos > 3){
+            setTimeout(function(){
+                $('nav').css('top', '0px');
+            }, 400);
+        }
+        prevScrollpos = currentScrollPos ;
+        $('nav').clearQueue();
     });
 
     $('a').click(function() {
@@ -17,7 +34,6 @@ $(document).ready(function() {
             return false;
         }
     });
-
     // Margin on the menu to make room for sidebar menu if it exists
 
     if ($('.sidebar-menu-toggle').length && !$('.sidebar-menu-toggle i').hasClass('variant-deleted-mrv')) {
@@ -80,18 +96,6 @@ $(document).ready(function() {
     $('.image-slider').flexslider({
         animation: "slide",
         directionNav: false
-    });
-
-    /************** Divider Scripts **************/
-
-    $('.background-image-holder').each(function() {
-
-        // Append background-image <img>'s as li item CSS background for better responsive performance
-        var imgSrc = $(this).children('.background-image').attr('src');
-        $(this).css('background', 'url("' + imgSrc + '")');
-        $(this).children('.background-image').hide();
-        $(this).css('background-position', '50% 0%');
-        // Check if the slider has a color scheme attached, if so, apply it to the slider nav
     });
 
     /************** Instagram Feed **************/
@@ -226,34 +230,6 @@ $(document).ready(function() {
         return false;
     });
 
-    /************** Speaker Bio tooltip script **************/
-    $('.speaker-column').on("mouseover", function(){
-
-        var parentRef = $(this).parent();
-        var tooltipRef = $(this).children('.speaker-bio-tooltip');
-        var tooltipPinRef = $(this).children('.speaker-bio-tooltip-pin');
-
-        // Calculate offset
-        var currentDivPos = $(this).position();    
-        var parentDivPos = parentRef.position();  
-        var left = -1 * (currentDivPos.left - parentDivPos.left ) + "px";
-
-        tooltipPinRef.css('display','block');
-        tooltipRef.css({
-            'width':parentRef.width(),
-            'left':left
-        }).slideDown(100);
-    });
-
-    $('.speaker-column').on("mouseleave", function(){
-
-        $(this).children('.speaker-bio-tooltip-pin').css('display','none');
-        $(this).children('.speaker-bio-tooltip').css('display','none');
-
-    })
-
-
-
 });
 
 $(window).load(function() {
@@ -355,11 +331,54 @@ $(window).load(function() {
 
 	$('.email-subscribe').submit(function() {
         if ($.trim($("#email").val()) === "") {
-            alert('Please enter your email address in the form');
-            return false; 
-        }
+        alert('Please enter your email address in the form');
+        return false; }
         else if ( !isValidEmailAddress( $.trim($("#email").val())  ) ) {
-            alert("Not a valid email address");
-            return false;
-        }   
+        alert("Not a valid email address");
+        return false;
+    }
+});
+    /************** Defer offscreen images **************/
+// Sections which have images have class lazy-section and the images have class lazy
+document.addEventListener("DOMContentLoaded", function() {
+    var lazyloadSections ;    // Stores the elements for lazy loading
+    var lazyLoadElements ;   // stores the img in the element
+    var lazyloadThrottleTimeout;
+    var scrollTop ;
+    function lazyload () {
+        lazyloadSections = document.querySelectorAll(".lazy-section");
+        if(lazyloadThrottleTimeout) {
+            clearTimeout(lazyloadThrottleTimeout);
+        }    
+        lazyloadThrottleTimeout = setTimeout(function() {
+            scrollTop = window.pageYOffset;
+            lazyloadSections.forEach(function(section) {
+                if($(section).offset().top -1300 < (window.innerHeight + scrollTop)  && $(section).height() + $(section).offset().top + 1300 > scrollTop ) {
+                    lazyLoadElements = section.querySelectorAll('img , iframe');
+                    lazyLoadElements.forEach(function(element){
+                        if($(element).hasClass('background-image'))
+                        {
+                            var elementSrc = $(element).attr('data-src');
+                            $(element).parent('.background-image-holder').css('background', 'url("' + elementSrc + '")');
+                            $(element).hide();
+                            $(element).parent('.background-image-holder').css('background-position', '50% 0%');
+                        }
+                        else{
+                            element.src = element.dataset.src;
+                        }
+                    });
+                    section.classList.remove('lazy-section');
+                }
+            });
+        }, 0);
+        if(lazyloadSections.length == 0 && !$('.map').hasClass('hid')) { 
+            document.removeEventListener("scroll", lazyload);
+            window.removeEventListener("resize", lazyload);
+            window.removeEventListener("orientationChange", lazyload);
+        }
+    }
+    document.addEventListener("scroll", lazyload);
+    window.addEventListener("resize", lazyload);
+    window.addEventListener("orientationChange", lazyload);
+    lazyload();
 });
