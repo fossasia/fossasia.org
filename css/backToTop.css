@@ -18,6 +18,7 @@ i.scrollToTop {
     background-color: #b82300;
     color: white; 
     cursor: pointer; 
+    border-radius:20px;
     padding: 10px 16px;
 }
   
