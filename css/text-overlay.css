@@ -15,3 +15,28 @@
   margin-right: -43%;
   transform: translate(-50%, -50%)
 }
+.overlays {
+  position:absolute; 
+  bottom: 0; 
+  background: rgb(199, 11, 8);
+ /* Black see-through */
+  color: #f1f1f1; 
+  width: 80%;
+  transition: .5s ease;
+  opacity:0;
+  color: black;
+  font-size: 20px;
+  padding-top:2px;
+  text-align: center;
+  margin-left: 25px;
+  height: 80%;
+  padding-bottom: 10px;
+  color: white;
+  margin-bottom: 115px;
+  border-radius: 10px;
+
+}
+
+.containers:hover .overlays {
+  opacity: 1;
+}
