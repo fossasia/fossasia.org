@@ -87,6 +87,7 @@ img {
   transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
+ possition:front;
 }
 .main-container,
 .footer-container,
@@ -103,6 +104,7 @@ nav {
   left: 0;
   right: 0;
   margin: 0 auto;
+ padding:0;
 }
 .no-loader .loader {
   display: none !important;
@@ -128,6 +130,8 @@ nav {
 }
 .strip-holder {
   top: 50%;
+ left:40%;
+ right:30;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
