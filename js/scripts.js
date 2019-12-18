@@ -7,8 +7,10 @@ $(document).ready(function() {
     $(window).scroll(function() {
         if ($(window).scrollTop() > 1) {
             $('nav').addClass('sticky-nav');
+            $(".btn-back-to-top").fadeIn();
         } else {
             $('nav').removeClass('sticky-nav');
+            $(".btn-back-to-top").fadeOut();
         }
     });
 
@@ -234,8 +236,8 @@ $(document).ready(function() {
         var tooltipPinRef = $(this).children('.speaker-bio-tooltip-pin');
 
         // Calculate offset
-        var currentDivPos = $(this).position();    
-        var parentDivPos = parentRef.position();  
+        var currentDivPos = $(this).position();
+        var parentDivPos = parentRef.position();
         var left = -1 * (currentDivPos.left - parentDivPos.left ) + "px";
 
         tooltipPinRef.css('display','block');
@@ -345,6 +347,9 @@ $(window).load(function() {
         }, 500);
     }, 10);
 
+//    Smooth Scroll
+
+
 
 });
 	//Sendy verify if email is empty
@@ -356,10 +361,11 @@ $(window).load(function() {
 	$('.email-subscribe').submit(function() {
         if ($.trim($("#email").val()) === "") {
             alert('Please enter your email address in the form');
-            return false; 
+            return false;
         }
         else if ( !isValidEmailAddress( $.trim($("#email").val())  ) ) {
             alert("Not a valid email address");
             return false;
-        }   
+        }
+
 });
