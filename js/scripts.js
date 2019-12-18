@@ -7,10 +7,8 @@ $(document).ready(function() {
     $(window).scroll(function() {
         if ($(window).scrollTop() > 1) {
             $('nav').addClass('sticky-nav');
-            $(".btn-back-to-top").fadeIn();
         } else {
             $('nav').removeClass('sticky-nav');
-            $(".btn-back-to-top").fadeOut();
         }
     });
 

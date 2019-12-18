@@ -211,18 +211,3 @@ nav{
   flex-wrap: wrap;
 }
 
-.btn-back-to-top{
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  font-size: 24px;
-  padding: 5px 15px;
-  display: none;
-  color: #fff;
-  background-color: #e12b00;
-}
-.btn-back-to-top:hover,
-.btn-back-to-top:active{
-  color: #fff;
-  background-color: #c82600;
-}
