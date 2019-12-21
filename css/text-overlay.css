@@ -1,6 +1,4 @@
-.container {
-  position: relative;
-}
+
 
 .text-block {
   position: absolute;
@@ -14,4 +12,48 @@
   margin-bottom: -20px;
   margin-right: -43%;
   transform: translate(-50%, -50%)
+}
+
+
+
+/* misc. CSS */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.item img {
+  max-width: 100%;
+}
+/* end of misc. CSS */
+
+.containers {
+  position: relative;
+  width: 100%;
+}
+
+
+
+.overlays{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: gray;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.containers:hover .overlays {
+  height: 67%;
+}
+
+.text {
+  color: white;
+  
 }
