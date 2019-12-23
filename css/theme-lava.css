@@ -24,6 +24,9 @@
 /*!
 // 1. Useful Mixins
 // --------------------------------------------------*/
+html {
+  overflow-x: hidden;
+}
 .vertical-align {
   position: relative;
   top: 50%;
