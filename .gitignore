@@ -1,2 +1,4 @@
 id_rsa
 .DS_Store
+.jekyll_cache
+_site
