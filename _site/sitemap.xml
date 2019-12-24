@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+  <url>
+    <loc>http://fossasia.org/</loc>
+    <lastmod>2017-01-01T02:06:46+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>http://fossasia.org/apply/index.html</loc>
+    <lastmod>2017-01-01T02:06:46+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>http://fossasia.org/500.html</loc>
+    <lastmod>2017-01-01T02:06:46+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>http://fossasia.org/mailthanks/index.html</loc>
+    <lastmod>2017-01-01T02:06:46+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>http://fossasia.org/sitemap/index.html</loc>
+    <lastmod>2017-01-01T02:06:46+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>http://fossasia.org/thankyou/index.html</loc>
+    <lastmod>2017-01-01T02:06:46+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>http://fossasia.org/about/index.html</loc>
+    <lastmod>2017-01-01T02:06:46+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>http://fossasia.org/404.html</loc>
+    <lastmod>2017-01-01T02:06:46+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>http://fossasia.org/donate/index.html</loc>
+    <lastmod>2017-01-01T02:06:46+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>http://fossasia.org/gci-mentor/index.html</loc>
+    <lastmod>2017-01-01T02:06:46+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>http://fossasia.org/speaker-registration/index.html</loc>
+    <lastmod>2017-01-01T02:06:46+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>http://fossasia.org/contacts/index.html</loc>
+    <lastmod>2017-01-01T02:06:46+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>http://fossasia.org/apply-students/index.html</loc>
+    <lastmod>2017-01-01T02:06:46+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>http://fossasia.org/about/index.html</loc>
+    <lastmod>2017-01-01T02:06:46+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>http://fossasia.org/recognition/index.html</loc>
+    <lastmod>2017-01-01T02:06:46+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>http://fossasia.org/contact/index.html</loc>
+    <lastmod>2017-01-01T02:06:46+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>http://fossasia.org/apply-pupils/index.html</loc>
+    <lastmod>2017-01-01T02:06:46+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+</urlset>
