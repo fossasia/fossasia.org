@@ -1091,7 +1091,7 @@ nav .container {
 .section-header {
   position: relative;
   overflow: hidden;
-  height: auto !important;
+  height: 450px !important;
   min-height: 550px !important;
 }
 .section-header i {
