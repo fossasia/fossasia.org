@@ -218,7 +218,7 @@ nav{
   bottom: 20px;
   right: 30px;
   z-index: 99;
-  font-size: 18px;
+  font-size: 30px;
   background-color: #555;
   border: solid 1px white;
   color: white;
@@ -227,6 +227,7 @@ nav{
   opacity: 0.5;
   border-radius: 4px;
   transition: 0.5s;
+  scroll-behavior: smooth;
   -webkit-transition: 0.5s;
 }
 
