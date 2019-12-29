@@ -1310,15 +1310,49 @@ nav .container {
 /*!
 // 10. Speakers & Topics
 // --------------------------------------------------*/
+.title-speakers{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.title-speakers h1{
+  color: #e12b00;
+}
+.border-bottom{
+  width: 50px;
+  height: 3px;
+  background: #e12b00;
+}
+.conatiner-speakers{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.speaker-with-bio {
+    overflow: hidden;
+    margin: 0px 30px 36px 30px;
+}
+.speaker {
+    position: relative;
+    overflow: hidden;
+    padding-top: 10px;
+}
+.speaker-large{
+    width: 270px;
+    margin: 10px 25px 36px 25px;
+}
+.speaker-small{
+    width: 230px;
+    margin: 10px 25px 36px 25px;
+}
+
 .speakers-row {
   padding: 0px 15px;
 }
 .speaker-column {
   padding: 0px;
-}
-.speaker {
-  position: relative;
-  overflow: hidden;
 }
 .speaker,
 .topic {
@@ -1332,13 +1366,24 @@ nav .container {
   height: 100%;
   z-index: 2;
   opacity: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgb(255, 0, 0, 0.5);
   transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
 }
 .speaker .image-holder {
   margin-bottom: 12px;
+
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  border: 8px solid white;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  box-shadow: 0 10px 10px -5px rgb(179, 178, 178);
+  -webkit-box-shadow: 0 10px 10px -5px rgb(179, 178, 178);
+  -moz-box-shadow: 0 10px 10px -5px rgb(179, 178, 178);
 }
 .speaker span {
   display: block;
@@ -1352,46 +1397,53 @@ nav .container {
   transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
-  transform: translate3d(0px, -200px, 0px);
-  -webkit-transform: translate3d(0px, -200px, 0px);
-  -moz-transform: translate3d(0px, -200px, 0px);
+  transform: translate3d(-140px, 0px, 0px);
+  -webkit-transform: translate3d(-140px, 0px, 0px);
+  -moz-transform: translate3d(-140px, 0px, 0px);
 }
 .speaker .social-links a {
   color: #fff;
   font-size: 24px;
   display: inline-block;
   margin-left: 6px;
+
+  filter: blur(12px);
+  -webkit-filter: blur(12px);
+  -moz-filter: blur(12px);
+  transform: rotate(-180deg);
+  transition: 0.6s;
+  text-decoration: none;
 }
 .speaker .social-links a:last-child {
   margin-right: 0px;
 }
+.speaker .social-links a:hover{
+  color: black;
+}
 .speaker .image-holder:hover .hover-state {
   opacity: 1;
 }
-.speaker .image-holder:hover .hover-state .social-links {
-  transform: translate3d(0px, 0px, 0px);
-  -webkit-transform: translate3d(0px, 0px, 0px);
-  -moz-transform: translate3d(0px, 0px, 0px);
+.speaker .image-holder:hover .hover-state .social-links, .speaker .image-holder:hover .social-links a{
+  transform: translate3d(0px, 0px, 0px) ;
+  -webkit-transform: translate3d(0px, 0px, 0px) ;
+  -moz-transform: translate3d(0px, 0px, 0px) ;
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
 }
-.speaker-with-bio {
-  overflow: hidden;
-  margin-bottom: 36px;
+.speaker .image-holder:hover{
+  margin-top: -15px;
 }
 .speaker-with-bio .speaker {
-  width: 50%;
-  float: left;
   margin-bottom: 0px;
   max-width: 300px;
 }
-.speaker-with-bio .speaker-description {
-  width: 50%;
-  float: left;
-  padding-left: 30px;
+.speaker-description{
+  display: flex;
+  justify-content: center;
 }
-.speaker-description span {
-  display: inline-block;
-  margin-bottom: 18px;
-  font-weight: 600;
+.speaker-description div{
+  text-align: center;
 }
 @media all and (max-width: 767px) {
   .speaker-with-bio .speaker {
@@ -1401,7 +1453,6 @@ nav .container {
   }
   .speaker-with-bio .speaker-description {
     width: 100%;
-    padding-left: 0px;
     text-align: center;
   }
 }
