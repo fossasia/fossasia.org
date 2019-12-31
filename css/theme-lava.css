@@ -1341,8 +1341,18 @@ nav .container {
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
 }
-.speaker .image-holder {
+/* .speaker .image-holder {
   margin-bottom: 12px;
+} */
+/* add */
+.speaker .image-holder {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  margin-bottom: 12px;
+}
+.speaker span{ 
+  text-align: center;
 }
 .speaker span {
   display: block;
