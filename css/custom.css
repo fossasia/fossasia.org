@@ -216,3 +216,6 @@ nav{
   padding:10px;
 
 }
+.vertical-align .row{
+  transform: translateY(100%);
+}
