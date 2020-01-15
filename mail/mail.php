@@ -1,5 +1,5 @@
 <?php
- 
+ //this comment is added for merged pull request test
 if(isset($_POST['email'])) {
 	// Require the Swift Mailer library
 	require_once 'lib/swift_required.php';
