@@ -233,16 +233,8 @@ nav{
   opacity: 0.5;
   border-radius: 4px;
   transition: 0.5s;
-  -webkit-transition: 0.5s;
-}
-.my-smooth-container {
   scroll-behavior: smooth;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .my-smooth-container {
-    scroll-behavior: auto;
-  }
+  -webkit-transition: 0.5s;
 }
 
 #myBtn:hover {
