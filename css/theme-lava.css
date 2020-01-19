@@ -1491,6 +1491,7 @@ nav .container {
   }
   .inline-video .btn {
     margin-top: 18px;
+    margin-left: 25%;
   }
 }
 @media all and (min-width: 321px) and (max-width: 767px) and (orientation: landscape) {
@@ -1751,6 +1752,7 @@ nav .container {
   }
   .contained-gallery .btn {
     margin-bottom: 0px;
+    margin-left: 25%;
   }
   .contained-gallery .instagram li:nth-child(n+5),
   .contained-gallery .lightbox-gallery li:nth-child(n+5) {
