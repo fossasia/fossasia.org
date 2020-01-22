@@ -219,3 +219,9 @@ nav{
 .vertical-align .row{
   transform: translateY(100%);
 }
+
+@media only screen and (max-width: 600px) {
+  .vertical-align .row{
+    transform: translateY(50%);
+  }
+}
