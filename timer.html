@@ -1,12 +1,103 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="refresh" content="0; URL='https://www.cs.hmc.edu/~geoff/countdowntimer.html'" />
-<title>Countdown timer redirect</title>
+   <title>Presentation Timer</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <style>
+.center {
+   right: 50%;
+   bottom: 50%;
+   transform: translate(50%,50%);
+   position: absolute;
+   color: white;
+   font-size: 8vw;
+   text-align: center;
+}
+.footer {
+   position: fixed;
+   margin: auto;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   display: table;
+   text-align: center;
+}
+#myProgress {
+   width: 100%;
+   background-color: grey;
+}
+#myBar {
+   width: 1%;
+   height: 30px;
+   background-color: green;
+}
+   </style>
 </head>
-
 <body>
-Auto redirect to <a href='https://www.cs.hmc.edu/~geoff/countdowntimer.html'>user-configurable countdown timer</a>
+   <div class="center" id="timer" contenteditable="true">20 mins left</div>
+   <div style="background-color:grey">
+      <div id="bar" style="width:100%;height:30px;background-color:red;"></div>
+   </div>
+
+<div class="footer">
+   <div class="row text-center">
+   <div class="col-sm-2 btn-group btn-group-toggle" style="height:100%;" data-toggle="buttons">
+      <label class="btn btn-primary" onclick="change(this)">
+         <input type="radio" name="options" id="btn-play" autocomplete="off"> &#9654;
+      </label>
+      <label class="btn btn-primary" onclick="change(this)">
+         <input type="radio" name="options" id="btn-pause" autocomplete="off"> &#9646;&#9646;
+      </label>
+      <label class="btn btn-primary active" onclick="change(this)">
+         <input type="radio" name="options" id="btn-stop" autocomplete="off" checked> &#9724;
+      </label>
+   </div>
+</div>
+
+   <script>
+"use strict";
+let total, left, running = false
+
+function update() {
+   if (!running)
+      return
+
+   left--
+
+   let mins = Math.abs(Math.floor((left+59)/60))
+   let suffix = left < 0 ? "over" : "left"
+   let plural = mins == 1 ? "" : "s"
+
+   document.getElementById("bar").style.width = left/total*100+"%"
+   document.getElementById("timer").textContent = mins+" min"+plural+" "+suffix
+
+   if (left < 60)
+      document.body.style.background = "#7b0101"
+   else if (left < 180)
+      document.body.style.background = "#999a00"
+}
+
+function change(e) {
+   let current = document.getElementsByClassName("active");
+   current[0].className = current[0].className.replace(" active", "");
+   e.className += " active";
+
+   running = document.getElementById("btn-play").checked
+}
+
+function edited() {
+   const text = document.getElementById("timer").textContent
+   total = left = parseInt(text) * 60
+   document.body.style.background = "#017b02"
+}
+
+document.getElementById("timer").addEventListener("input", edited, false)
+edited()
+setInterval(update, 1000)
+   </script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
