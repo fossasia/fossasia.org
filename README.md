@@ -5,7 +5,7 @@
 
 FOSSASIA develops Open Source software and hardware solutions with a global developer community from its base in Asia and organizes Open Technology events around the year. The mission of FOSSASIA is to improve people's lives by sharing open technologies, knowledge and resources to help build a sustainable FOSS ecosystem. 
 
-The organization supports its successful projects as a business incubator and runs coding programs and development contests like [Codeheat](https://codeheat.org) to grow the developer community. 
+The organization supports it's successful projects as a business incubator and runs coding programs and development contests like [Codeheat](https://codeheat.org) to grow the developer community. 
 
 FOSSASIA's annual [OpenTechSummit](https://2019.fossasia.org) in Singapore is the premier Open Technology event in Asia for developers, tech companies, and contributors. FOSSASIA was founded in 2009 by [Mario Behling](https://twitter.com/mariobehling) and [Hong Phuc Dang](https://twitter.com/hpdang).
 
