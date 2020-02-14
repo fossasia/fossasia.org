@@ -7,6 +7,6 @@ FOSSASIA develops Open Source software and hardware solutions with a global deve
 
 The organization supports it's successful projects as a business incubator and runs coding programs and development contests like [Codeheat](https://codeheat.org) to grow the developer community. 
 
-FOSSASIA's annual [OpenTechSummit](https://2019.fossasia.org) in Singapore is the premier Open Technology event in Asia for developers, tech companies, and contributors. FOSSASIA was founded in 2009 by [Mario Behling](https://twitter.com/mariobehling) and [Hong Phuc Dang](https://twitter.com/hpdang).
+FOSSASIA's annual [OpenTechSummit](https://2019.fossasia.org) in Singapore is the premier Open Technology event in Asia for developers, tech companies and contributors. FOSSASIA was founded in 2009 by [Mario Behling](https://twitter.com/mariobehling) and [Hong Phuc Dang](https://twitter.com/hpdang).
 
 Official website: https://fossasia.org
