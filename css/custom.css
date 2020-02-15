@@ -216,3 +216,7 @@ nav{
   padding:10px;
 
 }
+.blank-box-big {
+  display: inline-block;
+  margin: 100px 0;
+}
