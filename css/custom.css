@@ -216,10 +216,3 @@ nav{
   padding:10px;
 
 }
-/* 
-  blank-box-big adds a block of free space to prevent text overlapping
-*/
-.blank-box-big {
-  display: inline-block;
-  margin: 100px 0;
-}
