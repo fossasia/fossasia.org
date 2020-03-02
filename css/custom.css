@@ -175,7 +175,7 @@ nav{
 }
  .has-submenu{
   position: relative;
-}
+} 
 .submenu{
   top: 0px;
   left: 100%;
@@ -183,7 +183,7 @@ nav{
 .has-submenu > a:after{
   display: inline-block;
 
-  font-family: 'Pe-icon-7-stroke';
+  font-family: 'Pe-icon-7-stroke'; 
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -209,58 +209,4 @@ nav{
 .equal-row{
   display: flex;
   flex-wrap: wrap;
-}
-.text-block {
-  background-color: rgba(105, 105, 105, 0.7);
-  color: black;
-  padding:10px;
-}
-/*back to the top*/
-#return-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 1.7%;
-    transition: all .4s ease-in-out 0s;
-    background:  #E12B00;
-    width: 50px;
-    height: 50px;
-    display: block;
-    text-decoration: none;
-    -webkit-border-radius: 35px;
-    -moz-border-radius: 35px;
-    border-radius: 35px;
-    display: none;
-}
-#return-to-top span {
-    color: #fff;
-    margin: 0;
-    position: relative;
-    left: 32%;
-    top: 13px;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-}
-#return-to-top:hover {
-    background:  #E12B00;
-}
-#return-to-top:hover span {
-    color: #fff;
-    top: 5px;
-}
-.glyphicon{
-    position:relative;
-    top:1px;
-    display:inline-block;
-    font-family:'Glyphicons Halflings';
-    font-style:normal;
-    font-weight:400;
-    line-height:1;
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale
-}
-.glyphicon-chevron-up:before{
-    content:"\e113"
 }
