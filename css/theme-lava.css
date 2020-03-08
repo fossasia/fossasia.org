@@ -622,7 +622,7 @@ nav .container {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "\e688";
-  color: #000000;
+  color: #fff;
   font-size: 24px;
   position: absolute;
   top: -6px;
@@ -865,6 +865,12 @@ nav .container {
   .has-dropdown:before {
     color: #333333;
   }
+}
+@media screen and (max-width: 768px)
+{
+    .menu > .has-dropdown:before {
+        color : #000000;
+    }
 }
 /*!
 // 8. Sliders & Dividers & Headers
