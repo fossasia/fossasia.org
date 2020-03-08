@@ -622,6 +622,7 @@ nav .container {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "\e688";
+  color: #000000;
   font-size: 24px;
   position: absolute;
   top: -6px;
