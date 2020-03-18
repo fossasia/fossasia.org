@@ -1088,11 +1088,7 @@ nav .container {
 .section-header {
   position: relative;
   overflow: hidden;
-  height: auto !important;
-  min-height: 550px !important;
-}
-.section-header i {
-  margin: 10px !important;
+  height: 450px;
 }
 .section-header h1 {
   font-size: 32px;
@@ -1342,15 +1338,11 @@ nav .container {
   -moz-transition: all 0.3s ease-out;
 }
 .speaker .image-holder {
-  width: 300px;
-  height: 300px;
-  margin: auto;
   margin-bottom: 12px;
 }
 .speaker span {
   display: block;
   font-size: 16px;
-  text-align: center;
 }
 .speaker-name {
   color: #333333;
@@ -1804,7 +1796,7 @@ nav .container {
 .type {
   font-weight: 600;
   color: #333333;
-  font-size: 61px;
+  font-size: 72px;
 }
 .dollar {
   font-size: 36px;
