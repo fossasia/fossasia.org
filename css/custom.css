@@ -210,3 +210,7 @@ nav{
   display: flex;
   flex-wrap: wrap;
 }
+
+.img-responsive{
+  margin: auto;
+}
