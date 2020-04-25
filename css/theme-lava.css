@@ -1805,6 +1805,7 @@ nav .container {
 }
 .price {
   line-height: 1;
+ font-size: 60px;
 }
 .type {
   display: block;
