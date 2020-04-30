@@ -1,3 +1,9 @@
+@media screen and (max-width: 417px)
+ {
+      #btn-align {
+        text-align: center;
+      }      
+}
 .dark-layer {
   content: "";
   background-color: rgba(0, 0, 0, 0.4);
