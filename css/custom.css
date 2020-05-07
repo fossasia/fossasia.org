@@ -210,3 +210,10 @@ nav{
   display: flex;
   flex-wrap: wrap;
 }
+.social-profiles li{
+  float: left;
+  padding:10px;
+}
+.gap{
+  margin-top: -40px;
+}
