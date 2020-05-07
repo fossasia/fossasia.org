@@ -735,9 +735,10 @@ nav .container {
 .widget .menu .social-link {
   display: none;
 }
-.widget .social-profiles li {
+/* .widget .social-profiles a {
   margin-right: 24px;
-}
+  margin-bottom: 20px;
+} */
 .widget .social-profiles li a {
   color: #fff;
 }
@@ -2368,14 +2369,16 @@ footer.classic .social-profiles {
   display: inline-block;
   overflow: hidden;
 }
-.social-profiles li {
-  float: left;
-  margin-right: 36px;
-}
-.social-profiles li:last-child {
+
+/* .social-profiles li:last-child {
   margin-right: 0px;
-}
+} */
 .social-profiles li a {
   color: #333333;
   font-size: 20px;
+}
+.social-profiles li {
+  float: left;
+  margin-right: 10px;
+  padding: 10px;
 }
