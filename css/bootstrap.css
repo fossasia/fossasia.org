@@ -3042,6 +3042,7 @@ input[type="button"].btn-block {
   color: #262626;
   background-color: #f5f5f5;
 }
+
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {
@@ -3117,6 +3118,7 @@ input[type="button"].btn-block {
     left: 0;
     right: auto;
   }
+
 }
 .btn-group,
 .btn-group-vertical {
@@ -5771,4 +5773,8 @@ button.close {
   .hidden-print {
     display: none !important;
   }
+}
+
+.inner-link{
+  margin-top: 1px;
 }

@@ -38,7 +38,23 @@
      ga('create', 'UA-17146009-5', 'auto');
      ga('send', 'pageview');
     </script>
-    </head>
+	</head>
+	<style>
+	@media screen and (max-width:480px) {
+		.nav-dropdown{
+			overflow-y: scroll;
+			overflow-x: hidden;
+			max-height:max-content;
+			min-height: max-content;
+		}
+		.has-dropdown{
+			margin-top: -10px;
+		}
+		.has-submenu{
+			max-height:25px;
+		}
+}
+	</style>
 
     <body class="no-loader">
 
@@ -64,14 +80,14 @@
 							<div class="col-md-10 text-right">
 								<ul class="menu">
 									<li class="has-dropdown"><a target="_self" class="inner-link" href="#projects">Projects</a>
-               					         <ul class="nav-dropdown projects" style="min-height: 505px"> <!--whenever you add/remove an option, change the style="min-height:500px" by +- 25px-->
+               					         <ul class="nav-dropdown projects" style="max-height: 100vh"> <!--whenever you add/remove an option, change the style="min-height:500px" by +- 25px-->
 											<li><a target="_self" href="https://github.com/fossasia">Contribute on Github</a></li>
 											<li><a target="_self" href="https://susi.ai">SUSI.AI</a></li>
 											<li><a target="_self" href="https://pslab.io/">Pocket Science Lab</a></li>
 											<li><a target="_self" href="https://eventyay.com">eventyay</a></li>
 											<li><a target="_self" href="https://github.com/fossasia/badge-magic-android">LED Badge Magic</a></li>
 											<li><a target="_self" href="https://phimp.me">Phimp.me Image App</a></li>
-								                        <li><a target="_self" href="https://yaydoc.org">Yaydoc</a></li>
+								             <li><a target="_self" href="https://yaydoc.org">Yaydoc</a></li>
 											<li><a target="_self" href="https://meilix.org">Meilix Linux</a></li>
 											<li><a target="_self" href="https://badgeyay.com/">Badgeyay</a></li>
 											<li><a target="_self" href="https://loklak.org">loklak Social Search</a></li>
@@ -84,7 +100,7 @@
 									     </ul>
 									</li>
 									<li class="has-dropdown"><a target="_self" href="https://events.fossasia.org">Events</a>
-										<ul class="nav-dropdown events" style="min-height: 380px"> <!--whenever you add/remove an option, change the style="min-height:425px" by +- 25px-->
+										<ul class="nav-dropdown events" style="max-height: 100vh"> <!--whenever you add/remove an option, change the style="min-height:425px" by +- 25px-->
 											<li><a target="_self" href="https://eventyay.com">Eventyay Platform</a></li>
 											<li><a target="_self" href="https://events.fossasia.org/#sponsorship">Event Sponsorships</a></li>
 											<li><a target="_self" href="https://summit.fossasia.org">FOSSASIA Summit Singapore</a></li>
@@ -95,7 +111,7 @@
 											<li><a target="_self" href="https://vn.opentechsummit.asia">OpenTechSummit Vietnam</a></li>
 											<li><a target="_self" href="https://jugaadfest.com">Jugaad Fest India</a></li>
 											<li class="has-dropdown has-submenu"><a target="_self" href="https://events.fossasia.org">... Past Events</a>
-										        <ul class="nav-dropdown submenu" style="min-height: 380px;">
+										        <ul class="nav-dropdown submenu">
 											    <li><a target="_self" href="https://2019.fossasia.org">FOSSASIA Summit 2019</a></li>
 											    <li><a target="_self" href="https://2018.fossasia.org">FOSSASIA Summit 2018</a></li>
 												<li><a target="_self" href="https://2017.fossasia.org">FOSSASIA Summit 2017</a></li>
@@ -113,8 +129,8 @@
 											<li><a target="_self" href="https://events.fossasia.org/">... More Events</a></li>
 										</ul>
 									</li>
-									<li class="has-dropdown"><a class="inner-link" href="#labs-programs">Programs</a>
-										<ul class="nav-dropdown" style="min-height: 330px"> <!--whenever you add/remove an option, change the style="min-height:425px" by +- 25px-->
+									<li class="has-dropdown" ><a class="inner-link" href="#labs-programs">Programs</a>
+										<ul class="nav-dropdown" style="max-height: 100vh"> <!--whenever you add/remove an option, change the style="min-height:425px" by +- 25px-->
 											<li><a target="_self" href="https://academy.fossasia.org">Academy</a></li>
 											<li><a target="_self" class="inner-link" href="#programs">Programs & Opportunities</a></li>
 											<li><a target="_self" href="https://jobs.fossasia.org">Job Opportunities</a></li>
@@ -124,29 +140,35 @@
 											<li><a target="_self" href="./apply-pupils">High School Student Program</a></li>
 											<li><a target="_self" href="./adp">Advanced Developer Program</a></li>
 											<li class="has-dropdown has-submenu"><a target="_self" class="inner-link" href="#programs">Become A Mentor</a>
-										        <ul class="nav-dropdown submenu" style="min-height: 90px;">
+										        <ul class="nav-dropdown submenu">
 												<li><a target="_self" href="./mentor">Become University Student Mentor</a></li>
 												<li><a target="_self" href="./gci-mentor">Become High School Student Mentor</a></li>
 											    </ul>
 										    </li>
 										</ul>
-										<li><a target="_self" href="https://fossasia.com">Shop</a></li>
-										<li><a target="_self" href="https://blog.fossasia.org">Blog</a></li>
-										    </li>
-										<li class="has-dropdown"><a target="_self" class="inner-link" href="#about">About</a>
-										<ul class="nav-dropdown" style="min-height: 285px"> <!--whenever you add/remove an option, change the style="min-height:425px" by +- 25px-->
-											<li><a target="_self" href="https://community.fossasia.org">Membership</a></li>
-											<li><a target="_self" href="https://jobs.fossasia.org">Jobs</a></li>
-											<li><a target="_self" class="inner-link" href="#activities">Activities</a></li>
-											<li><a target="_self" class="inner-link" href="#mission">Background & Mission</a></li>
-											<li><a target="_self" href="https://blog.fossasia.org/open-source-developer-guide-and-best-practices-at-fossasia/">Best Practices</a></li>
-											<li><a target="_self" href="./licenses">Licenses</a></li>
-											<li><a target="_self" href="./team">Team</a></li>
-											<li><a target="_self" href="./coc">Code of Conduct</a></li>
-											<li><a class="inner-link" href="#subscribe" target="_self">Subscribe</a></li>
+											</li>
+											<li class="has-dropdown" ><a target="_self" class="inner-link" href="#about">About</a>
+												<ul class="nav-dropdown" style="max-height: 100vh"> <!--whenever you add/remove an option, change the style="min-height:425px" by +- 25px-->
+													<li><a target="_self"  class="inner-link" href="https://community.fossasia.org">Membership</a></li>
+													<li><a target="_self" class="inner-link" href="https://jobs.fossasia.org">Jobs</a></li>
+													<li><a target="_self" class="inner-link" class="inner-link" href="#activities">Activities</a></li>
+													<li><a target="_self" class="inner-link" href="#mission">Background & Mission</a></li>
+													<li><a target="_self" class="inner-link" href="https://blog.fossasia.org/open-source-developer-guide-and-best-practices-at-fossasia/">Best Practices</a></li>
+													<li><a target="_self"  class="inner-link" href="./licenses">Licenses</a></li>
+													<li><a target="_self" class="inner-link" href="./team">Team</a></li>
+													<li><a target="_self" class="inner-link" href="./coc">Code of Conduct</a></li>
+													<li><a target="_self" class="inner-link" href="#subscribe" >Subscribe</a></li>
+												</ul>
+												</li>
+
+												<li class="has-dropdown"><a target="_self" class="inner-link" href="#">Other</a>
+												<ul class="nav-dropdown" style="max-height: 100vh; min-height: max-content;">
+										<li class="has-dropdown"><a target="_self" href="https://fossasia.com">Shop</a></li>
+										<li class="has-dropdown"><a target="_self" href="https://blog.fossasia.org">Blog</a></li>
+										<li class="has-dropdown"><a target="_self" href="./donate/">Donate</a></li>
+										<li class="has-dropdown"><a target="_self" href="./contact/">Contact</a></li> 
 										</ul>
-										<li class="hidden-sm hidden-xs"><a target="_self" href="./donate/">Donate</a></li>
-							<!--		<li class="hidden-sm hidden-xs"><a target="_self" href="./contact/">Contact</a></li>  -->
+												</li>
 									<li class="social-link hidden-md hidden-sm hidden-xs"><a target="_self" href="https://twitter.com/fossasia"><i class="icon social_twitter"></i></a></li>
 									<li class="social-link hidden-md hidden-sm hidden-xs"><a target="_self" href="https://facebook.com/fossasia"><i class="icon social_facebook"></i></a></li>
 									<li class="social-link hidden-md hidden-sm hidden-xs"><a target="_self" href="https://github.com/fossasia"><i class="fa fa-github fa-lg"></i></a></li>
