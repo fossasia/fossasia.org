@@ -210,3 +210,6 @@ nav{
   display: flex;
   flex-wrap: wrap;
 }
+.copy-text-bottom{
+  margin-bottom:48px;
+}
