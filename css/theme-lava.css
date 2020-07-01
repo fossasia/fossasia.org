@@ -765,7 +765,7 @@ nav .container {
 }
 .copy-text-bottom {
   left: 24px;
-  bottom:5px;
+  bottom:5%;
   position: absolute;
 }
 .text-panel {
