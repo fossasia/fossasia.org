@@ -135,13 +135,47 @@
 }
 
 
-@media screen and (min-width: 375px) and (max-width: 812px)
+@media screen and (min-width: 375px) and (max-width: 812px)       
 {
   .schedule-with-text .btn,
   .contained-gallery .btn {
     margin-bottom: 12px;
   }
 }
+@media screen and (min-width: 320px) and (max-width: 568px)       
+{
+  .schedule-with-text .btn,
+  .contained-gallery .btn {
+    margin-bottom: 12px;
+  }
+}
+
+
+
+@media screen and (min-width: 360px) and (max-width: 640px)
+{
+  .schedule-with-text .btn,
+  .contained-gallery .btn {
+    margin-bottom: 12px;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 667px)
+{
+  .schedule-with-text .btn,
+  .contained-gallery .btn {
+    margin-bottom: 12px;
+  }
+}
+
+@media screen and (min-width: 414px) and (max-width: 736px)
+{
+  .schedule-with-text .btn,
+  .contained-gallery .btn {
+    margin-bottom: 12px;
+  }
+}
+
 
 
 
