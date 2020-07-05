@@ -1742,7 +1742,7 @@ nav .container {
     margin-bottom: 32px;
   }
   .contained-gallery .btn {
-    margin-bottom: 0px;
+    margin-bottom: 30px;
   }
   .contained-gallery .instagram li:nth-child(n+5),
   .contained-gallery .lightbox-gallery li:nth-child(n+5) {
@@ -2286,7 +2286,7 @@ form .field-error {
   font-size: 14px;
 }
 .footer .menu li a {
-  diplay: inline-block;
+  display: inline-block;
   position: relative;
   border: none;
 }
