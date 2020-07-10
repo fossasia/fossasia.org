@@ -168,6 +168,7 @@
   }
 }
 
+
 @media screen and (min-width: 414px) and (max-width: 736px)
 {
   .schedule-with-text .btn,
@@ -175,6 +176,40 @@
     margin-bottom: 12px;
   }
 }
+
+@media screen and (min-width: 320px) and (max-width: 568px)
+{
+   
+  h1.text-white{
+     margin-top: 60px;
+     margin-bottom: 8px;
+   
+    }
+
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 568px)
+{
+   
+  p.lead.text-white{
+     margin-bottom: 45px;
+   
+    }
+
+  }
+  @media screen and (min-width: 320px) and (max-width: 568px)
+  {
+     
+    a.inner-link{
+       margin-bottom: 8px;
+       
+     
+      }
+  
+    }
+
+
+
 
 
 
