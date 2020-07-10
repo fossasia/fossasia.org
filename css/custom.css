@@ -103,7 +103,7 @@
 .social_5:hover{
   color:  #c13584;
 }
-.social_6:hover{
+.social_6:hover{  
   color: #211F1F;
 }
 .social_7:hover{
@@ -280,22 +280,4 @@ nav{
 .equal-row{
   display: flex;
   flex-wrap: wrap;
-}
-.back-to-top-button{
-    position: relative;
-    float: right;
-    right: 20px;
-    top: -20px;
-    z-index: 99;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    background-color:grey;
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 50%;
-}
-.back-to-top-button:hover{
-  background-color: #555;
 }
