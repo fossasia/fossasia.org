@@ -88,8 +88,32 @@
 .social-profiles a i{
   transition: all .5s;
 }
-.social-profiles a:hover i{
-  color: grey;
+.social_1:hover{
+  color: #00acee ;
+}
+.social_2:hover{
+  color: #3b5998  ;
+}
+.social_3:hover{
+  color:#FF0000;
+}
+.social_4:hover{
+  color: #ff0084  ;
+}
+.social_5:hover{
+  color:  #c13584;
+}
+.social_6:hover{  
+  color: #211F1F;
+}
+.social_7:hover{
+  color: #df2029 ;
+}
+.social_8:hover{
+  color: #4376A6;
+}
+.social_9:hover{
+  color: #0077b5 ;
 }
 .sticky-nav .menu li a:hover {
   border-color: #C3BFBF;
