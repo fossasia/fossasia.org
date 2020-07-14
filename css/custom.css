@@ -257,3 +257,21 @@ nav{
   display: flex;
   flex-wrap: wrap;
 }
+
+.scroll-top{
+  position: relative;
+  float: right;
+  right: 20px;
+  top: -40px;
+  font-size: 10px;
+  border: none;
+  z-index: 99;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  color: white;
+  padding: 10px;
+}
+.scroll-top:hover{
+  background-color: rgba(0, 0, 0, 0.8);
+}
