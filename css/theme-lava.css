@@ -244,7 +244,7 @@ nav {
 // 5. Typography
 // --------------------------------------------------*/
 .text-white {
-  color:black;
+  color:#fff;
 }
 body {
   font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
