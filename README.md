@@ -3,6 +3,8 @@
 [![Build Status](https://travis-ci.org/fossasia/fossasia.org.svg?branch=gh-pages)](https://travis-ci.org/fossasia/fossasia.org) [![Join the chat at https://gitter.im/fossasia/fossasia](https://badges.gitter.im/fossasia/fossasia.svg)](https://gitter.im/fossasia/fossasia?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Mailing List](https://img.shields.io/badge/Mailing%20List-FOSSASIA-blue.svg)](mailto:fossasia@googlegroups.com)
 
+<img src="https://github.com/khushi1234945/fossasia.org/blob/gh-pages/img/OpenTechSummit-LinuxCommunity.jpg">
+
 FOSSASIA develops Open Source software and hardware solutions with a global developer community from its base in Asia and organizes Open Technology events around the year. The mission of FOSSASIA is to improve people's lives by sharing open technologies, knowledge and resources to help build a sustainable FOSS ecosystem. 
 
 The organization supports its successful projects as a business incubator and runs coding programs and development contests like [Codeheat](https://codeheat.org) to grow the developer community. 
