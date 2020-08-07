@@ -521,6 +521,7 @@ nav .container {
   font-weight: 600;
   position: relative;
   top: 4px;
+  padding-bottom: 10px;
 }
 .menu li:last-child {
   margin-right: 0px;
@@ -765,7 +766,7 @@ nav .container {
 }
 .copy-text-bottom {
   left: 24px;
-  bottom:5px;
+  bottom:25%;
   position: absolute;
 }
 .text-panel {
@@ -1546,6 +1547,7 @@ nav .container {
   margin-top: 24px;
   margin-right: 12px;
 }
+ 
 .schedule-with-text .schedule-overview li {
   padding-right: 48px;
 }
@@ -2286,7 +2288,7 @@ form .field-error {
   font-size: 14px;
 }
 .footer .menu li a {
-  diplay: inline-block;
+display: inline-block;
   position: relative;
   border: none;
 }
@@ -2371,6 +2373,7 @@ footer.classic .social-profiles {
 .social-profiles li {
   float: left;
   margin-right: 36px;
+  margin-top: 5%;
 }
 .social-profiles li:last-child {
   margin-right: 0px;
