@@ -258,6 +258,6 @@ nav{
   flex-wrap: wrap;
 }
 .app-name{
-  color: #B82300;
+  color: #080808;
   border-bottom: 1px rgb(88, 84, 84) solid;
-}
+  text-transform: uppercase;
