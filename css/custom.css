@@ -208,13 +208,7 @@
   
     }
 
-
-
-
-
-
-
-
+    
 /*css classes for hiding and showing Donation and regular supporter parts in donate.html*/
 .appear{
   display: block;
@@ -266,7 +260,7 @@ nav{
   display: inline-block;
 
   font-family: 'Pe-icon-7-stroke'; 
-  speak: none;
+  speak-as: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
