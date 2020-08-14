@@ -31,6 +31,48 @@
   text-decoration: none;
   border: none;
 }
+.sponsor{
+  position: relative;
+    display: inline-block;
+    margin: 0;
+    max-width: 100%;
+    color:#ff5722
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+}
+figcaption {
+    display: block;
+    background-color: #ff5722;
+    font-size: large;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    opacity:0;
+}
+figcaption a{
+  color:white;
+}
+figcaption a:hover{
+  color:white;
+}
+.sponsor:hover img
+{
+    opacity: 0;
+}
+
+.sponsor:hover figcaption {
+    opacity: 1;
+}
 
 .tweets-feed {
   color: #FFFFFF;
@@ -135,14 +177,14 @@
 }
 
 
-@media screen and (min-width: 375px) and (max-width: 812px)       
+@media screen and (min-width: 375px) and (max-width: 812px)
 {
   .schedule-with-text .btn,
   .contained-gallery .btn {
     margin-bottom: 12px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 568px)       
+@media screen and (min-width: 320px) and (max-width: 568px)
 {
   .schedule-with-text .btn,
   .contained-gallery .btn {
@@ -222,7 +264,7 @@ nav{
 }
  .has-submenu{
   position: relative;
-} 
+}
 .submenu{
   top: 0px;
   left: 100%;
@@ -230,7 +272,7 @@ nav{
 .has-submenu > a:after{
   display: inline-block;
 
-  font-family: 'Pe-icon-7-stroke'; 
+  font-family: 'Pe-icon-7-stroke';
   speak: none;
   font-style: normal;
   font-weight: normal;
