@@ -542,21 +542,32 @@ nav .container {
   border-bottom: 2px solid #fff;
 }
 .nav-dropdown {
+  display: none;
+  min-height: 314px;
   position: absolute;
   z-index: 1;
   opacity: 0;
   background: rgba(255, 255, 255, 0.9);
-  min-width: 200px;
+  min-width: 240px;
   overflow: visible;
   margin-top: -2px;
+  padding-bottom: 20px;
   -webkit-transition: all 0.3s;
+  grid-template-rows: repeat(auto-fit, minmax(40px,1fr)); /*enables multi-column view of menu items for allowing full visibility on lower resolution displays*/
+  grid-auto-flow: column;
+}
+
+@media only screen and (max-width: 560px){ /*enables vertical scroll for menu options on mobile devices*/
+  .nav-dropdown{
+    overflow-y:auto;
+  }
 }
 .projects{
-   min-height:525px;
+  min-height: fit-content; /*resizes menu to fit all content. This eliminates the need to manually increase the menu size everytime a new element is added */
 }
 
 .events{
-   min-height: 450px;
+  min-height:fit-content;
 }
 
 .nav-dropdown li:first-child {
@@ -586,15 +597,8 @@ nav .container {
 }
 
 
-
-.nav-dropdown{
-  display: none;
-  min-height:314px;
-
-}
-
 .has-dropdown:hover > ul{
-  display: block;
+  display: grid;  /*display type of dropdown set to grid to enable multi-column view*/
 }
 
 
@@ -607,6 +611,7 @@ nav .container {
 }
 .has-dropdown:hover .nav-dropdown li a {
   padding-left: 24px;
+  padding-right: 24px;
 }
 .has-dropdown a {
   padding-left: 18px;

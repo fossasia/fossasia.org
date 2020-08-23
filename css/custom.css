@@ -224,7 +224,6 @@ nav{
   position: relative;
 } 
 .submenu{
-  top: 0px;
   left: 100%;
 }
 .has-submenu > a:after{

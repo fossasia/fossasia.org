@@ -252,8 +252,14 @@ $(document).ready(function() {
 
     })
 
-
-
+    $(".has-submenu").hover(function(){
+        var top = $(this).offset().top - $(window).scrollTop();;        
+        if(top<screen.height/4) {$(".submenu").css("top",'0%');}
+        else {$(".submenu").css("bottom","0%");}
+    },
+    function(){
+        $(".submenu").css({'top':'', 'bottom':''});
+    });
 });
 
 $(window).load(function() {
