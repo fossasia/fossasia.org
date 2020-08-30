@@ -176,8 +176,12 @@
   }
 }
 
-
-
+@media screen and (min-width: 280px) and (max-width: 653px)
+{
+  .Para{
+    margin-bottom: 20px;
+  }
+}
 
 
 /*css classes for hiding and showing Donation and regular supporter parts in donate.html*/
