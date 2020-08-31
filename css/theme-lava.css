@@ -765,7 +765,7 @@ nav .container {
 }
 .copy-text-bottom {
   left: 24px;
-  bottom:40px;
+  bottom:5px;
   position: absolute;
 }
 .text-panel {
@@ -1546,7 +1546,6 @@ nav .container {
   margin-top: 24px;
   margin-right: 12px;
 }
- 
 .schedule-with-text .schedule-overview li {
   padding-right: 48px;
 }
@@ -2287,7 +2286,7 @@ form .field-error {
   font-size: 14px;
 }
 .footer .menu li a {
-display: inline-block;
+  diplay: inline-block;
   position: relative;
   border: none;
 }
