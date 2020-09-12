@@ -153,7 +153,6 @@ figcaption a:hover{
   #DevPrograms{
     height: 90vh;
   }
-
 }
 @media screen and (min-width: 290px) and (max-width: 350px)
 {
@@ -175,53 +174,6 @@ figcaption a:hover{
     height: 180vh;
   }
 }
-
-
-@media screen and (min-width: 375px) and (max-width: 812px)
-{
-  .schedule-with-text .btn,
-  .contained-gallery .btn {
-    margin-bottom: 12px;
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 568px)
-{
-  .schedule-with-text .btn,
-  .contained-gallery .btn {
-    margin-bottom: 12px;
-  }
-}
-
-
-
-@media screen and (min-width: 360px) and (max-width: 640px)
-{
-  .schedule-with-text .btn,
-  .contained-gallery .btn {
-    margin-bottom: 12px;
-  }
-}
-
-@media screen and (min-width: 375px) and (max-width: 667px)
-{
-  .schedule-with-text .btn,
-  .contained-gallery .btn {
-    margin-bottom: 12px;
-  }
-}
-
-@media screen and (min-width: 414px) and (max-width: 736px)
-{
-  .schedule-with-text .btn,
-  .contained-gallery .btn {
-    margin-bottom: 12px;
-  }
-}
-
-
-
-
-
 /*css classes for hiding and showing Donation and regular supporter parts in donate.html*/
 .appear{
   display: block;
