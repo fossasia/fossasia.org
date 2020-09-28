@@ -246,20 +246,6 @@ nav {
 .text-white {
   color: #fff;
 }
-
-.text-white-heading{
-  padding-top: 3%;
-}
-
-@media only screen and (max-width:380px){
-  .lab-section{
-    height: 600px!important;
-  }
-  .text-white-heading{
-    padding-top: 2%!important;
-  }
-}
-
 body {
   font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-smoothing: antialiased;
@@ -1102,6 +1088,7 @@ nav .container {
 .section-header {
   position: relative;
   overflow: hidden;
+  height: 450px;
 }
 .section-header h1 {
   font-size: 32px;
