@@ -9,4 +9,6 @@ The organization supports its successful projects as a business incubator and ru
 
 FOSSASIA's annual [OpenTechSummit](https://2019.fossasia.org) in Singapore is the premier Open Technology event in Asia for developers, tech companies, and contributors. FOSSASIA was founded in 2009 by [Mario Behling](https://twitter.com/mariobehling) and [Hong Phuc Dang](https://twitter.com/hpdang).
 
+A platfrom for learning and growing.
+
 Official website: https://fossasia.org
