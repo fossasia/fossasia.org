@@ -175,7 +175,7 @@ nav{
 }
  .has-submenu{
   position: relative;
-} 
+}
 .submenu{
   top: 0px;
   left: 100%;
@@ -183,7 +183,7 @@ nav{
 .has-submenu > a:after{
   display: inline-block;
 
-  font-family: 'Pe-icon-7-stroke'; 
+  font-family: 'Pe-icon-7-stroke';
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -209,4 +209,9 @@ nav{
 .equal-row{
   display: flex;
   flex-wrap: wrap;
+}
+
+.responsive{
+  width: 100%;
+  height: auto;
 }
