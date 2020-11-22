@@ -862,7 +862,7 @@ nav .container {
     position: relative;
     display: none;
     min-height: 600px;
- }
+ } 
   .has-dropdown:hover .nav-dropdown {
     display: block;
   }
