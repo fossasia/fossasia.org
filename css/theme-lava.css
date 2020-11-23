@@ -854,7 +854,7 @@ nav .container {
     top: 17px;
     right: 24px;
     color: #333333 !important;
- }
+  }
   .open-menu {
     max-height: 800px !important;
   }
@@ -862,7 +862,7 @@ nav .container {
     position: relative;
     display: none;
     min-height: 600px;
- } 
+ }
   .has-dropdown:hover .nav-dropdown {
     display: block;
   }
