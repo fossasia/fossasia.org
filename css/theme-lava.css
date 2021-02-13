@@ -842,7 +842,11 @@ nav .container {
     float: left !important;
   }
   .sidebar-menu-toggle {
-    display: none;
+    display: block;
+    position: fixed;
+    top: 17px;
+    right: 24px;
+    color: #222222 !important;
   }
   .mobile-menu-toggle {
     display: block;
