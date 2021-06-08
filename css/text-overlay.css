@@ -3,10 +3,7 @@
 }
 
 .text-block {
-  position: absolute;
-  bottom: 80px;
-  right: 80px;
-  left: 50%;
+  align: left;
   background-color: rgba(105, 105, 105, 0.7);
   color: black;
   padding-top: 10px;
