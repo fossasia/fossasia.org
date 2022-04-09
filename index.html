@@ -192,7 +192,7 @@
 
 						<div class="copy-text-box">
 							<div class="copy-text-bottom">
-								<span>© Copyright 2009-2019 Creative Commons By License, FOSSASIA</span>
+								<span>© Copyright 2009- <span id='currentDate'>2019</span> Creative Commons By License, FOSSASIA</span>
 							</div>
 						</div>
 					</div>
@@ -1651,6 +1651,12 @@
  			</a>
 			</footer>
 		</div>
+
+	<!-- Getting Current Date to display  -->
+	    <script type="text/javascript">
+		document.querySelector('#currentDate').innerHTML = new Date().getFullYear();     
+	    </script>
+
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
 		<script src="js/feednami.js"></script>
         <script src="js/bootstrap.min.js"></script>
