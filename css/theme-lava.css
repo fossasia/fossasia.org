@@ -246,6 +246,9 @@ nav {
 .text-white {
   color: #fff;
 }
+.text-block h4{
+  color: #000;
+}
 body {
   font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-smoothing: antialiased;
