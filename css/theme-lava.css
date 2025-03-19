@@ -246,7 +246,7 @@ nav {
 .text-white {
   color: #fff;
 }
-#android h4{
+#android .text-block h4{
   color: #000;
 }
 body {
