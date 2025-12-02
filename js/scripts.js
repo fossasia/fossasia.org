@@ -341,7 +341,7 @@ $(window).load(function() {
         setTimeout(function() {
             $('.loader').remove();
             $('.main-container').addClass('show-content');
-            $('nav').addClass('show-content');
+            // $('nav').addClass('show-content'); //This breaks the scroll logic
         }, 500);
     }, 10);
 
@@ -379,3 +379,19 @@ $('.no-loader').bind('scroll wheel mousemove touchmove tap swipeleft swipeup swi
     if (timer) clearTimeout(timer);
     timer = setTimeout(function(){ circle.fadeOut('slow') }, 4000);
 }); 
+
+
+
+// Force header to start in "not scrolled" state
+document.addEventListener("DOMContentLoaded", function () {
+    const nav = document.querySelector(".overlay-nav");
+    nav.classList.remove("show-content"); // remove black mode at start
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 50) {
+            nav.classList.add("show-content"); // enable black on scroll
+        } else {
+            nav.classList.remove("show-content"); // white at top
+        }
+    });
+});

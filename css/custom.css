@@ -210,3 +210,35 @@ nav{
   display: flex;
   flex-wrap: wrap;
 }
+
+/* Base icon → white on top */
+.social-icon {
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    filter: invert(1);
+    transition: filter .2s ease;
+}
+
+/* FORCE WHITE ICON BEFORE SCROLL — OVERRIDE ALL THEMES */
+.nav-container .overlay-nav:not(.show-content) .social-icon {
+    filter: invert(1) !important; /* white */
+}
+
+/* WHEN SCROLLED — FORCE BLACK ICON */
+.nav-container .overlay-nav.show-content .social-icon {
+    filter: invert(0) !important; /* black */
+}
+
+/* Sidebar always white */
+.sidebar-menu .social-icon {
+    filter: invert(1) !important;
+}
+
+/* Footer always black */
+.footer-container .social-icon,
+footer .social-icon,
+.copy-text-box .social-icon {
+    filter: invert(0) !important;
+}
+
