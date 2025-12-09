@@ -39,75 +39,7 @@
      ga('send', 'pageview');
     </script>
     </head>
-
-	<style>
-			/* ---------- Android app cards - final tidy styles ---------- */
-
-/* section padding to match rest of site */
-#android { padding: 48px 0; background: #f6f6f6; }
-
-/* center container uses Bootstrap container class in HTML */
-
-/* grid spacing */
-.android-apps-grid { margin-top: 18px; }
-
-/* card */
-.app-card {
-  background: #fff;
-  border-radius: 10px;
-  padding: 14px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-  transition: transform .18s ease, box-shadow .18s ease;
-  margin: 0 auto 28px;
-  box-sizing: border-box;
-  max-width: 360px;           /* keeps cards compact and consistent */
-}
-
-/* hover */
-.app-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 14px 30px rgba(0,0,0,0.08);
-}
-
-/* header */
-.app-card-header { display:flex; align-items:center; gap:10px; margin-bottom:12px; }
-.app-icon { width:2.4rem; height:2.4rem; border-radius:8px; object-fit:cover; flex:0 0 auto; }
-.app-title { font-size:1.05rem; margin:0; font-weight:600; color:#222; }
-
-/* screenshot (responsive, no fixed height) */
-.app-screenshot {
-  display:block;
-  width:100%;
-  height:auto;          /* important: scales with zoom */
-  max-height:420px;     /* prevents extremely tall images from dominating (adjust if needed) */
-  object-fit:cover;     /* crops only if too tall; keeps tidy */
-  border-radius:8px;
-  margin-bottom:12px;
-  border:1px solid rgba(0,0,0,0.04);
-  box-shadow: 0 2px 6px rgba(0,0,0,0.03);
-}
-
-/* description and badges */
-.app-desc { font-size:.92rem; color:#555; min-height:42px; margin-bottom:12px; line-height:1.45; }
-.app-buttons { display:flex; align-items:center; gap:10px; }
-.store-badge { width:120px; height:auto; display:inline-block; }
-.github-badge { height:28px; width:auto; }
-
-/* responsiveness: 3 cols desktop, 2 cols tablet, 1 col mobile (Bootstrap handles columns) */
-@media (max-width: 991px) {
-  .app-card { max-width: 320px; }
-  .app-screenshot { max-height:380px; }
-}
-@media (max-width: 575px) {
-  .app-card { max-width: 100%; padding:12px; }
-  .app-screenshot { max-height: 360px; }
-}
-
-/* safety: prevent accidental horizontal overflow */
-#android, .android-apps-grid { overflow-x: hidden; }
-
-	</style>
-
+	
     <body class="no-loader">
 
     	<div class="loader">
@@ -585,116 +517,6 @@
 			</div>
 			</section>
 
-			<!-- <section id="android" class="sponsors">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-12 text-center">
-							<h1>Android Apps of FOSSASIA</h1>
-						</div>
-					</div>
-					<div class="row">
-
-							<div class="col-md-4 col-sm-6 col-xs-12 sponsor-column"  >
-								<div class=" text-center" style="margin-bottom: 30px">
-									<a href="https://play.google.com/store/apps/details?id=ai.susi">
-										<img alt="SUSI.AI"  class="img-responsive" src="img/SUSI.AI-Android.jpg" height="500">
-                    <div class="text-block">
-    										<h4 class="text-white"><strong>SUSI.AI Android</strong></h4>
- 										</div>
-									</a>
-                  <div style="display: flex;flex-direction: row;justify-content: center; align-items: center;">
-										<a href='https://play.google.com/store/apps/details?id=ai.susi'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' width="125"/></a>
-										<a href='https://f-droid.org/en/packages/ai.susi/'><img alt='Get it on F-Droid' src='https://fdroid.gitlab.io/artwork/badge/get-it-on.png' width="125"/></a>
-                    					<a href='https://github.com/fossasia/susi_android'><img alt="GitHub" src="img/GitHub.png" height="35"></a>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-md-4 col-sm-6 col-xs-12 sponsor-column" >
-								<div class=" text-center" style="margin-bottom: 30px">
-									<a href="https://play.google.com/store/apps/details?id=io.pslab">
-										<img alt="Pocket Science Lab" src="img/PSLab_Android.jpg" class="img-responsive" height="500">
-                    <div class="text-block">
-    										<h4 class="text-white"><strong>PSLab Android</strong></h4>
- 										</div>
-									</a>
-                  <div style="display: flex;flex-direction: row;justify-content: center; align-items: center;">
-										<a href='https://play.google.com/store/apps/details?id=io.pslab'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' width="125"/></a>
-										<a href='https://f-droid.org/app/io.pslab'><img alt='Get it on F-Droid' src='https://fdroid.gitlab.io/artwork/badge/get-it-on.png' width="125"/></a>
-                    					<a href='https://github.com/fossasia/pslab-android'><img alt="GitHub" src="img/GitHub.png" height="35"></a>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-md-4 col-sm-6 col-xs-12 sponsor-column" >
-								<div class=" text-center" style="margin-bottom: 30px">
-									<a href="https://play.google.com/store/apps/details?id=org.fossasia.phimpme">
-										<img alt="Phimp.me" src="img/Phimpme_Android.jpg"class="img-responsive">
-                    <div class="text-block">
-    										<h4 class="text-white"><strong>Phimp.me Android</strong></h4>
- 										</div>
-									</a>
-                  <div style="display: flex;flex-direction: row;justify-content: center; align-items: center;">
-										<a href='https://play.google.com/store/apps/details?id=org.fossasia.phimpme'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' width="125"/></a>
-                    					<a href='https://github.com/fossasia/phimpme-android'><img alt="GitHub" src="img/GitHub.png" height="35"></a>
-									</div>
-								</div>
-							</div>
-
-
-							<div class="col-md-4 col-sm-6 col-xs-12 sponsor-column"  >
-								<div class=" text-center" style="margin-bottom: 30px">
-									<a href="https://play.google.com/store/apps/details?id=org.fossasia.badgemagic">
-										<img alt="Badge Magic" src="img/Badge_Magic_Android.jpg" class="img-responsive">
-                    <div class="text-block">
-    										<h4 class="text-white"><strong>Badge Magic Android</strong></h4>
- 										</div>
-									</a>
-                  <div style="display: flex;flex-direction: row;justify-content: center; align-items: center;">
-										<a href='https://play.google.com/store/apps/details?id=org.fossasia.badgemagic'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' width="125"/></a>
-										<a href='https://f-droid.org/en/packages/org.fossasia.badgemagic/'><img alt='Get it on F-Droid' src='https://fdroid.gitlab.io/artwork/badge/get-it-on.png' width="125"/></a>
-                    					<a href='https://github.com/fossasia/badge-magic-android'><img alt="GitHub" src="img/GitHub.png" height="35"></a>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 col-sm-6 col-xs-12 sponsor-column"  >
-								<div class=" text-center" style="margin-bottom: 30px">
-									<a href="https://play.google.com/store/apps/details?id=com.eventyay.attendee">
-										<img alt="Eventyay Attendee" src="img/Eventyay_Attendee_App.jpg" class="img-responsive">
-                    <div class="text-block">
-    										<h4 class="text-white"><strong>Eventyay Attendee App</strong></h4>
- 										</div>
-									</a>
-                  <div style="display: flex;flex-direction: row;justify-content: center; align-items: center;">
-										<a href='https://play.google.com/store/apps/details?id=com.eventyay.attendee'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' width="125"/></a>
-										<a href='https://f-droid.org/en/packages/com.eventyay.attendee/'><img alt='Get it on F-Droid' src='https://fdroid.gitlab.io/artwork/badge/get-it-on.png' width="125"/></a>
-                    					<a href='https://github.com/fossasia/open-event-attendee-android'><img alt="GitHub" src="img/GitHub.png" height="35"></a>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 col-sm-6 col-xs-12 sponsor-column"  >
-								<div class=" text-center" style="margin-bottom: 30px">
-									<a href="https://play.google.com/store/apps/details?id=com.eventyay.organizer">
-										<img alt="Eventyay Organizer" src="img/Eventyay_Organizer_App.jpg" class="img-responsive">
-										<div class="text-block">
-    										<h4 class="text-white"><strong>Eventyay Organizer App</strong></h4>
- 										</div>
-									</a>
-									<div style="display: flex;flex-direction: row;justify-content: center; align-items: center;">
-										<a href='https://play.google.com/store/apps/details?id=com.eventyay.organizer'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' width="125"/></a>
-										<a href='https://f-droid.org/en/packages/com.eventyay.organizer/'><img alt='Get it on F-Droid' src='https://fdroid.gitlab.io/artwork/badge/get-it-on.png' width="125"/></a>
-                  						<a href='https://github.com/fossasia/open-event-organizer-android'><img alt="GitHub" src="img/GitHub.png" height="35"></a>
-                 					 </div>
-								</div>
-							</div>
-
-						                <div class="col-sm-12 text-center">
-									<span>Find more apps on the <a href="https://play.google.com/store/apps/developer?id=FOSSASIA">Play Store</a></span>
-								</div>
-
-					</div>
-				</div>
-			</section> -->
 
 			<a id="about" class="in-page-link"></a>
 			<section class="section-header overlay preserve3d">
@@ -730,7 +552,7 @@
       <div class="col-md-4 col-sm-6 col-xs-12">
         <div class="app-card">
           <div class="app-card-header">
-            <img src="img/SUSI.AI-Android.jpg" class="app-icon" alt="SUSI.AI Icon">
+            <img src="img/SUSI.AI.png" class="app-icon" alt="SUSI.AI Icon">
             <h4 class="app-title">SUSI.AI Android</h4>
           </div>
 
@@ -756,7 +578,7 @@
       <div class="col-md-4 col-sm-6 col-xs-12">
         <div class="app-card">
           <div class="app-card-header">
-            <img src="img/PSLab_Android.jpg" class="app-icon" alt="PSLab Icon">
+            <img src="img/PSLab-io.png" class="app-icon" alt="PSLab Icon">
             <h4 class="app-title">PSLab Android</h4>
           </div>
 
@@ -776,7 +598,7 @@
       <div class="col-md-4 col-sm-6 col-xs-12">
         <div class="app-card">
           <div class="app-card-header">
-            <img src="img/Phimpme_Android.jpg" class="app-icon" alt="Phimp.me Icon">
+            <img src="img/phimpme.png" class="app-icon" alt="Phimp.me Icon">
             <h4 class="app-title">Phimp.me Android</h4>
           </div>
 
@@ -795,7 +617,7 @@
       <div class="col-md-4 col-sm-6 col-xs-12">
         <div class="app-card">
           <div class="app-card-header">
-            <img src="img/Badge_Magic_Android.jpg" class="app-icon" alt="Badge Magic Icon">
+            <img src="img/badge_magic.webp" class="app-icon" alt="Badge Magic Icon">
             <h4 class="app-title">Badge Magic Android</h4>
           </div>
 
@@ -815,7 +637,7 @@
       <div class="col-md-4 col-sm-6 col-xs-12">
         <div class="app-card">
           <div class="app-card-header">
-            <img src="img/Eventyay_Attendee_App.jpg" class="app-icon" alt="Eventyay Attendee Icon">
+            <img src="img/eventyay.png" class="app-icon" alt="Eventyay Attendee Icon">
             <h4 class="app-title">Eventyay Attendee</h4>
           </div>
 
@@ -835,7 +657,7 @@
       <div class="col-md-4 col-sm-6 col-xs-12">
         <div class="app-card">
           <div class="app-card-header">
-            <img src="img/Eventyay_Organizer_App.jpg" class="app-icon" alt="Eventyay Organizer Icon">
+            <img src="img/eventyay.png" class="app-icon" alt="Eventyay Organizer Icon">
             <h4 class="app-title">Eventyay Organizer</h4>
           </div>
 
