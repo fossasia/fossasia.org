@@ -210,3 +210,41 @@ nav{
   display: flex;
   flex-wrap: wrap;
 }
+ .x-logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Subscribe section X (Twitter) logo */
+.subscribe-x {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.subscribe-x-icon {
+  width: 48px;     /* 👈 bada size (bird jaisa) */
+  height: 48px;
+  color: #ffffff; /* 👈 pure white */
+  opacity: 0.95;
+}
+/* Social circle base (already matches FB / LinkedIn size) */
+.social-circle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 8px;
+}
+
+/* X (Twitter) specific */
+.x-circle {
+  background-color: #000;   /* black circle */
+}
+
+.x-icon {
+  width: 26px;
+  height: 26px;
+  color: #fff;              /* white X */
+}

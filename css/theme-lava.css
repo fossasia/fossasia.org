@@ -2379,3 +2379,10 @@ footer.classic .social-profiles {
   color: #333333;
   font-size: 20px;
 }
+/* Fix: Hide hamburger menu on desktop view */
+@media (min-width: 1024px) {
+  .sidebar-menu-toggle,
+  .mobile-menu-toggle {
+    display: none !important;
+  }
+}
