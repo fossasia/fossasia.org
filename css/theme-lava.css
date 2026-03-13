@@ -866,6 +866,12 @@ nav .container {
     color: #333333;
   }
 }
+@media screen and (max-width: 768px)
+{
+    .menu > .has-dropdown:before {
+        color : #000000;
+    }
+}
 /*!
 // 8. Sliders & Dividers & Headers
 // --------------------------------------------------*/
