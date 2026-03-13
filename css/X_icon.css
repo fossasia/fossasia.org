@@ -1,0 +1,11 @@
+.X {
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.X img {
+    width: 60px; 
+    height: 60px; 
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
