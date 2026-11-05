@@ -1,0 +1,9 @@
+.mobile{
+    border-top: 14px solid rgb(32, 31, 31);
+    border-left: 10px solid rgb(32, 31, 31);
+    border-right: 10px solid rgb(32, 31, 31);
+    border-bottom: 20px solid rgb(32, 31, 31);
+    border-radius: 20px;
+    box-shadow: inset 5px 4px 6px rgba(1, 1, 1, 0.309),
+                5px 5px 5px rgba(0, 0, 0, 0.29);
+}
